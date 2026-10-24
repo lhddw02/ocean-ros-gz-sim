@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author>Ocean simulation maintainers</author>
+    <authoring_tool>generate-drone-meshes.py; original GPL-3.0-or-later geometry</authoring_tool>
+    </contributor><created>2026-10-24T00:00:00Z</created><modified>2026-10-24T00:00:00Z</modified>
+    <unit name="meter" meter="1"/><up_axis>Z_UP</up_axis></asset>
+  <library_geometries><geometry id="trim_graphite" name="trim_graphite"><mesh>
+    <source id="positions"><float_array id="positions-array" count="54">-0.049 -0.047 0.061 0.049 -0.047 0.061 0.061 -0.035 0.061 0.061 0.035 0.061 0.049 0.047 0.061 -0.049 0.047 0.061 -0.061 0.035 0.061 -0.061 -0.035 0.061 -0.047 -0.045 0.063 0.047 -0.045 0.063 0.059 -0.033 0.063 0.059 0.033 0.063 0.047 0.045 0.063 -0.047 0.045 0.063 -0.059 0.033 0.063 -0.059 -0.033 0.063 -1.73472348e-18 0 0.061 -1.73472348e-18 0 0.063</float_array>
+      <technique_common><accessor source="#positions-array" count="18" stride="3">
+        <param name="X" type="float"/><param name="Y" type="float"/><param name="Z" type="float"/>
+      </accessor></technique_common></source>
+    <source id="normals"><float_array id="normals-array" count="96">0 -0.707106781 0.707106781 0 -0.707106781 0.707106781 0.40824829 -0.40824829 0.816496581 0.40824829 -0.40824829 0.816496581 0.707106781 -0 0.707106781 0.707106781 0 0.707106781 0.40824829 0.40824829 0.816496581 0.40824829 0.40824829 0.816496581 0 0.707106781 0.707106781 0 0.707106781 0.707106781 -0.40824829 0.40824829 0.816496581 -0.40824829 0.40824829 0.816496581 -0.707106781 0 0.707106781 -0.707106781 0 0.707106781 -0.40824829 -0.40824829 0.816496581 -0.40824829 -0.40824829 0.816496581 0 -0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 -0 0 -1 0 0 -1 0 0 1 0 0 1 -0 0 1 0 0 1 0 -0 1 0 0 1 0 0 1 0 0 1</float_array>
+      <technique_common><accessor source="#normals-array" count="32" stride="3">
+        <param name="X" type="float"/><param name="Y" type="float"/><param name="Z" type="float"/>
+      </accessor></technique_common></source>
+    <vertices id="vertices"><input semantic="POSITION" source="#positions"/></vertices>
+    <triangles count="32"><input semantic="VERTEX" source="#vertices" offset="0"/>
+      <input semantic="NORMAL" source="#normals" offset="1"/><p>0 0 1 0 9 0 0 1 9 1 8 1 1 2 2 2 10 2 1 3 10 3 9 3 2 4 3 4 11 4 2 5 11 5 10 5 3 6 4 6 12 6 3 7 12 7 11 7 4 8 5 8 13 8 4 9 13 9 12 9 5 10 6 10 14 10 5 11 14 11 13 11 6 12 7 12 15 12 6 13 15 13 14 13 7 14 0 14 8 14 7 15 8 15 15 15 16 16 1 16 0 16 16 17 2 17 1 17 16 18 3 18 2 18 16 19 4 19 3 19 16 20 5 20 4 20 16 21 6 21 5 21 16 22 7 22 6 22 16 23 0 23 7 23 17 24 8 24 9 24 17 25 9 25 10 25 17 26 10 26 11 26 17 27 11 27 12 27 17 28 12 28 13 28 17 29 13 29 14 29 17 30 14 30 15 30 17 31 15 31 8 31</p></triangles>
+  </mesh></geometry></library_geometries>
+  <library_visual_scenes><visual_scene id="Scene"><node id="trim_graphite-node">
+    <instance_geometry url="#trim_graphite"/></node></visual_scene></library_visual_scenes>
+  <scene><instance_visual_scene url="#Scene"/></scene>
+</COLLADA>

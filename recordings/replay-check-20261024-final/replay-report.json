@@ -1,0 +1,293 @@
+{
+  "passed": false,
+  "error": "Replay 1 physical landing failed: Wall-clock landing deadline exceeded; see /recordings/replay-check-20261024-final/cycle-1/landing-report.json",
+  "wall_elapsed_s": 122.077,
+  "request_transport": "gz",
+  "test_scope": "native Gazebo replay request through the GUI transport bridge, real reset/arming, rendered tag, and physical touchdown; GUI widget and unchanged process identities checked separately",
+  "requests": [
+    {
+      "number": 1,
+      "reason": "fresh hover; burst of five requests",
+      "burst_messages": 5,
+      "requested_at_sim_time": 18.165,
+      "requested_from_state": "disabled_hover",
+      "request_transport": "gz",
+      "arming_sim_time": 0.0,
+      "arming_detections": 0,
+      "arming_image_age_s": null,
+      "rewind": {
+        "from_s": 18.185,
+        "to_s": 0.0,
+        "wall_elapsed_s": 0.468
+      },
+      "fresh_detection_sim_time": 0.615
+    }
+  ],
+  "clock_rewinds": [
+    {
+      "from_s": 18.185,
+      "to_s": 0.0,
+      "wall_elapsed_s": 0.468
+    }
+  ],
+  "completed_landings": [],
+  "fresh_camera_frames_by_epoch": {
+    "0": {
+      "frames": 2,
+      "first_stamp_s": 18.1,
+      "last_stamp_s": 18.15
+    },
+    "1": {
+      "frames": 1962,
+      "first_stamp_s": 0.05,
+      "last_stamp_s": 98.65
+    }
+  },
+  "final_controller_status": {
+    "state": "landed",
+    "tag_family": "tag36h11",
+    "tag_id": 0,
+    "tag_size_m": 0.4,
+    "detections": 239,
+    "target_fresh": false,
+    "lateral_error_m": 0.18314863932261957,
+    "image_age_s": 0.06499999999999773,
+    "tag_age_s": 81.86500000000001,
+    "camera_height_m": 0.4182003537126531,
+    "reprojection_error_px": 0.25184501848462654,
+    "processing_ms": 206.96930400026758,
+    "processing_ms_ema": 228.29740097311594,
+    "image_arrival_age_s": 0.06499999999999773,
+    "image_callbacks": 641,
+    "fallback_calls": 402,
+    "foot_station_contact": false,
+    "motors_enabled": false,
+    "sim_time": 98.465,
+    "replay_count": 1,
+    "replay_phase": null,
+    "replay_error": null
+  },
+  "timeline": [
+    {
+      "event": "button_status",
+      "wall_elapsed_s": 0.425,
+      "sim_time": 18.165,
+      "value": "ready"
+    },
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 0.425,
+      "sim_time": 18.165,
+      "replay_count": 0,
+      "replay_phase": null,
+      "state": "disabled_hover",
+      "motors_enabled": true,
+      "detections": 255,
+      "image_age_s": 0.02500000000000213
+    },
+    {
+      "event": "initial_scene_ready",
+      "wall_elapsed_s": 0.425,
+      "sim_time": 18.165
+    },
+    {
+      "event": "request",
+      "wall_elapsed_s": 0.425,
+      "sim_time": 18.165,
+      "number": 1,
+      "reason": "fresh hover; burst of five requests",
+      "burst_messages": 5,
+      "requested_at_sim_time": 18.165,
+      "requested_from_state": "disabled_hover",
+      "request_transport": "gz"
+    },
+    {
+      "event": "button_status",
+      "wall_elapsed_s": 0.454,
+      "sim_time": 18.185,
+      "value": "resetting"
+    },
+    {
+      "event": "clock_rewind",
+      "wall_elapsed_s": 0.468,
+      "sim_time": 18.185,
+      "from_s": 18.185,
+      "to_s": 0.0
+    },
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 0.632,
+      "sim_time": 0.0,
+      "replay_count": 0,
+      "replay_phase": "arming",
+      "state": "replay_arming",
+      "motors_enabled": true,
+      "detections": 0,
+      "image_age_s": null
+    },
+    {
+      "event": "button_status",
+      "wall_elapsed_s": 0.655,
+      "sim_time": 0.0,
+      "value": "arming"
+    },
+    {
+      "event": "independent_probe_started",
+      "wall_elapsed_s": 0.791,
+      "sim_time": 0.0,
+      "replay": 1,
+      "phase": "arming",
+      "directory": "cycle-1"
+    },
+    {
+      "event": "button_status",
+      "wall_elapsed_s": 1.575,
+      "sim_time": 0.052500000000000005,
+      "value": "starting"
+    },
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 1.74,
+      "sim_time": 0.22,
+      "replay_count": 1,
+      "replay_phase": null,
+      "state": "aligning",
+      "motors_enabled": true,
+      "detections": 1,
+      "image_age_s": 0.0025000000000000022
+    },
+    {
+      "event": "button_status",
+      "wall_elapsed_s": 1.801,
+      "sim_time": 0.275,
+      "value": "replaying"
+    },
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 5.251,
+      "sim_time": 3.145,
+      "replay_count": 1,
+      "replay_phase": null,
+      "state": "descending",
+      "motors_enabled": true,
+      "detections": 40,
+      "image_age_s": 0.04499999999999993
+    },
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 5.677,
+      "sim_time": 3.5175,
+      "replay_count": 1,
+      "replay_phase": null,
+      "state": "aligning",
+      "motors_enabled": true,
+      "detections": 45,
+      "image_age_s": 0.03500000000000014
+    },
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 7.859,
+      "sim_time": 5.5125,
+      "replay_count": 1,
+      "replay_phase": null,
+      "state": "descending",
+      "motors_enabled": true,
+      "detections": 74,
+      "image_age_s": 0.040000000000000924
+    },
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 11.891,
+      "sim_time": 9.1125,
+      "replay_count": 1,
+      "replay_phase": null,
+      "state": "aligning",
+      "motors_enabled": true,
+      "detections": 125,
+      "image_age_s": 0.02000000000000135
+    },
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 15.817,
+      "sim_time": 12.755,
+      "replay_count": 1,
+      "replay_phase": null,
+      "state": "descending",
+      "motors_enabled": true,
+      "detections": 180,
+      "image_age_s": 0.04750000000000121
+    },
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 16.707,
+      "sim_time": 13.5675,
+      "replay_count": 1,
+      "replay_phase": null,
+      "state": "flaring",
+      "motors_enabled": true,
+      "detections": 192,
+      "image_age_s": 0.04750000000000121
+    },
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 18.088,
+      "sim_time": 14.8125,
+      "replay_count": 1,
+      "replay_phase": null,
+      "state": "descending",
+      "motors_enabled": true,
+      "detections": 211,
+      "image_age_s": 0.01750000000000007
+    },
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 18.74,
+      "sim_time": 15.42,
+      "replay_count": 1,
+      "replay_phase": null,
+      "state": "flaring",
+      "motors_enabled": true,
+      "detections": 220,
+      "image_age_s": 0.022500000000000853
+    },
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 19.185,
+      "sim_time": 15.82,
+      "replay_count": 1,
+      "replay_phase": null,
+      "state": "touchdown",
+      "motors_enabled": true,
+      "detections": 226,
+      "image_age_s": 0.015000000000000568
+    },
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 19.399,
+      "sim_time": 16.0,
+      "replay_count": 1,
+      "replay_phase": null,
+      "state": "aligning",
+      "motors_enabled": true,
+      "detections": 229,
+      "image_age_s": 0.012500000000001066
+    },
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 19.874,
+      "sim_time": 16.415,
+      "replay_count": 1,
+      "replay_phase": null,
+      "state": "landed",
+      "motors_enabled": false,
+      "detections": 235,
+      "image_age_s": 0.017500000000001847
+    },
+    {
+      "event": "button_status",
+      "wall_elapsed_s": 20.075,
+      "sim_time": 16.6175,
+      "value": "landed"
+    }
+  ]
+}

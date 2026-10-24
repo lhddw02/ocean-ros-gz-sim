@@ -1,0 +1,26 @@
+{
+  "sim_time": 0.005,
+  "image_stamp": 0.0025,
+  "status": {
+    "state": "waiting_for_camera",
+    "tag_family": "tag25h9",
+    "tag_id": 7,
+    "tag_size_m": 0.4,
+    "detections": 0,
+    "target_fresh": false,
+    "lateral_error_m": null,
+    "image_age_s": null,
+    "tag_age_s": null,
+    "camera_height_m": null,
+    "reprojection_error_px": null,
+    "processing_ms": 0.0,
+    "processing_ms_ema": 0.0,
+    "image_arrival_age_s": null,
+    "image_callbacks": 0,
+    "fallback_calls": 0,
+    "foot_station_contact": false,
+    "motors_enabled": true,
+    "sim_time": 0.005
+  },
+  "independent_target_detected": true
+}

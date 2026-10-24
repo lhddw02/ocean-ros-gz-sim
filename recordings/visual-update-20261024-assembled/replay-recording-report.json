@@ -1,0 +1,238 @@
+{
+  "passed": false,
+  "error": "Timed out waiting for the button-triggered world reset and paused arming",
+  "started_at_utc": "2026-10-24T04:59:33.856439+00:00",
+  "request_mode": "external",
+  "capture_method": "X11 window framebuffer",
+  "synthetic_frames": false,
+  "wall_elapsed_s": 141.734,
+  "requests": [],
+  "clock_rewinds": [],
+  "completed_landings": [
+    {
+      "replay": 0,
+      "passed": true,
+      "report": "cycle-0/landing-report.json",
+      "final_drone_in_station_frame_m": [
+        0.022918755871182764,
+        0.03906139259217142,
+        0.7999995405194656
+      ],
+      "settled_simulation_seconds": 2.0,
+      "physical_foot_station_contact_messages": 1017
+    }
+  ],
+  "processes_before": [
+    {
+      "pid": 58,
+      "start_ticks": 719962,
+      "command": "/usr/bin/python3 /opt/ocean_ws/install/lib/ocean_sim/vision_landing --ros-args --params-file /tmp/launch_params_u05c4w32"
+    },
+    {
+      "pid": 64,
+      "start_ticks": 719963,
+      "command": "gz sim -v 3 --render-engine ogre2 /tmp/ocean-landing-vkko6wcq/landing.sdf"
+    },
+    {
+      "pid": 100,
+      "start_ticks": 719978,
+      "command": "gz sim server"
+    },
+    {
+      "pid": 101,
+      "start_ticks": 719978,
+      "command": "gz sim gui"
+    }
+  ],
+  "processes_after": [
+    {
+      "pid": 58,
+      "start_ticks": 719962,
+      "command": "/usr/bin/python3 /opt/ocean_ws/install/lib/ocean_sim/vision_landing --ros-args --params-file /tmp/launch_params_u05c4w32"
+    },
+    {
+      "pid": 64,
+      "start_ticks": 719963,
+      "command": "gz sim -v 3 --render-engine ogre2 /tmp/ocean-landing-vkko6wcq/landing.sdf"
+    },
+    {
+      "pid": 100,
+      "start_ticks": 719978,
+      "command": "gz sim server"
+    },
+    {
+      "pid": 101,
+      "start_ticks": 719978,
+      "command": "gz sim gui"
+    }
+  ],
+  "unchanged_processes": true,
+  "final_status": {
+    "state": "landed",
+    "tag_family": "tag36h11",
+    "tag_id": 0,
+    "tag_size_m": 0.4,
+    "detections": 11032,
+    "target_fresh": true,
+    "lateral_error_m": 0.04537875537186704,
+    "image_age_s": 0.007500000000050022,
+    "tag_age_s": 0.007500000000050022,
+    "camera_height_m": 0.34842225213109695,
+    "reprojection_error_px": 0.025198534799161645,
+    "processing_ms": 204.45461200051795,
+    "processing_ms_ema": 183.01847064117254,
+    "image_arrival_age_s": 0.007500000000050022,
+    "image_callbacks": 11032,
+    "fallback_calls": 2,
+    "foot_station_contact": true,
+    "motors_enabled": false,
+    "sim_time": 816.9075,
+    "replay_count": 0,
+    "replay_phase": null,
+    "replay_error": null
+  },
+  "timeline": [
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 0.524,
+      "sim_time": 702.865,
+      "replay_count": 0,
+      "replay_phase": null,
+      "state": "disabled_hover",
+      "motors_enabled": true,
+      "detections": 10616,
+      "image_age_s": 0.015000000000100044
+    },
+    {
+      "event": "independent_probe_started",
+      "wall_elapsed_s": 0.534,
+      "sim_time": 702.865,
+      "replay": 0,
+      "phase": null,
+      "directory": "cycle-0"
+    },
+    {
+      "event": "initial_landing_enabled",
+      "wall_elapsed_s": 0.534,
+      "sim_time": 702.865
+    },
+    {
+      "event": "button_status",
+      "wall_elapsed_s": 2.895,
+      "sim_time": 702.865,
+      "value": "replaying"
+    },
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 2.897,
+      "sim_time": 705.0125,
+      "replay_count": 0,
+      "replay_phase": null,
+      "state": "aligning",
+      "motors_enabled": true,
+      "detections": 10645,
+      "image_age_s": 0.030000000000086402
+    },
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 6.018,
+      "sim_time": 707.915,
+      "replay_count": 0,
+      "replay_phase": null,
+      "state": "descending",
+      "motors_enabled": true,
+      "detections": 10690,
+      "image_age_s": 0.02250000000003638
+    },
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 11.676,
+      "sim_time": 713.165,
+      "replay_count": 0,
+      "replay_phase": null,
+      "state": "flaring",
+      "motors_enabled": true,
+      "detections": 10768,
+      "image_age_s": 0.017500000000040927
+    },
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 13.613,
+      "sim_time": 714.8175,
+      "replay_count": 0,
+      "replay_phase": null,
+      "state": "touchdown",
+      "motors_enabled": true,
+      "detections": 10789,
+      "image_age_s": 0.04000000000007731
+    },
+    {
+      "event": "button_status",
+      "wall_elapsed_s": 13.908,
+      "sim_time": 715.0675,
+      "value": "landed"
+    },
+    {
+      "event": "controller_transition",
+      "wall_elapsed_s": 14.042,
+      "sim_time": 715.1975,
+      "replay_count": 0,
+      "replay_phase": null,
+      "state": "landed",
+      "motors_enabled": false,
+      "detections": 10794,
+      "image_age_s": 0.18250000000000455
+    },
+    {
+      "event": "independent_probe_passed",
+      "wall_elapsed_s": 16.827,
+      "sim_time": 717.6075,
+      "replay": 0
+    },
+    {
+      "event": "initial_landed_scene_ready",
+      "wall_elapsed_s": 16.827,
+      "sim_time": 717.6075,
+      "status": {
+        "state": "landed",
+        "tag_family": "tag36h11",
+        "tag_id": 0,
+        "tag_size_m": 0.4,
+        "detections": 10799,
+        "target_fresh": true,
+        "lateral_error_m": 0.045278602605642114,
+        "image_age_s": 0.24750000000005912,
+        "tag_age_s": 0.24750000000005912,
+        "camera_height_m": 0.3483825032004172,
+        "reprojection_error_px": 0.01932562934262728,
+        "processing_ms": 159.52575499977684,
+        "processing_ms_ema": 115.83836389746891,
+        "image_arrival_age_s": 0.015000000000100044,
+        "image_callbacks": 10799,
+        "fallback_calls": 2,
+        "foot_station_contact": true,
+        "motors_enabled": false,
+        "sim_time": 717.4975000000001,
+        "replay_count": 0,
+        "replay_phase": null,
+        "replay_error": null
+      }
+    },
+    {
+      "event": "gui_capture_started",
+      "wall_elapsed_s": 19.038,
+      "sim_time": 719.6075,
+      "metadata": "gui-source/gui-capture.json"
+    },
+    {
+      "event": "ready_for_replay_button",
+      "wall_elapsed_s": 21.047,
+      "sim_time": 721.3275
+    },
+    {
+      "event": "awaiting_external_gui_button",
+      "wall_elapsed_s": 21.047,
+      "sim_time": 721.3275
+    }
+  ]
+}

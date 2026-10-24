@@ -1,0 +1,24 @@
+[1;32m[Msg] [0m[1;32mGazebo Sim Server v[0m[1;32m8.15.0[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mLoading SDF world file[[0m[1;32m/tmp/ocean-contact-reset-n0qc228i/world.sdf[0m[1;32m].[0m
+[1;32m[Msg] [0m[1;32mServing entity system service on [[0m[1;32m/[0m[1;32mentity/system/add[0m[1;32m][0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mLoaded level [[0m[1;32mdefault[0m[1;32m][0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mServing world controls on [[0m[1;32m/world/contact_reset[0m[1;32m/control], [[0m[1;32m/world/contact_reset[0m[1;32m/control/state] and [[0m[1;32m/world/contact_reset[0m[1;32m/playback/control][0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mServing GUI information on [[0m[1;32m/world/contact_reset[0m[1;32m/[0m[1;32mgui/info[0m[1;32m][0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mWorld [[0m[1;32mcontact_reset[0m[1;32m] initialized with [[0m[1;32mdefault[0m[1;32m] physics profile.[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mServing world SDF generation service on [[0m[1;32m/world/contact_reset[0m[1;32m/[0m[1;32mgenerate_world_sdf[0m[1;32m][0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mServing world names on [[0m[1;32m/gazebo/worlds[0m[1;32m][0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mResource path add service on [[0m[1;32m/gazebo/resource_paths/add[0m[1;32m].[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mResource path get service on [[0m[1;32m/gazebo/resource_paths/get[0m[1;32m].[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mResource path resolve service on [[0m[1;32m/gazebo/resource_paths/resolve[0m[1;32m].[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mResource paths published on [[0m[1;32m/gazebo/resource_paths[0m[1;32m].[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mServer control service on [[0m[1;32m/server_control[0m[1;32m].[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mFound no publishers on /stats, adding root stats topic[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mFound no publishers on /clock, adding root clock topic[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mReplayContact publishing on [0m[1;32mworld/contact_reset/model/box/link/link/sensor/native_name/contact[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mReplayContact publishing on [0m[1;32m/contact_reset/custom[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mReplayContact publishing on [0m[1;32mworld/contact_reset/model/box/link/link/sensor/native_name/contact[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mReplayContact publishing on [0m[1;32m/contact_reset/custom[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mReplayContact: restored [0m[1;32m2[0m[1;32m contact sensors after world reset.[0m
+[1;32m[Msg] [0m[1;32mReplayContact publishing on [0m[1;32mworld/contact_reset/model/box/link/link/sensor/native_name/contact[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mReplayContact publishing on [0m[1;32m/contact_reset/custom[0m[1;32m[0m
+[1;32m[Msg] [0m[1;32mReplayContact: restored [0m[1;32m2[0m[1;32m contact sensors after world reset.[0m

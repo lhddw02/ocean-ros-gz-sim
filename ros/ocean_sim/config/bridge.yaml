@@ -1,0 +1,30 @@
+# A single publisher should own the ROS simulation clock.
+- ros_topic_name: /clock
+  gz_topic_name: /world/ocean/clock
+  ros_type_name: rosgraph_msgs/msg/Clock
+  gz_type_name: gz.msgs.Clock
+  direction: GZ_TO_ROS
+  publisher_queue: 10
+  subscriber_queue: 10
+  lazy: false
+
+# Kept for compatibility: SceneBroadcaster publishes moving entities, but its
+# compact stream may omit names. This is not a usable named TF tree.
+- ros_topic_name: /ocean/poses
+  gz_topic_name: /world/ocean/dynamic_pose/info
+  ros_type_name: tf2_msgs/msg/TFMessage
+  gz_type_name: gz.msgs.Pose_V
+  direction: GZ_TO_ROS
+  publisher_queue: 10
+  subscriber_queue: 10
+  lazy: false
+
+# Dedicated model telemetry avoids relying on names in the compact scene stream.
+- ros_topic_name: /ocean/buoy/pose
+  gz_topic_name: /ocean/buoy/pose
+  ros_type_name: geometry_msgs/msg/PoseStamped
+  gz_type_name: gz.msgs.Pose
+  direction: GZ_TO_ROS
+  publisher_queue: 10
+  subscriber_queue: 10
+  lazy: false

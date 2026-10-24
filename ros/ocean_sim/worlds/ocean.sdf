@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <world name="ocean">
+    <gravity>0 0 -9.81</gravity>
+    <physics name="ocean_physics" type="ignored">
+      <max_step_size>0.005</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin filename="gz-sim-scene-broadcaster-system"
+            name="gz::sim::systems::SceneBroadcaster">
+      <dynamic_pose_hertz>30</dynamic_pose_hertz>
+    </plugin>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+
+    <scene>
+      <ambient>0.5 0.5 0.5 1</ambient>
+      <background>0.65 0.78 0.9 1</background>
+      <shadows>true</shadows>
+      <sky/>
+    </scene>
+    <light type="directional" name="sun">
+      <pose>0 0 30 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <diffuse>0.9 0.9 0.85 1</diffuse>
+      <specular>0.7 0.7 0.7 1</specular>
+      <direction>-0.5 0.2 -0.8</direction>
+    </light>
+
+    <!-- Surface rendering and the force-generating wave field share FFT parameters. -->
+    <include>
+      <uri>model://ocean_surface</uri>
+    </include>
+    <include>
+      <uri>model://duck</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://spherical_buoy</uri>
+      <pose>6 0 0 0 0 0</pose>
+    </include>
+
+    <gui fullscreen="false">
+      <plugin filename="MinimalScene" name="3D View">
+        <gz-gui>
+          <title>3D View</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">docked</property>
+        </gz-gui>
+        <engine>ogre2</engine>
+        <scene>scene</scene>
+        <ambient_light>0.5 0.5 0.5</ambient_light>
+        <background_color>0.65 0.78 0.9</background_color>
+        <camera_pose>18 -24 15 0 0.40 2.25</camera_pose>
+        <camera_clip><near>0.1</near><far>2000</far></camera_clip>
+      </plugin>
+      <!-- Utility plugins use Gazebo's compact floating layout. -->
+      <plugin filename="GzSceneManager" name="Scene Manager">
+        <gz-gui>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="width">5</property>
+          <property type="double" key="height">5</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="showTitleBar">false</property>
+        </gz-gui>
+      </plugin>
+      <plugin filename="InteractiveViewControl" name="View Control">
+        <gz-gui>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="width">5</property>
+          <property type="double" key="height">5</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="showTitleBar">false</property>
+        </gz-gui>
+      </plugin>
+      <plugin filename="CameraTracking" name="Camera Tracking">
+        <gz-gui>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="width">5</property>
+          <property type="double" key="height">5</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="showTitleBar">false</property>
+        </gz-gui>
+      </plugin>
+      <plugin filename="WorldControl" name="World control">
+        <gz-gui>
+          <title>World control</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="height">72</property>
+          <property type="double" key="z">1</property>
+          <property type="string" key="state">floating</property>
+          <anchors target="3D View">
+            <line own="left" target="left"/>
+            <line own="bottom" target="bottom"/>
+          </anchors>
+        </gz-gui>
+        <play_pause>true</play_pause>
+        <step>true</step>
+        <start_paused>false</start_paused>
+      </plugin>
+      <plugin filename="WorldStats" name="World stats">
+        <gz-gui>
+          <title>World stats</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="height">110</property>
+          <property type="double" key="width">290</property>
+          <property type="double" key="z">1</property>
+          <property type="string" key="state">floating</property>
+          <anchors target="3D View">
+            <line own="right" target="right"/>
+            <line own="bottom" target="bottom"/>
+          </anchors>
+        </gz-gui>
+        <sim_time>true</sim_time>
+        <real_time>true</real_time>
+        <real_time_factor>true</real_time_factor>
+        <iterations>true</iterations>
+      </plugin>
+    </gui>
+  </world>
+</sdf>

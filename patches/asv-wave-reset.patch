@@ -1,0 +1,89 @@
+--- a/gz-waves/src/systems/waves/WavesVisual.hh
++++ b/gz-waves/src/systems/waves/WavesVisual.hh
+@@ -35,6 +35,7 @@
+ class WavesVisual
+     : public System,
+       public ISystemConfigure,
++      public ISystemReset,
+       public ISystemPreUpdate
+ {
+   /// \brief Constructor
+@@ -54,6 +55,11 @@
+               const UpdateInfo &_info,
+               EntityComponentManager &_ecm) override;
+ 
++  /// Documentation inherited
++  public: void Reset(
++              const UpdateInfo &_info,
++              EntityComponentManager &_ecm) override;
++
+   /// \brief Private data pointer
+   private: std::unique_ptr<WavesVisualPrivate> dataPtr;
+ };
+--- a/gz-waves/src/systems/waves/WavesVisual.cc
++++ b/gz-waves/src/systems/waves/WavesVisual.cc
+@@ -276,6 +276,11 @@
+   public: waves::WaveParametersPtr waveParams;
+   public: bool waveParamsDirty{false};
+ 
++  /// \brief Configured defaults restored on server and GUI clock rewind.
++  public: double initialWindSpeed{0.0};
++  public: double initialWindAngleRad{0.0};
++  public: double initialSteepness{0.0};
++
+   /// \brief The ocean tile managing the wave simulation
+   public: waves::visual::OceanTilePtr oceanTile;
+ 
+@@ -385,6 +390,9 @@
+     auto sdfWave = sdf->GetElement("wave");
+     this->dataPtr->waveParams->SetFromSDF(*sdfWave);
+   }
++  this->dataPtr->initialWindSpeed = this->dataPtr->waveParams->WindSpeed();
++  this->dataPtr->initialWindAngleRad = this->dataPtr->waveParams->WindAngleRad();
++  this->dataPtr->initialSteepness = this->dataPtr->waveParams->Steepness();
+ 
+   // Shader params
+   if (sdf->HasElement("param"))
+@@ -519,11 +527,34 @@
+ {
+   GZ_PROFILE("WavesVisual::PreUpdate");
+   std::lock_guard<std::mutex> lock(this->dataPtr->mutex);
++  // GUI systems are retained across world reset and do not receive Reset.
++  // Detect rewind here as well so a live wind change returns to the same
++  // configured defaults as the reconstructed server WavesModel.
++  if (this->dataPtr->waveParams &&
++      _info.simTime < this->dataPtr->currentSimTime)
++  {
++    this->dataPtr->waveParams->SetWindSpeedAndAngle(
++        this->dataPtr->initialWindSpeed, this->dataPtr->initialWindAngleRad);
++    this->dataPtr->waveParams->SetSteepness(this->dataPtr->initialSteepness);
++    this->dataPtr->waveParamsDirty = true;
++  }
+   this->dataPtr->currentSimTime = _info.simTime;
+ 
+   this->dataPtr->currentSimTimeSeconds =
+       (std::chrono::duration_cast<std::chrono::nanoseconds>(
+           this->dataPtr->currentSimTime).count()) * 1e-9;
++}
++
++//////////////////////////////////////////////////
++void WavesVisual::Reset(const UpdateInfo &_info,
++    EntityComponentManager &_ecm)
++{
++  // Gazebo restores the same ECM / entity identities and retains the Sensors
++  // rendering scene. Preserve this visual's GPU resources too: reconstruction
++  // would retrieve resident entity-named displacement textures and attempt to
++  // change their resolution, which Ogre2 rejects. PreUpdate rewinds shader / FFT
++  // time and restores configured wind defaults under the rendering mutex.
++  this->PreUpdate(_info, _ecm);
+ }
+ 
+ /////////////////////////////////////////////////
+@@ -1206,6 +1237,7 @@
+ GZ_ADD_PLUGIN(gz::sim::systems::WavesVisual,
+               gz::sim::System,
+               gz::sim::systems::WavesVisual::ISystemConfigure,
++              gz::sim::systems::WavesVisual::ISystemReset,
+               gz::sim::systems::WavesVisual::ISystemPreUpdate)
+ 
+ GZ_ADD_PLUGIN_ALIAS(gz::sim::systems::WavesVisual,

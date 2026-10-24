@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>ocean_landing_gui</name>
+  <version>0.1.0</version>
+  <description>Gazebo Harmonic button for replaying the ocean station landing demo.</description>
+  <maintainer email="maintainer@example.com">Ocean simulation maintainers</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>gz-gui8</depend>
+  <depend>gz-plugin2</depend>
+  <depend>gz-transport13</depend>
+  <depend>gz-msgs10</depend>
+  <depend>qtbase5-dev</depend>
+  <depend>qtdeclarative5-dev</depend>
+  <depend>qtquickcontrols2-5-dev</depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

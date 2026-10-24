@@ -1,0 +1,29 @@
+{
+  "sim_time": 13.825,
+  "image_stamp": 13.8,
+  "status": {
+    "state": "descending",
+    "tag_family": "tag36h11",
+    "tag_id": 0,
+    "tag_size_m": 0.4,
+    "detections": 185,
+    "target_fresh": true,
+    "lateral_error_m": 0.048807180072682234,
+    "image_age_s": 0.01750000000000007,
+    "tag_age_s": 0.01750000000000007,
+    "camera_height_m": 0.9645980326604384,
+    "reprojection_error_px": 0.2860904514519344,
+    "processing_ms": 168.69443799987494,
+    "processing_ms_ema": 88.56023033794291,
+    "image_arrival_age_s": 0.01750000000000007,
+    "image_callbacks": 185,
+    "fallback_calls": 0,
+    "foot_station_contact": false,
+    "motors_enabled": true,
+    "sim_time": 13.6675,
+    "replay_count": 1,
+    "replay_phase": null,
+    "replay_error": null
+  },
+  "independent_target_detected": true
+}

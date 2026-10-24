@@ -1,0 +1,17 @@
+{
+  "id": "5dd1ac433fea849f6350bd636f900da5c31fd90b067f9478b81352c53873cb85",
+  "image": "sha256:82672a868155d68868052c374401d13c2f7e04271e15664da084beac1f9338b7",
+  "started_at": "2026-10-24T04:27:15.490670245Z",
+  "host_pid": 23904,
+  "restart_count": 0,
+  "command": [
+    "ros2",
+    "launch",
+    "ocean_sim",
+    "landing.launch.py",
+    "tag_id:=config",
+    "tag_family:=config",
+    "tag_size:=config",
+    "autoland:=false"
+  ]
+}

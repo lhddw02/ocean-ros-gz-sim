@@ -1,0 +1,21 @@
+Landing state: aligning
+Landing state: descending
+Landing state: aligning
+Landing state: descending
+Landing state: aligning
+Landing state: descending
+Landing verification: frames=163, tag poses=109, foot contacts=0, state=descending; pending=physical_foot_station_contact, controller_landed, motors_disabled, status_reports_station_contact, ground_truth_landing_height_0_80m
+Landing state: aligning
+Landing state: descending
+Landing state: flaring
+Landing state: aligning
+Landing verification: frames=327, tag poses=218, foot contacts=156, state=aligning; pending=controller_landed, motors_disabled
+Landing state: touchdown
+Landing state: aligning
+Landing state: descending
+Landing state: flaring
+Landing state: touchdown
+Landing state: landed
+Landing verification: frames=479, tag poses=312, foot contacts=392, state=landed; pending=
+PASS: rendered AprilTag detected; real feet/station contact; centered landing with motors off
+Evidence directory: /recordings/visual-update-20261024-replay/cycle-1

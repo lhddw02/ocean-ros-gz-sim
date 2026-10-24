@@ -1,0 +1,26 @@
+Start testing: Oct 24 03:59 UTC
+----------------------------------------------------------
+1/1 Testing: replay_button_test
+1/1 Test: replay_button_test
+Command: "/tmp/gui-build/replay_button_test"
+Directory: /tmp/gui-build
+"replay_button_test" start time: Oct 24 03:59 UTC
+Output:
+----------------------------------------------------------
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+********* Start testing of ReplayButtonTest *********
+Config: Using QtTest library 5.15.3, Qt 5.15.3 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 11.3.0), ubuntu 22.04
+PASS   : ReplayButtonTest::initTestCase()
+PASS   : ReplayButtonTest::clickPublishesOneRequest()
+PASS   : ReplayButtonTest::cleanupTestCase()
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 1091ms
+********* Finished testing of ReplayButtonTest *********
+<end of output>
+Test time =   1.12 sec
+----------------------------------------------------------
+Test Passed.
+"replay_button_test" end time: Oct 24 04:00 UTC
+"replay_button_test" time elapsed: 00:00:01
+----------------------------------------------------------
+
+End testing: Oct 24 04:00 UTC

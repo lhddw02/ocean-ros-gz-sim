@@ -1,0 +1,33 @@
+{
+  "camera_optical_origin_m": [
+    0.0,
+    0.0,
+    -0.1
+  ],
+  "target_size_m": [
+    0.4,
+    0.4
+  ],
+  "target_plane_body_z_m": -0.45,
+  "near_clip_m": 0.03,
+  "rays_tested": 1681,
+  "rays_blocked_by_drone_meshes": 0,
+  "blocked_targets": [],
+  "closest_hit_fraction": null,
+  "rotor_swept_radii_m": {
+    "rotor_0": 0.13168523075880606,
+    "rotor_1": 0.13168523075880606,
+    "rotor_2": 0.13168523075880606,
+    "rotor_3": 0.13168523075880606
+  },
+  "pairwise_rotor_swept_disc_gap_m": {
+    "rotor_0/rotor_1": 0.3871677771740117,
+    "rotor_0/rotor_2": 0.1966295384823879,
+    "rotor_0/rotor_3": 0.1966295384823879,
+    "rotor_1/rotor_2": 0.1966295384823879,
+    "rotor_1/rotor_3": 0.1966295384823879,
+    "rotor_2/rotor_3": 0.3871677771740117
+  },
+  "minimum_rotor_swept_disc_gap_m": 0.1966295384823879,
+  "scope": "Exact triangle intersections for a centred 0.40 m tag at minimum nominal clearance; tilted/offset flight is additionally checked in the rendered runtime."
+}

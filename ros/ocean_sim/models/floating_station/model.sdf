@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!-- Original primitive model; GPL-3.0-or-later. See MODEL_NOTES.md. -->
+<sdf version="1.9">
+  <model name="floating_station">
+    <self_collide>false</self_collide>
+    <!-- One box collision centered at the link origin provides both the real
+         landing contact surface and the mesh used for wave buoyancy forces. -->
+    <plugin filename="gz-waves1-hydrodynamics-system"
+            name="gz::sim::systems::Hydrodynamics"/>
+    <plugin filename="libocean-station-mooring-system.so"
+            name="ocean_station_systems::StationMooring">
+      <link_name>base_link</link_name>
+      <horizontal_stiffness>20000</horizontal_stiffness>
+      <horizontal_damping>12000</horizontal_damping>
+      <max_horizontal_force>20000</max_horizontal_force>
+      <yaw_stiffness>1000</yaw_stiffness>
+      <yaw_damping>3300</yaw_damping>
+      <max_yaw_torque>10000</max_yaw_torque>
+      <roll_pitch_damping>1000</roll_pitch_damping>
+      <max_roll_pitch_torque>3000</max_roll_pitch_torque>
+    </plugin>
+    <plugin filename="gz-sim-pose-publisher-system"
+            name="gz::sim::systems::PosePublisher">
+      <publish_model_pose>true</publish_model_pose>
+      <publish_link_pose>false</publish_link_pose>
+      <publish_nested_model_pose>false</publish_nested_model_pose>
+      <use_pose_vector_msg>false</use_pose_vector_msg>
+      <update_frequency>30</update_frequency>
+      <topic>/station/pose</topic>
+    </plugin>
+    <link name="base_link">
+      <inertial>
+        <mass>1800</mass>
+        <inertia>
+          <ixx>1423.5</ixx><ixy>0</ixy><ixz>0</ixz>
+          <iyy>1423.5</iyy><iyz>0</iyz><izz>2700</izz>
+        </inertia>
+      </inertial>
+      <collision name="hull_collision">
+        <geometry><box><size>3 3 0.7</size></box></geometry>
+        <surface>
+          <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
+          <bounce><restitution_coefficient>0</restitution_coefficient></bounce>
+        </surface>
+      </collision>
+      <visual name="hull">
+        <geometry><box><size>3 3 0.7</size></box></geometry>
+        <material>
+          <ambient>0.025 0.12 0.18 1</ambient>
+          <diffuse>0.04 0.22 0.32 1</diffuse>
+          <specular>0.15 0.15 0.15 1</specular>
+        </material>
+      </visual>
+      <visual name="deck_surface">
+        <pose>0 0 0.3504 0 0 0</pose>
+        <geometry><box><size>2.98 2.98 0.0008</size></box></geometry>
+        <material>
+          <ambient>0.62 0.67 0.67 1</ambient>
+          <diffuse>0.72 0.77 0.77 1</diffuse>
+          <specular>0.02 0.02 0.02 1</specular>
+        </material>
+      </visual>
+      <visual name="edge_north">
+        <pose>0 1.42 0.351 0 0 0</pose>
+        <geometry><box><size>2.88 0.12 0.001</size></box></geometry>
+        <material><ambient>1 0.68 0.02 1</ambient><diffuse>1 0.72 0.03 1</diffuse></material>
+      </visual>
+      <visual name="edge_south">
+        <pose>0 -1.42 0.351 0 0 0</pose>
+        <geometry><box><size>2.88 0.12 0.001</size></box></geometry>
+        <material><ambient>1 0.68 0.02 1</ambient><diffuse>1 0.72 0.03 1</diffuse></material>
+      </visual>
+      <visual name="edge_east">
+        <pose>1.42 0 0.351 0 0 0</pose>
+        <geometry><box><size>0.12 2.88 0.001</size></box></geometry>
+        <material><ambient>1 0.68 0.02 1</ambient><diffuse>1 0.72 0.03 1</diffuse></material>
+      </visual>
+      <visual name="edge_west">
+        <pose>-1.42 0 0.351 0 0 0</pose>
+        <geometry><box><size>0.12 2.88 0.001</size></box></geometry>
+        <material><ambient>1 0.68 0.02 1</ambient><diffuse>1 0.72 0.03 1</diffuse></material>
+      </visual>
+      <!-- DAE carries explicit UVs: image right=station +X, image top=+Y.
+           The generated image contains a 0.4 m black-border tag surrounded by
+           a 0.1 m white margin on each side of this 0.6 m square board. -->
+      <visual name="apriltag_board">
+        <pose>0 0 0.352 0 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry><mesh><uri>model://floating_station/meshes/tag_board.dae</uri></mesh></geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <pbr><metal>
+            <albedo_map>model://floating_station/materials/textures/apriltag.png</albedo_map>
+            <metalness>0</metalness><roughness>1</roughness>
+          </metal></pbr>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

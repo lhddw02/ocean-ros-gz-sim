@@ -1,0 +1,779 @@
+{
+  "source": "gui-capture.json",
+  "capture_method": "X11 window framebuffer",
+  "capture_started_at_utc": "2026-10-24T05:02:37.186467+00:00",
+  "frames": [
+    {
+      "file": "frame-117.png",
+      "elapsed_seconds": 50.19730619599977,
+      "captured_at_utc": "2026-10-24T05:03:32.812211+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-117.png"
+    },
+    {
+      "file": "frame-118.png",
+      "elapsed_seconds": 50.58238373799941,
+      "captured_at_utc": "2026-10-24T05:03:33.197288+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-118.png"
+    },
+    {
+      "file": "frame-119.png",
+      "elapsed_seconds": 50.9684976640001,
+      "captured_at_utc": "2026-10-24T05:03:33.583404+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-119.png"
+    },
+    {
+      "file": "frame-120.png",
+      "elapsed_seconds": 51.58394050100014,
+      "captured_at_utc": "2026-10-24T05:03:34.198845+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-120.png"
+    },
+    {
+      "file": "frame-121.png",
+      "elapsed_seconds": 51.89003236099961,
+      "captured_at_utc": "2026-10-24T05:03:34.504937+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-121.png"
+    },
+    {
+      "file": "frame-122.png",
+      "elapsed_seconds": 52.226116363000074,
+      "captured_at_utc": "2026-10-24T05:03:34.841020+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-122.png"
+    },
+    {
+      "file": "frame-123.png",
+      "elapsed_seconds": 52.60752338800012,
+      "captured_at_utc": "2026-10-24T05:03:35.222427+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-123.png"
+    },
+    {
+      "file": "frame-124.png",
+      "elapsed_seconds": 53.065246029000264,
+      "captured_at_utc": "2026-10-24T05:03:35.680151+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-124.png"
+    },
+    {
+      "file": "frame-125.png",
+      "elapsed_seconds": 53.639220058999854,
+      "captured_at_utc": "2026-10-24T05:03:36.254127+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-125.png"
+    },
+    {
+      "file": "frame-126.png",
+      "elapsed_seconds": 54.1208023399995,
+      "captured_at_utc": "2026-10-24T05:03:36.735709+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-126.png"
+    },
+    {
+      "file": "frame-127.png",
+      "elapsed_seconds": 54.600669446999746,
+      "captured_at_utc": "2026-10-24T05:03:37.215577+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-127.png"
+    },
+    {
+      "file": "frame-128.png",
+      "elapsed_seconds": 55.02343252999981,
+      "captured_at_utc": "2026-10-24T05:03:37.638350+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-128.png"
+    },
+    {
+      "file": "frame-129.png",
+      "elapsed_seconds": 55.41712362199996,
+      "captured_at_utc": "2026-10-24T05:03:38.032028+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-129.png"
+    },
+    {
+      "file": "frame-130.png",
+      "elapsed_seconds": 55.887342903999524,
+      "captured_at_utc": "2026-10-24T05:03:38.502247+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-130.png"
+    },
+    {
+      "file": "frame-131.png",
+      "elapsed_seconds": 56.309757103000265,
+      "captured_at_utc": "2026-10-24T05:03:38.924661+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-131.png"
+    },
+    {
+      "file": "frame-132.png",
+      "elapsed_seconds": 56.7851955189999,
+      "captured_at_utc": "2026-10-24T05:03:39.400100+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-132.png"
+    },
+    {
+      "file": "frame-133.png",
+      "elapsed_seconds": 57.22047201799978,
+      "captured_at_utc": "2026-10-24T05:03:39.835375+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-133.png"
+    },
+    {
+      "file": "frame-134.png",
+      "elapsed_seconds": 57.616181517999394,
+      "captured_at_utc": "2026-10-24T05:03:40.231086+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-134.png"
+    },
+    {
+      "file": "frame-135.png",
+      "elapsed_seconds": 58.03259237600014,
+      "captured_at_utc": "2026-10-24T05:03:40.647498+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-135.png"
+    },
+    {
+      "file": "frame-136.png",
+      "elapsed_seconds": 58.43118094300007,
+      "captured_at_utc": "2026-10-24T05:03:41.046087+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-136.png"
+    },
+    {
+      "file": "frame-137.png",
+      "elapsed_seconds": 58.84094019300028,
+      "captured_at_utc": "2026-10-24T05:03:41.455844+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-137.png"
+    },
+    {
+      "file": "frame-138.png",
+      "elapsed_seconds": 59.22783273499954,
+      "captured_at_utc": "2026-10-24T05:03:41.842740+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-138.png"
+    },
+    {
+      "file": "frame-139.png",
+      "elapsed_seconds": 59.64281121000022,
+      "captured_at_utc": "2026-10-24T05:03:42.257716+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-139.png"
+    },
+    {
+      "file": "frame-140.png",
+      "elapsed_seconds": 60.05565981000018,
+      "captured_at_utc": "2026-10-24T05:03:42.670564+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-140.png"
+    },
+    {
+      "file": "frame-141.png",
+      "elapsed_seconds": 60.599308306999774,
+      "captured_at_utc": "2026-10-24T05:03:43.214214+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-141.png"
+    },
+    {
+      "file": "frame-142.png",
+      "elapsed_seconds": 61.02606402299989,
+      "captured_at_utc": "2026-10-24T05:03:43.640973+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-142.png"
+    },
+    {
+      "file": "frame-143.png",
+      "elapsed_seconds": 61.46725412199976,
+      "captured_at_utc": "2026-10-24T05:03:44.082158+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-143.png"
+    },
+    {
+      "file": "frame-144.png",
+      "elapsed_seconds": 61.91466114600007,
+      "captured_at_utc": "2026-10-24T05:03:44.529565+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-144.png"
+    },
+    {
+      "file": "frame-145.png",
+      "elapsed_seconds": 62.35602147000009,
+      "captured_at_utc": "2026-10-24T05:03:44.970925+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-145.png"
+    },
+    {
+      "file": "frame-146.png",
+      "elapsed_seconds": 62.75777345400002,
+      "captured_at_utc": "2026-10-24T05:03:45.372678+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-146.png"
+    },
+    {
+      "file": "frame-147.png",
+      "elapsed_seconds": 63.21656639399953,
+      "captured_at_utc": "2026-10-24T05:03:45.831473+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-147.png"
+    },
+    {
+      "file": "frame-148.png",
+      "elapsed_seconds": 63.65270712700021,
+      "captured_at_utc": "2026-10-24T05:03:46.267612+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-148.png"
+    },
+    {
+      "file": "frame-149.png",
+      "elapsed_seconds": 64.09853794299943,
+      "captured_at_utc": "2026-10-24T05:03:46.713445+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-149.png"
+    },
+    {
+      "file": "frame-150.png",
+      "elapsed_seconds": 64.5486367579997,
+      "captured_at_utc": "2026-10-24T05:03:47.163543+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-150.png"
+    },
+    {
+      "file": "frame-151.png",
+      "elapsed_seconds": 65.10127014699992,
+      "captured_at_utc": "2026-10-24T05:03:47.716176+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-151.png"
+    },
+    {
+      "file": "frame-152.png",
+      "elapsed_seconds": 65.58292099499977,
+      "captured_at_utc": "2026-10-24T05:03:48.197825+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-152.png"
+    },
+    {
+      "file": "frame-153.png",
+      "elapsed_seconds": 65.99719858699973,
+      "captured_at_utc": "2026-10-24T05:03:48.612105+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-153.png"
+    },
+    {
+      "file": "frame-154.png",
+      "elapsed_seconds": 66.44209284399949,
+      "captured_at_utc": "2026-10-24T05:03:49.056999+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-154.png"
+    },
+    {
+      "file": "frame-155.png",
+      "elapsed_seconds": 66.8279845699999,
+      "captured_at_utc": "2026-10-24T05:03:49.442914+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-155.png"
+    },
+    {
+      "file": "frame-156.png",
+      "elapsed_seconds": 67.26382381099938,
+      "captured_at_utc": "2026-10-24T05:03:49.878728+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-156.png"
+    },
+    {
+      "file": "frame-157.png",
+      "elapsed_seconds": 67.66804428599971,
+      "captured_at_utc": "2026-10-24T05:03:50.282949+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-157.png"
+    },
+    {
+      "file": "frame-158.png",
+      "elapsed_seconds": 68.0974062690002,
+      "captured_at_utc": "2026-10-24T05:03:50.712311+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-158.png"
+    },
+    {
+      "file": "frame-159.png",
+      "elapsed_seconds": 68.51189735200023,
+      "captured_at_utc": "2026-10-24T05:03:51.126803+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-159.png"
+    },
+    {
+      "file": "frame-160.png",
+      "elapsed_seconds": 68.99265124199974,
+      "captured_at_utc": "2026-10-24T05:03:51.607556+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-160.png"
+    },
+    {
+      "file": "frame-161.png",
+      "elapsed_seconds": 69.51357878099952,
+      "captured_at_utc": "2026-10-24T05:03:52.128484+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-161.png"
+    },
+    {
+      "file": "frame-162.png",
+      "elapsed_seconds": 69.94559973899959,
+      "captured_at_utc": "2026-10-24T05:03:52.560506+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-162.png"
+    },
+    {
+      "file": "frame-163.png",
+      "elapsed_seconds": 70.3801572049997,
+      "captured_at_utc": "2026-10-24T05:03:52.995062+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-163.png"
+    },
+    {
+      "file": "frame-164.png",
+      "elapsed_seconds": 70.76758471299945,
+      "captured_at_utc": "2026-10-24T05:03:53.382489+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-164.png"
+    },
+    {
+      "file": "frame-165.png",
+      "elapsed_seconds": 71.15644139699998,
+      "captured_at_utc": "2026-10-24T05:03:53.771347+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-165.png"
+    },
+    {
+      "file": "frame-166.png",
+      "elapsed_seconds": 71.55688080599975,
+      "captured_at_utc": "2026-10-24T05:03:54.171790+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-166.png"
+    },
+    {
+      "file": "frame-167.png",
+      "elapsed_seconds": 71.97046172999944,
+      "captured_at_utc": "2026-10-24T05:03:54.585367+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-167.png"
+    },
+    {
+      "file": "frame-168.png",
+      "elapsed_seconds": 72.40986212999996,
+      "captured_at_utc": "2026-10-24T05:03:55.024768+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-168.png"
+    },
+    {
+      "file": "frame-169.png",
+      "elapsed_seconds": 72.84970867099946,
+      "captured_at_utc": "2026-10-24T05:03:55.464614+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-169.png"
+    },
+    {
+      "file": "frame-170.png",
+      "elapsed_seconds": 73.28702512000018,
+      "captured_at_utc": "2026-10-24T05:03:55.901930+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-170.png"
+    },
+    {
+      "file": "frame-171.png",
+      "elapsed_seconds": 73.67451404500025,
+      "captured_at_utc": "2026-10-24T05:03:56.289419+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-171.png"
+    },
+    {
+      "file": "frame-172.png",
+      "elapsed_seconds": 74.09615136999946,
+      "captured_at_utc": "2026-10-24T05:03:56.711055+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-172.png"
+    },
+    {
+      "file": "frame-173.png",
+      "elapsed_seconds": 74.5407468859994,
+      "captured_at_utc": "2026-10-24T05:03:57.155653+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-173.png"
+    },
+    {
+      "file": "frame-174.png",
+      "elapsed_seconds": 75.02048199199999,
+      "captured_at_utc": "2026-10-24T05:03:57.635387+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-174.png"
+    },
+    {
+      "file": "frame-175.png",
+      "elapsed_seconds": 75.47097699099959,
+      "captured_at_utc": "2026-10-24T05:03:55.671083+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-175.png"
+    },
+    {
+      "file": "frame-176.png",
+      "elapsed_seconds": 75.88703428999997,
+      "captured_at_utc": "2026-10-24T05:04:01.260345+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-176.png"
+    },
+    {
+      "file": "frame-177.png",
+      "elapsed_seconds": 76.29533053999967,
+      "captured_at_utc": "2026-10-24T05:04:01.668621+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-177.png"
+    },
+    {
+      "file": "frame-178.png",
+      "elapsed_seconds": 76.69062790699991,
+      "captured_at_utc": "2026-10-24T05:04:02.063921+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-178.png"
+    },
+    {
+      "file": "frame-179.png",
+      "elapsed_seconds": 77.08723344899954,
+      "captured_at_utc": "2026-10-24T05:04:02.460526+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-179.png"
+    },
+    {
+      "file": "frame-180.png",
+      "elapsed_seconds": 77.50658909899994,
+      "captured_at_utc": "2026-10-24T05:04:02.879980+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-180.png"
+    },
+    {
+      "file": "frame-181.png",
+      "elapsed_seconds": 77.91116863200023,
+      "captured_at_utc": "2026-10-24T05:04:03.284461+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-181.png"
+    },
+    {
+      "file": "frame-182.png",
+      "elapsed_seconds": 78.34931209800015,
+      "captured_at_utc": "2026-10-24T05:04:03.722603+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-182.png"
+    },
+    {
+      "file": "frame-183.png",
+      "elapsed_seconds": 78.998063301,
+      "captured_at_utc": "2026-10-24T05:04:04.371354+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-183.png"
+    },
+    {
+      "file": "frame-184.png",
+      "elapsed_seconds": 79.5835706480002,
+      "captured_at_utc": "2026-10-24T05:04:04.956861+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-184.png"
+    },
+    {
+      "file": "frame-185.png",
+      "elapsed_seconds": 80.15794755200022,
+      "captured_at_utc": "2026-10-24T05:04:05.531238+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-185.png"
+    },
+    {
+      "file": "frame-186.png",
+      "elapsed_seconds": 80.70402292400013,
+      "captured_at_utc": "2026-10-24T05:04:06.077316+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-186.png"
+    },
+    {
+      "file": "frame-187.png",
+      "elapsed_seconds": 81.20096248899972,
+      "captured_at_utc": "2026-10-24T05:04:06.574253+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-187.png"
+    },
+    {
+      "file": "frame-188.png",
+      "elapsed_seconds": 82.19621643499977,
+      "captured_at_utc": "2026-10-24T05:04:07.569508+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-188.png"
+    },
+    {
+      "file": "frame-189.png",
+      "elapsed_seconds": 82.7491460909996,
+      "captured_at_utc": "2026-10-24T05:04:08.122438+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-189.png"
+    },
+    {
+      "file": "frame-190.png",
+      "elapsed_seconds": 83.23827308899945,
+      "captured_at_utc": "2026-10-24T05:04:08.611566+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-190.png"
+    },
+    {
+      "file": "frame-191.png",
+      "elapsed_seconds": 83.80776195999988,
+      "captured_at_utc": "2026-10-24T05:04:09.181054+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-191.png"
+    },
+    {
+      "file": "frame-192.png",
+      "elapsed_seconds": 84.25455683400014,
+      "captured_at_utc": "2026-10-24T05:04:09.627850+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-192.png"
+    },
+    {
+      "file": "frame-193.png",
+      "elapsed_seconds": 84.84777866399963,
+      "captured_at_utc": "2026-10-24T05:04:10.221069+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-193.png"
+    },
+    {
+      "file": "frame-194.png",
+      "elapsed_seconds": 85.85650815999998,
+      "captured_at_utc": "2026-10-24T05:04:11.229800+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-194.png"
+    },
+    {
+      "file": "frame-195.png",
+      "elapsed_seconds": 86.47154317199966,
+      "captured_at_utc": "2026-10-24T05:04:11.844835+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-195.png"
+    },
+    {
+      "file": "frame-196.png",
+      "elapsed_seconds": 87.07977202599977,
+      "captured_at_utc": "2026-10-24T05:04:12.453066+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-196.png"
+    },
+    {
+      "file": "frame-197.png",
+      "elapsed_seconds": 87.4511443020001,
+      "captured_at_utc": "2026-10-24T05:04:12.824436+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-197.png"
+    },
+    {
+      "file": "frame-198.png",
+      "elapsed_seconds": 87.94106861699947,
+      "captured_at_utc": "2026-10-24T05:04:13.314359+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-198.png"
+    },
+    {
+      "file": "frame-199.png",
+      "elapsed_seconds": 88.38067297399994,
+      "captured_at_utc": "2026-10-24T05:04:13.753964+00:00",
+      "width": 1200,
+      "height": 1000,
+      "original_file": "frame-199.png"
+    }
+  ],
+  "gif_durations_ms": [
+    390,
+    390,
+    620,
+    310,
+    340,
+    380,
+    460,
+    570,
+    480,
+    480,
+    420,
+    390,
+    470,
+    420,
+    480,
+    440,
+    400,
+    420,
+    400,
+    410,
+    390,
+    410,
+    410,
+    540,
+    430,
+    440,
+    450,
+    440,
+    400,
+    460,
+    440,
+    450,
+    450,
+    550,
+    480,
+    410,
+    440,
+    390,
+    440,
+    400,
+    430,
+    410,
+    480,
+    520,
+    430,
+    430,
+    390,
+    390,
+    400,
+    410,
+    440,
+    440,
+    440,
+    390,
+    420,
+    440,
+    480,
+    450,
+    420,
+    410,
+    400,
+    400,
+    420,
+    400,
+    440,
+    650,
+    590,
+    570,
+    550,
+    500,
+    1000,
+    550,
+    490,
+    570,
+    450,
+    590,
+    1010,
+    620,
+    610,
+    370,
+    490,
+    440,
+    250
+  ],
+  "gif_duration_seconds": 38.47,
+  "size": [
+    1200,
+    1000
+  ],
+  "changes": [
+    "proportional resize",
+    "shared 256-color palette",
+    "GIF 10 ms timing precision"
+  ],
+  "synthetic_frames": false,
+  "actual_gui_button_click": {
+    "requested_at_utc": "2026-10-24T05:03:29.161Z",
+    "completed_at_utc": "2026-10-24T05:03:29.330Z",
+    "method": "Computer Use actual Replay landing mouse click in Gazebo",
+    "window_title": "Gazebo Sim (Ubuntu-22.04)",
+    "backend_request_published_by_recorder": false
+  },
+  "source_recording": "recordings/visual-update-20261024-replay/gui-frames/gui-capture.json",
+  "trimmed_before_seconds": 49.974533,
+  "timing_note": "Playback uses the capture guest monotonic clock. Host click UTC and guest capture UTC are separate clock readings and may adjust independently. The retained sequence was visually checked to begin LANDED before the disabled replay button, respawn, approach and second LANDED state.",
+  "encoded_frame_count": 82,
+  "source_capture_count": 83
+}

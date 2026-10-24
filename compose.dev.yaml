@@ -1,0 +1,11 @@
+# Enable with OCEAN_DEV=1 bash scripts/run-wsl.sh start.
+# World, model, launch and bridge edits become visible without rebuilding.
+services:
+  ocean:
+    volumes:
+      - type: bind
+        source: ./ros/ocean_sim
+        target: /opt/ocean_ws/install/share/ocean_sim
+        read_only: true
+        bind:
+          create_host_path: false

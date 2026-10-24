@@ -1,0 +1,67 @@
+name: ocean-ros-humble
+
+services:
+  ocean:
+    image: ros-humble-ocean:harmonic
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BUILD_JOBS: "${BUILD_JOBS:-2}"
+    container_name: ocean-sim
+    init: true
+    stdin_open: true
+    tty: true
+    shm_size: "1gb"
+    stop_grace_period: 20s
+    environment:
+      DISPLAY: "${DISPLAY:-:0}"
+      WAYLAND_DISPLAY: "${WAYLAND_DISPLAY:-wayland-0}"
+      XDG_RUNTIME_DIR: /mnt/wslg/runtime-dir
+      PULSE_SERVER: "${PULSE_SERVER:-unix:/mnt/wslg/PulseServer}"
+      QT_QPA_PLATFORM: xcb
+      QT_X11_NO_MITSHM: "1"
+      MESA_D3D12_DEFAULT_ADAPTER_NAME: "${MESA_D3D12_DEFAULT_ADAPTER_NAME:-NVIDIA}"
+      GPU_EXPECT: "${GPU_EXPECT:-3060}"
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility
+      ROS_DOMAIN_ID: "${ROS_DOMAIN_ID:-30}"
+    devices:
+      - /dev/dxg:/dev/dxg
+    volumes:
+      - type: bind
+        source: /tmp/.X11-unix
+        target: /tmp/.X11-unix
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: /mnt/wslg
+        target: /mnt/wslg
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: /usr/lib/wsl
+        target: /usr/lib/wsl
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./workspace
+        target: /workspace
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./recordings
+        target: /recordings
+        bind:
+          create_host_path: false
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+

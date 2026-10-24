@@ -1,0 +1,22 @@
+[
+  {
+    "pid": 58,
+    "start_ticks": 614002,
+    "command": "/usr/bin/python3 /opt/ocean_ws/install/lib/ocean_sim/vision_landing --ros-args --params-file /tmp/launch_params_8y4b8cqi"
+  },
+  {
+    "pid": 64,
+    "start_ticks": 614003,
+    "command": "gz sim -v 3 --render-engine ogre2 /tmp/ocean-landing-2guisa7h/landing.sdf"
+  },
+  {
+    "pid": 100,
+    "start_ticks": 614018,
+    "command": "gz sim server"
+  },
+  {
+    "pid": 101,
+    "start_ticks": 614018,
+    "command": "gz sim gui"
+  }
+]

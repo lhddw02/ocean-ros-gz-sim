@@ -1,0 +1,26 @@
+{
+  "sim_time": 22.7175,
+  "image_stamp": 22.7,
+  "status": {
+    "state": "descending",
+    "tag_family": "tag25h9",
+    "tag_id": 7,
+    "tag_size_m": 0.4,
+    "detections": 452,
+    "target_fresh": true,
+    "lateral_error_m": 0.06848738193668451,
+    "image_age_s": 0.022500000000004405,
+    "tag_age_s": 0.022500000000004405,
+    "camera_height_m": 0.9833902602946318,
+    "reprojection_error_px": 0.004564832920980238,
+    "processing_ms": 27.01095800011899,
+    "processing_ms_ema": 30.94633928734828,
+    "image_arrival_age_s": 0.022500000000004405,
+    "image_callbacks": 452,
+    "fallback_calls": 0,
+    "foot_station_contact": false,
+    "motors_enabled": true,
+    "sim_time": 22.672500000000003
+  },
+  "independent_target_detected": true
+}

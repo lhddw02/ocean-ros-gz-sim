@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "native": false,
+  "phases": [
+    {
+      "phase": 0,
+      "sim_time": 0.47500000000000003,
+      "messages": {
+        "/world/contact_reset/model/box/link/link/sensor/native_name/contact": 5,
+        "/contact_reset/custom": 5
+      },
+      "collision_pairs": {
+        "/world/contact_reset/model/box/link/link/sensor/native_name/contact": [
+          [
+            "box::link::collision",
+            "ground::link::collision"
+          ]
+        ],
+        "/contact_reset/custom": [
+          [
+            "box::link::collision",
+            "ground::link::collision"
+          ]
+        ]
+      }
+    },
+    {
+      "phase": 1,
+      "sim_time": 0.47500000000000003,
+      "messages": {
+        "/world/contact_reset/model/box/link/link/sensor/native_name/contact": 5,
+        "/contact_reset/custom": 5
+      },
+      "collision_pairs": {
+        "/world/contact_reset/model/box/link/link/sensor/native_name/contact": [
+          [
+            "box::link::collision",
+            "ground::link::collision"
+          ]
+        ],
+        "/contact_reset/custom": [
+          [
+            "box::link::collision",
+            "ground::link::collision"
+          ]
+        ]
+      }
+    },
+    {
+      "phase": 2,
+      "sim_time": 0.47500000000000003,
+      "messages": {
+        "/world/contact_reset/model/box/link/link/sensor/native_name/contact": 5,
+        "/contact_reset/custom": 5
+      },
+      "collision_pairs": {
+        "/world/contact_reset/model/box/link/link/sensor/native_name/contact": [
+          [
+            "box::link::collision",
+            "ground::link::collision"
+          ]
+        ],
+        "/contact_reset/custom": [
+          [
+            "box::link::collision",
+            "ground::link::collision"
+          ]
+        ]
+      }
+    }
+  ]
+}

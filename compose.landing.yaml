@@ -1,0 +1,16 @@
+# The landing action adds this overlay; the original ocean action stays usable.
+services:
+  ocean:
+    environment:
+      TAG_ID: "${TAG_ID:-}"
+      TAG_FAMILY: "${TAG_FAMILY:-}"
+      TAG_SIZE: "${TAG_SIZE:-}"
+    command:
+      - ros2
+      - launch
+      - ocean_sim
+      - landing.launch.py
+      - "tag_id:=${TAG_ID:-config}"
+      - "tag_family:=${TAG_FAMILY:-config}"
+      - "tag_size:=${TAG_SIZE:-config}"
+      - "autoland:=${AUTOLAND:-true}"

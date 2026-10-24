@@ -1,0 +1,21 @@
+{
+  "container_id": "5b2d36ed308468377a1f8b3770f926c4d0aa3e58aceaf10c77e42160194c600a",
+  "image_id": "sha256:fdb7be35f7ece904246c03f5e005b5754fdcd8304a9e28d09e288a18d8ae5d50",
+  "started_at": "2026-10-24T03:32:19.051990262Z",
+  "command": [
+    "ros2",
+    "launch",
+    "ocean_sim",
+    "landing.launch.py",
+    "tag_id:=config",
+    "tag_family:=config",
+    "tag_size:=config",
+    "autoland:=false"
+  ],
+  "running": true,
+  "restart_count": 0,
+  "oom_killed": false,
+  "gui": "Native Gazebo ImageDisplay with RGB annotated detector images",
+  "recording": "side-view-landing.gif",
+  "guidance_uses_world_pose": false
+}

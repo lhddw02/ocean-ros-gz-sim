@@ -1,0 +1,26 @@
+{
+  "sim_time": 39.485,
+  "image_stamp": 39.45,
+  "status": {
+    "state": "disabled_hover",
+    "tag_family": "tag36h11",
+    "tag_id": 0,
+    "tag_size_m": 0.4,
+    "detections": 562,
+    "target_fresh": true,
+    "lateral_error_m": 0.9354181807597999,
+    "image_age_s": 0.020000000000003126,
+    "tag_age_s": 0.020000000000003126,
+    "camera_height_m": 2.429070236320807,
+    "reprojection_error_px": 0.1334086378159036,
+    "processing_ms": 135.49396400003388,
+    "processing_ms_ema": 63.654849668497135,
+    "image_arrival_age_s": 0.020000000000003126,
+    "image_callbacks": 562,
+    "fallback_calls": 0,
+    "foot_station_contact": false,
+    "motors_enabled": true,
+    "sim_time": 39.32
+  },
+  "independent_target_detected": true
+}

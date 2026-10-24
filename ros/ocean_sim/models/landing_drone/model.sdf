@@ -1,0 +1,833 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.9">
+  <model name="landing_drone">
+    <self_collide>false</self_collide>
+    <link name="base_link">
+      <inertial>
+        <mass>1.16</mass>
+        <inertia>
+          <ixx>0.028</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.028</iyy>
+          <iyz>0</iyz>
+          <izz>0.048</izz>
+        </inertia>
+      </inertial>
+      <collision name="body_collision">
+        <geometry>
+          <box>
+            <size>0.26 0.18 0.10</size>
+          </box>
+        </geometry>
+      </collision>
+      <sensor name="downward_camera" type="camera">
+        <pose>0 0 -0.10 0 1.5707963267948966 0</pose>
+        <always_on>true</always_on>
+        <update_rate>20</update_rate>
+        <topic>/drone/camera/image_raw</topic>
+        <gz_frame_id>drone_camera_optical_frame</gz_frame_id>
+        <camera>
+          <horizontal_fov>1.8</horizontal_fov>
+          <image>
+            <width>960</width>
+            <height>720</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.03</near>
+            <far>100</far>
+          </clip>
+          <camera_info_topic>/drone/camera/camera_info</camera_info_topic>
+        </camera>
+        <visualize>false</visualize>
+      </sensor>
+      <collision name="foot_fl">
+        <pose>0.3 0.3 -0.425 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.025</radius>
+          </sphere>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+          </bounce>
+        </surface>
+      </collision>
+      <collision name="foot_fr">
+        <pose>0.3 -0.3 -0.425 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.025</radius>
+          </sphere>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+          </bounce>
+        </surface>
+      </collision>
+      <collision name="foot_rl">
+        <pose>-0.3 0.3 -0.425 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.025</radius>
+          </sphere>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+          </bounce>
+        </surface>
+      </collision>
+      <collision name="foot_rr">
+        <pose>-0.3 -0.3 -0.425 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.025</radius>
+          </sphere>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+          </bounce>
+        </surface>
+      </collision>
+      <sensor name="landing_contact_fl" type="contact">
+        <always_on>true</always_on>
+        <update_rate>100</update_rate>
+        <contact>
+          <collision>foot_fl</collision>
+        </contact>
+      </sensor>
+      <sensor name="landing_contact_fr" type="contact">
+        <always_on>true</always_on>
+        <update_rate>100</update_rate>
+        <contact>
+          <collision>foot_fr</collision>
+        </contact>
+      </sensor>
+      <sensor name="landing_contact_rl" type="contact">
+        <always_on>true</always_on>
+        <update_rate>100</update_rate>
+        <contact>
+          <collision>foot_rl</collision>
+        </contact>
+      </sensor>
+      <sensor name="landing_contact_rr" type="contact">
+        <always_on>true</always_on>
+        <update_rate>100</update_rate>
+        <contact>
+          <collision>foot_rr</collision>
+        </contact>
+      </sensor>
+      <visual name="connected_carbon_frame">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/airframe_carbon.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.06 0.076 0.092 1</ambient>
+          <diffuse>0.075 0.095 0.115 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.25</metalness>
+              <roughness>0.55</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="orange_canopy">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/canopy_orange.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.768 0.196 0.036 1</ambient>
+          <diffuse>0.96 0.245 0.045 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.05</metalness>
+              <roughness>0.38</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="service_panel">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/trim_graphite.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.084 0.1 0.116 1</ambient>
+          <diffuse>0.105 0.125 0.145 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.25</metalness>
+              <roughness>0.48</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="hardware_and_motor_supports">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/fasteners_aluminum.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.464 0.512 0.552 1</ambient>
+          <diffuse>0.58 0.64 0.69 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.75</metalness>
+              <roughness>0.3</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="downward_camera_housing">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/camera_housing.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.044 0.052 0.064 1</ambient>
+          <diffuse>0.055 0.065 0.08 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.12</metalness>
+              <roughness>0.48</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="downward_camera_glass">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/camera_lens.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.044 0.176 0.232 1</ambient>
+          <diffuse>0.055 0.22 0.29 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.55</metalness>
+              <roughness>0.13</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="rubber_contact_feet">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/foot_rubber.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.028 0.036 0.044 1</ambient>
+          <diffuse>0.035 0.045 0.055 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.0</metalness>
+              <roughness>0.9</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="front_navigation_light">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/navigation_front.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.04 0.72 0.256 1</ambient>
+          <diffuse>0.05 0.9 0.32 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <emissive>0.05 0.9 0.32 1</emissive>
+          <pbr>
+            <metal>
+              <metalness>0.0</metalness>
+              <roughness>0.3</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="rear_navigation_light">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/navigation_rear.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.76 0.064 0.02 1</ambient>
+          <diffuse>0.95 0.08 0.025 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <emissive>0.95 0.08 0.025 1</emissive>
+          <pbr>
+            <metal>
+              <metalness>0.0</metalness>
+              <roughness>0.3</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+    <link name="rotor_0">
+      <pose>0.23 0.23 0.045 0 0 0</pose>
+      <inertial>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>0.00003</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00003</iyy>
+          <iyz>0</iyz>
+          <izz>0.00006</izz>
+        </inertia>
+      </inertial>
+      <visual name="motor_bell_and_shaft">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/motor_bell.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.184 0.216 0.24 1</ambient>
+          <diffuse>0.23 0.27 0.3 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.75</metalness>
+              <roughness>0.3</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="motor_copper_band">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/motor_copper.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.544 0.216 0.064 1</ambient>
+          <diffuse>0.68 0.27 0.08 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.75</metalness>
+              <roughness>0.3</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="shaped_propeller">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/rotor_blade_ccw.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.06 0.076 0.092 1</ambient>
+          <diffuse>0.075 0.095 0.115 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.15</metalness>
+              <roughness>0.48</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="attached_propeller_tip_marks">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/propeller_tip_ccw.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.784 0.256 0.052 1</ambient>
+          <diffuse>0.98 0.32 0.065 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.05</metalness>
+              <roughness>0.45</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+    <joint name="rotor_0_joint" type="revolute">
+      <parent>base_link</parent>
+      <child>rotor_0</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e16</lower>
+          <upper>1e16</upper>
+        </limit>
+        <dynamics>
+          <damping>0</damping>
+        </dynamics>
+      </axis>
+    </joint>
+    <plugin filename="gz-sim-multicopter-motor-model-system" name="gz::sim::systems::MulticopterMotorModel">
+      <robotNamespace>drone</robotNamespace>
+      <jointName>rotor_0_joint</jointName>
+      <linkName>rotor_0</linkName>
+      <turningDirection>ccw</turningDirection>
+      <timeConstantUp>0.0125</timeConstantUp>
+      <timeConstantDown>0.025</timeConstantDown>
+      <maxRotVelocity>800</maxRotVelocity>
+      <motorConstant>8.54858e-06</motorConstant>
+      <momentConstant>0.016</momentConstant>
+      <commandSubTopic>command/motor_speed</commandSubTopic>
+      <actuator_number>0</actuator_number>
+      <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
+      <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
+      <motorSpeedPubTopic>motor_speed/0</motorSpeedPubTopic>
+      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
+      <motorType>velocity</motorType>
+    </plugin>
+    <link name="rotor_1">
+      <pose>-0.23 -0.23 0.045 0 0 0</pose>
+      <inertial>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>0.00003</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00003</iyy>
+          <iyz>0</iyz>
+          <izz>0.00006</izz>
+        </inertia>
+      </inertial>
+      <visual name="motor_bell_and_shaft">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/motor_bell.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.184 0.216 0.24 1</ambient>
+          <diffuse>0.23 0.27 0.3 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.75</metalness>
+              <roughness>0.3</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="motor_copper_band">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/motor_copper.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.544 0.216 0.064 1</ambient>
+          <diffuse>0.68 0.27 0.08 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.75</metalness>
+              <roughness>0.3</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="shaped_propeller">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/rotor_blade_ccw.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.06 0.076 0.092 1</ambient>
+          <diffuse>0.075 0.095 0.115 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.15</metalness>
+              <roughness>0.48</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="attached_propeller_tip_marks">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/propeller_tip_ccw.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.784 0.256 0.052 1</ambient>
+          <diffuse>0.98 0.32 0.065 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.05</metalness>
+              <roughness>0.45</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+    <joint name="rotor_1_joint" type="revolute">
+      <parent>base_link</parent>
+      <child>rotor_1</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e16</lower>
+          <upper>1e16</upper>
+        </limit>
+        <dynamics>
+          <damping>0</damping>
+        </dynamics>
+      </axis>
+    </joint>
+    <plugin filename="gz-sim-multicopter-motor-model-system" name="gz::sim::systems::MulticopterMotorModel">
+      <robotNamespace>drone</robotNamespace>
+      <jointName>rotor_1_joint</jointName>
+      <linkName>rotor_1</linkName>
+      <turningDirection>ccw</turningDirection>
+      <timeConstantUp>0.0125</timeConstantUp>
+      <timeConstantDown>0.025</timeConstantDown>
+      <maxRotVelocity>800</maxRotVelocity>
+      <motorConstant>8.54858e-06</motorConstant>
+      <momentConstant>0.016</momentConstant>
+      <commandSubTopic>command/motor_speed</commandSubTopic>
+      <actuator_number>1</actuator_number>
+      <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
+      <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
+      <motorSpeedPubTopic>motor_speed/1</motorSpeedPubTopic>
+      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
+      <motorType>velocity</motorType>
+    </plugin>
+    <link name="rotor_2">
+      <pose>0.23 -0.23 0.045 0 0 0</pose>
+      <inertial>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>0.00003</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00003</iyy>
+          <iyz>0</iyz>
+          <izz>0.00006</izz>
+        </inertia>
+      </inertial>
+      <visual name="motor_bell_and_shaft">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/motor_bell.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.184 0.216 0.24 1</ambient>
+          <diffuse>0.23 0.27 0.3 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.75</metalness>
+              <roughness>0.3</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="motor_copper_band">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/motor_copper.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.544 0.216 0.064 1</ambient>
+          <diffuse>0.68 0.27 0.08 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.75</metalness>
+              <roughness>0.3</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="shaped_propeller">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/rotor_blade_cw.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.06 0.076 0.092 1</ambient>
+          <diffuse>0.075 0.095 0.115 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.15</metalness>
+              <roughness>0.48</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="attached_propeller_tip_marks">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/propeller_tip_cw.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.784 0.256 0.052 1</ambient>
+          <diffuse>0.98 0.32 0.065 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.05</metalness>
+              <roughness>0.45</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+    <joint name="rotor_2_joint" type="revolute">
+      <parent>base_link</parent>
+      <child>rotor_2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e16</lower>
+          <upper>1e16</upper>
+        </limit>
+        <dynamics>
+          <damping>0</damping>
+        </dynamics>
+      </axis>
+    </joint>
+    <plugin filename="gz-sim-multicopter-motor-model-system" name="gz::sim::systems::MulticopterMotorModel">
+      <robotNamespace>drone</robotNamespace>
+      <jointName>rotor_2_joint</jointName>
+      <linkName>rotor_2</linkName>
+      <turningDirection>cw</turningDirection>
+      <timeConstantUp>0.0125</timeConstantUp>
+      <timeConstantDown>0.025</timeConstantDown>
+      <maxRotVelocity>800</maxRotVelocity>
+      <motorConstant>8.54858e-06</motorConstant>
+      <momentConstant>0.016</momentConstant>
+      <commandSubTopic>command/motor_speed</commandSubTopic>
+      <actuator_number>2</actuator_number>
+      <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
+      <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
+      <motorSpeedPubTopic>motor_speed/2</motorSpeedPubTopic>
+      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
+      <motorType>velocity</motorType>
+    </plugin>
+    <link name="rotor_3">
+      <pose>-0.23 0.23 0.045 0 0 0</pose>
+      <inertial>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>0.00003</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00003</iyy>
+          <iyz>0</iyz>
+          <izz>0.00006</izz>
+        </inertia>
+      </inertial>
+      <visual name="motor_bell_and_shaft">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/motor_bell.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.184 0.216 0.24 1</ambient>
+          <diffuse>0.23 0.27 0.3 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.75</metalness>
+              <roughness>0.3</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="motor_copper_band">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/motor_copper.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.544 0.216 0.064 1</ambient>
+          <diffuse>0.68 0.27 0.08 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.75</metalness>
+              <roughness>0.3</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="shaped_propeller">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/rotor_blade_cw.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.06 0.076 0.092 1</ambient>
+          <diffuse>0.075 0.095 0.115 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.15</metalness>
+              <roughness>0.48</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="attached_propeller_tip_marks">
+        <geometry>
+          <mesh>
+            <uri>model://landing_drone/meshes/propeller_tip_cw.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.784 0.256 0.052 1</ambient>
+          <diffuse>0.98 0.32 0.065 1</diffuse>
+          <specular>0.25 0.25 0.25 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.05</metalness>
+              <roughness>0.45</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+    <joint name="rotor_3_joint" type="revolute">
+      <parent>base_link</parent>
+      <child>rotor_3</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e16</lower>
+          <upper>1e16</upper>
+        </limit>
+        <dynamics>
+          <damping>0</damping>
+        </dynamics>
+      </axis>
+    </joint>
+    <plugin filename="gz-sim-multicopter-motor-model-system" name="gz::sim::systems::MulticopterMotorModel">
+      <robotNamespace>drone</robotNamespace>
+      <jointName>rotor_3_joint</jointName>
+      <linkName>rotor_3</linkName>
+      <turningDirection>cw</turningDirection>
+      <timeConstantUp>0.0125</timeConstantUp>
+      <timeConstantDown>0.025</timeConstantDown>
+      <maxRotVelocity>800</maxRotVelocity>
+      <motorConstant>8.54858e-06</motorConstant>
+      <momentConstant>0.016</momentConstant>
+      <commandSubTopic>command/motor_speed</commandSubTopic>
+      <actuator_number>3</actuator_number>
+      <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
+      <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
+      <motorSpeedPubTopic>motor_speed/3</motorSpeedPubTopic>
+      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
+      <motorType>velocity</motorType>
+    </plugin>
+    <plugin filename="gz-sim-multicopter-control-system" name="gz::sim::systems::MulticopterVelocityControl">
+      <robotNamespace>drone</robotNamespace>
+      <commandSubTopic>cmd_vel</commandSubTopic>
+      <enableSubTopic>enable</enableSubTopic>
+      <comLinkName>base_link</comLinkName>
+      <velocityGain>2.7 2.7 2.7</velocityGain>
+      <attitudeGain>2 3 0.15</attitudeGain>
+      <angularRateGain>0.4 0.52 0.18</angularRateGain>
+      <maximumLinearAcceleration>2 2 2</maximumLinearAcceleration>
+      <maximumLinearVelocity>2 2 1</maximumLinearVelocity>
+      <maximumAngularVelocity>1 1 1</maximumAngularVelocity>
+      <rotorConfiguration>
+        <rotor>
+          <jointName>rotor_0_joint</jointName>
+          <forceConstant>8.54858e-06</forceConstant>
+          <momentConstant>0.016</momentConstant>
+          <direction>1</direction>
+        </rotor>
+        <rotor>
+          <jointName>rotor_1_joint</jointName>
+          <forceConstant>8.54858e-06</forceConstant>
+          <momentConstant>0.016</momentConstant>
+          <direction>1</direction>
+        </rotor>
+        <rotor>
+          <jointName>rotor_2_joint</jointName>
+          <forceConstant>8.54858e-06</forceConstant>
+          <momentConstant>0.016</momentConstant>
+          <direction>-1</direction>
+        </rotor>
+        <rotor>
+          <jointName>rotor_3_joint</jointName>
+          <forceConstant>8.54858e-06</forceConstant>
+          <momentConstant>0.016</momentConstant>
+          <direction>-1</direction>
+        </rotor>
+      </rotorConfiguration>
+    </plugin>
+    <plugin filename="gz-sim-pose-publisher-system" name="gz::sim::systems::PosePublisher">
+      <publish_model_pose>true</publish_model_pose>
+      <publish_link_pose>false</publish_link_pose>
+      <publish_nested_model_pose>false</publish_nested_model_pose>
+      <use_pose_vector_msg>false</use_pose_vector_msg>
+      <update_frequency>30</update_frequency>
+      <topic>/drone/pose</topic>
+    </plugin>
+  </model>
+</sdf>

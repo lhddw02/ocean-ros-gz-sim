@@ -1,0 +1,19 @@
+Landing state: waiting_for_camera
+Landing state: aligning
+Landing verification: frames=33, tag poses=33, foot contacts=0, state=aligning; pending=physical_foot_station_contact, controller_landed, motors_disabled, status_reports_station_contact, ground_truth_landing_height_0_80m
+Landing state: descending
+Landing state: aligning
+Landing state: descending
+Landing verification: frames=166, tag poses=164, foot contacts=0, state=descending; pending=physical_foot_station_contact, controller_landed, motors_disabled, status_reports_station_contact, ground_truth_landing_height_0_80m
+Landing state: aligning
+Landing state: descending
+Landing state: aligning
+Landing verification: frames=322, tag poses=319, foot contacts=0, state=aligning; pending=physical_foot_station_contact, controller_landed, motors_disabled, status_reports_station_contact, ground_truth_center_within_0_35m, ground_truth_landing_height_0_80m
+Landing state: descending
+Landing state: flaring
+Landing verification: frames=474, tag poses=470, foot contacts=17, state=flaring; pending=controller_landed, motors_disabled, status_reports_station_contact
+Landing state: aligning
+Landing state: target_lost_hover
+Landing state: landed
+PASS: rendered AprilTag detected; real feet/station contact; centered landing with motors off
+Evidence directory: /recordings/landing-check-20261024T030529Z-7

@@ -1,0 +1,3 @@
+[1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="landing_drone"]/link[@name="base_link"]/sensor[@name="downward_camera"]/gz_frame_id:/opt/ocean_ws/install/share/ocean_sim/models/landing_drone/model.sdf:L47]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="landing_drone"]/link[@name="base_link"]/sensor[@name="downward_camera"]/gz_frame_id:/opt/ocean_ws/install/share/ocean_sim/models/landing_drone/model.sdf:L47]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+Valid.

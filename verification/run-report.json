@@ -1,0 +1,27 @@
+{
+    "verified_at_utc":  "2026-10-23T15:30:50.5067304+00:00",
+    "image_tag":  "ros-humble-ocean:harmonic",
+    "image_id":  "sha256:828787cafbfe4bef55d3debb659a5ef859bb228571171b71a21e76631a4060fa",
+    "asv_ref":  "ca8629df4e191235753dfae92ef725d30b923364",
+    "asv_patch":  "asv-wave-visual-dedup.patch",
+    "container_started_at_utc":  "2026-10-23T15:23:33.2960944+00:00",
+    "final_gui_uptime_seconds":  437.2,
+    "container_running":  true,
+    "restart_count":  0,
+    "oom_killed":  false,
+    "gui_renderer":  "D3D12 (NVIDIA GeForce RTX 3060)",
+    "opengl":  "4.2 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1~22.04.4",
+    "duplicate_visual_skipped":  true,
+    "texture_residency_assertion_absent":  true,
+    "headless_probe":  {
+                           "passed":  true,
+                           "clock_advanced_seconds":  8,
+                           "buoy_height_range_metres":  0.526
+                       },
+    "actual_gui_probe":  {
+                             "passed":  true,
+                             "clock_advanced_seconds":  8,
+                             "buoy_height_range_metres":  0.557
+                         },
+    "note":  "Probe values transcribed from successful command outputs. Full Ogre log retains nonfatal rendering warnings; no claim of a warning-free renderer."
+}

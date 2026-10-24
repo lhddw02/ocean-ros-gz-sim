@@ -1,0 +1,26 @@
+{
+  "source": "Actual Gazebo Sim X11 window on WSLg; no simulated or generated imagery",
+  "capture_size": [
+    1200,
+    1000
+  ],
+  "frames": 8,
+  "requested_interval_seconds": 0.5,
+  "animation_size": [
+    960,
+    800
+  ],
+  "water_only_region_xyxy": [
+    30,
+    360,
+    330,
+    720
+  ],
+  "first_vs_last_mean_absolute_rgb_difference": [
+    4.780064814814815,
+    3.2688703703703705,
+    1.7841666666666667
+  ],
+  "fraction_water_pixels_changed_by_more_than_3_in_any_channel": 0.43348148148148147,
+  "note": "Pixel differences corroborate visually observed wave animation; this is not a frame-rate benchmark."
+}

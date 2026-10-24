@@ -1,0 +1,1042 @@
+{
+  "generator": "scripts/generate-drone-meshes.py",
+  "units": "metres",
+  "up_axis": "Z",
+  "license": "GPL-3.0-or-later; original project geometry",
+  "physics_sha256_before": "18191e20426febba232bd66f7a0d2c9b5725226d99a1a6646f1006c833800058",
+  "physics_sha256_after": "18191e20426febba232bd66f7a0d2c9b5725226d99a1a6646f1006c833800058",
+  "nonvisual_xml_unchanged": true,
+  "attachments": [
+    {
+      "name": "fl",
+      "shell_attachment_m": [
+        0.106,
+        0.069,
+        -0.025
+      ],
+      "knee_m": [
+        0.19,
+        0.18,
+        -0.166
+      ],
+      "foot_center_m": [
+        0.3,
+        0.3,
+        -0.425
+      ],
+      "foot_radius_m": 0.025,
+      "motor_center_m": [
+        0.23,
+        0.23,
+        0.045
+      ]
+    },
+    {
+      "name": "fr",
+      "shell_attachment_m": [
+        0.106,
+        -0.069,
+        -0.025
+      ],
+      "knee_m": [
+        0.19,
+        -0.18,
+        -0.166
+      ],
+      "foot_center_m": [
+        0.3,
+        -0.3,
+        -0.425
+      ],
+      "foot_radius_m": 0.025,
+      "motor_center_m": [
+        0.23,
+        -0.23,
+        0.045
+      ]
+    },
+    {
+      "name": "rl",
+      "shell_attachment_m": [
+        -0.106,
+        0.069,
+        -0.025
+      ],
+      "knee_m": [
+        -0.19,
+        0.18,
+        -0.166
+      ],
+      "foot_center_m": [
+        -0.3,
+        0.3,
+        -0.425
+      ],
+      "foot_radius_m": 0.025,
+      "motor_center_m": [
+        -0.23,
+        0.23,
+        0.045
+      ]
+    },
+    {
+      "name": "rr",
+      "shell_attachment_m": [
+        -0.106,
+        -0.069,
+        -0.025
+      ],
+      "knee_m": [
+        -0.19,
+        -0.18,
+        -0.166
+      ],
+      "foot_center_m": [
+        -0.3,
+        -0.3,
+        -0.425
+      ],
+      "foot_radius_m": 0.025,
+      "motor_center_m": [
+        -0.23,
+        -0.23,
+        0.045
+      ]
+    }
+  ],
+  "camera_optical_origin_m": [
+    0,
+    0,
+    -0.1
+  ],
+  "lowest_visual_point_m": -0.45,
+  "propeller_plane_body_z_m": 0.088,
+  "motor_link_body_z_m": 0.045,
+  "mesh_count": 15,
+  "meshes": [
+    {
+      "file": "airframe_carbon.dae",
+      "sha256": "0382f5698c711ee9d3bf2624a1f720dc9989d41a771ca38b5af038c4b881cb07",
+      "vertices": 1994,
+      "triangles": 3888,
+      "bounds_m": [
+        [
+          -0.3101139282154753,
+          -0.3100255454161944,
+          -0.4161048572977488
+        ],
+        [
+          0.3101139282154753,
+          0.3100255454161944,
+          0.027000000000000017
+        ]
+      ],
+      "solids": [
+        {
+          "name": "lower structural shell",
+          "vertices": 26,
+          "triangles": 48,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 0.0026393373333333334
+        },
+        {
+          "name": "fl tapered arm",
+          "vertices": 10,
+          "triangles": 16,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 0.0004428119392473514
+        },
+        {
+          "name": "fl motor seat",
+          "vertices": 66,
+          "triangles": 128,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 0.00011333655203333777
+        },
+        {
+          "name": "fl upper landing strut",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 0.00010420391105612715
+        },
+        {
+          "name": "fl lower landing strut",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 0.00012055544600826979
+        },
+        {
+          "name": "fl knee joint",
+          "vertices": 266,
+          "triangles": 528,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 1.1169595678092421e-05
+        },
+        {
+          "name": "fl motor-to-leg brace",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 5.618564938207726e-05
+        },
+        {
+          "name": "fr tapered arm",
+          "vertices": 10,
+          "triangles": 16,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 0.0004428119392473513
+        },
+        {
+          "name": "fr motor seat",
+          "vertices": 66,
+          "triangles": 128,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 0.00011333655203333784
+        },
+        {
+          "name": "fr upper landing strut",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 0.00010420391105612725
+        },
+        {
+          "name": "fr lower landing strut",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 0.0001205554460082682
+        },
+        {
+          "name": "fr knee joint",
+          "vertices": 266,
+          "triangles": 528,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 1.1169595678089954e-05
+        },
+        {
+          "name": "fr motor-to-leg brace",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 5.61856493820767e-05
+        },
+        {
+          "name": "rl tapered arm",
+          "vertices": 10,
+          "triangles": 16,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 0.0004428119392473513
+        },
+        {
+          "name": "rl motor seat",
+          "vertices": 66,
+          "triangles": 128,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 0.00011333655203333765
+        },
+        {
+          "name": "rl upper landing strut",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 0.00010420391105612725
+        },
+        {
+          "name": "rl lower landing strut",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 0.0001205554460082682
+        },
+        {
+          "name": "rl knee joint",
+          "vertices": 266,
+          "triangles": 528,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 1.116959567808904e-05
+        },
+        {
+          "name": "rl motor-to-leg brace",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 5.618564938207738e-05
+        },
+        {
+          "name": "rr tapered arm",
+          "vertices": 10,
+          "triangles": 16,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 0.0004428119392473514
+        },
+        {
+          "name": "rr motor seat",
+          "vertices": 66,
+          "triangles": 128,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 0.0001133365520333376
+        },
+        {
+          "name": "rr upper landing strut",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 0.00010420391105612715
+        },
+        {
+          "name": "rr lower landing strut",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 0.00012055544600826979
+        },
+        {
+          "name": "rr knee joint",
+          "vertices": 266,
+          "triangles": 528,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 1.1169595678092526e-05
+        },
+        {
+          "name": "rr motor-to-leg brace",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 5.6185649382077156e-05
+        }
+      ]
+    },
+    {
+      "file": "canopy_orange.dae",
+      "sha256": "f2d70fec031e6e8eaf4b40e3c0696558439787a5c739ddd6003da14ffdb44422",
+      "vertices": 266,
+      "triangles": 496,
+      "bounds_m": [
+        [
+          -0.15612895462057813,
+          -0.14237300401789402,
+          -0.06497827727702817
+        ],
+        [
+          0.15612895462057813,
+          0.14237300401789402,
+          0.061
+        ]
+      ],
+      "solids": [
+        {
+          "name": "chamfered canopy",
+          "vertices": 26,
+          "triangles": 48,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 0.002586297333333332
+        },
+        {
+          "name": "fl arm saddle",
+          "vertices": 10,
+          "triangles": 16,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 5.4863102354861396e-05
+        },
+        {
+          "name": "fl upper attachment cuff",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 3.974782494420294e-05
+        },
+        {
+          "name": "fr arm saddle",
+          "vertices": 10,
+          "triangles": 16,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 5.486310235486141e-05
+        },
+        {
+          "name": "fr upper attachment cuff",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 3.9747824944202966e-05
+        },
+        {
+          "name": "rl arm saddle",
+          "vertices": 10,
+          "triangles": 16,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 5.486310235486141e-05
+        },
+        {
+          "name": "rl upper attachment cuff",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 3.9747824944202966e-05
+        },
+        {
+          "name": "rr arm saddle",
+          "vertices": 10,
+          "triangles": 16,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 5.4863102354861396e-05
+        },
+        {
+          "name": "rr upper attachment cuff",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 3.974782494420294e-05
+        }
+      ]
+    },
+    {
+      "file": "trim_graphite.dae",
+      "sha256": "8f9451a2cc450112af8a916fc325b170935b15763b47e04a475b74a13890517c",
+      "vertices": 18,
+      "triangles": 32,
+      "bounds_m": [
+        [
+          -0.061,
+          -0.047,
+          0.061
+        ],
+        [
+          0.061,
+          0.047,
+          0.063
+        ]
+      ],
+      "solids": [
+        {
+          "name": "top service hatch",
+          "vertices": 18,
+          "triangles": 32,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 2.1506666666666723e-05
+        }
+      ]
+    },
+    {
+      "file": "fasteners_aluminum.dae",
+      "sha256": "32b60f443be84183f76f05bd2b04afa2917dba0c3933699b2239e1229e20e94e",
+      "vertices": 842,
+      "triangles": 1600,
+      "bounds_m": [
+        [
+          -0.31173857722429166,
+          -0.31164171000174395,
+          -0.4287668945775175
+        ],
+        [
+          0.31173857722429166,
+          0.31164171000174395,
+          0.037
+        ]
+      ],
+      "solids": [
+        {
+          "name": "fl stator support",
+          "vertices": 66,
+          "triangles": 128,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 3.0449697460277323e-05
+        },
+        {
+          "name": "fl ankle sleeve",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 1.916499890122455e-05
+        },
+        {
+          "name": "fl frame bolt 0.1",
+          "vertices": 26,
+          "triangles": 48,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 2.399999999999721e-07
+        },
+        {
+          "name": "fl frame bolt 0.215",
+          "vertices": 26,
+          "triangles": 48,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 1.9200000000006848e-07
+        },
+        {
+          "name": "fl frame bolt 0.245",
+          "vertices": 26,
+          "triangles": 48,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 1.9200000000002988e-07
+        },
+        {
+          "name": "fr stator support",
+          "vertices": 66,
+          "triangles": 128,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 3.0449697460277273e-05
+        },
+        {
+          "name": "fr ankle sleeve",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 1.9164998901225825e-05
+        },
+        {
+          "name": "fr frame bolt 0.1",
+          "vertices": 26,
+          "triangles": 48,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 2.400000000000211e-07
+        },
+        {
+          "name": "fr frame bolt 0.215",
+          "vertices": 26,
+          "triangles": 48,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 1.9200000000003504e-07
+        },
+        {
+          "name": "fr frame bolt 0.245",
+          "vertices": 26,
+          "triangles": 48,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 1.9200000000009751e-07
+        },
+        {
+          "name": "rl stator support",
+          "vertices": 66,
+          "triangles": 128,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 3.0449697460277208e-05
+        },
+        {
+          "name": "rl ankle sleeve",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 1.9164998901225368e-05
+        },
+        {
+          "name": "rl frame bolt 0.1",
+          "vertices": 26,
+          "triangles": 48,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 2.4000000000002105e-07
+        },
+        {
+          "name": "rl frame bolt 0.215",
+          "vertices": 26,
+          "triangles": 48,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 1.9200000000003494e-07
+        },
+        {
+          "name": "rl frame bolt 0.245",
+          "vertices": 26,
+          "triangles": 48,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 1.9200000000009783e-07
+        },
+        {
+          "name": "rr stator support",
+          "vertices": 66,
+          "triangles": 128,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 3.044969746027718e-05
+        },
+        {
+          "name": "rr ankle sleeve",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 1.916499890122383e-05
+        },
+        {
+          "name": "rr frame bolt 0.1",
+          "vertices": 26,
+          "triangles": 48,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 2.3999999999997213e-07
+        },
+        {
+          "name": "rr frame bolt 0.215",
+          "vertices": 26,
+          "triangles": 48,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 1.9200000000006922e-07
+        },
+        {
+          "name": "rr frame bolt 0.245",
+          "vertices": 26,
+          "triangles": 48,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 1.9200000000002978e-07
+        },
+        {
+          "name": "lens retaining ring",
+          "vertices": 66,
+          "triangles": 128,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 3.995449794890308e-06
+        }
+      ]
+    },
+    {
+      "file": "camera_housing.dae",
+      "sha256": "f6210e5ae549e4dfbc6823cc474868ce69e8263f57e28c3de17e2805468796e7",
+      "vertices": 92,
+      "triangles": 176,
+      "bounds_m": [
+        [
+          -0.031,
+          -0.031,
+          -0.09900000000000006
+        ],
+        [
+          0.031,
+          0.031,
+          -0.04299999999999999
+        ]
+      ],
+      "solids": [
+        {
+          "name": "camera mount",
+          "vertices": 26,
+          "triangles": 48,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 0.00015138466666666665
+        },
+        {
+          "name": "lens barrel",
+          "vertices": 66,
+          "triangles": 128,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 1.3745803968827067e-05
+        }
+      ]
+    },
+    {
+      "file": "camera_lens.dae",
+      "sha256": "d6943a05ea5d791148eadd1bced41797f95afa745673f10d98c6ac660c40493b",
+      "vertices": 66,
+      "triangles": 128,
+      "bounds_m": [
+        [
+          -0.016,
+          -0.016,
+          -0.0995
+        ],
+        [
+          0.016,
+          0.016,
+          -0.09879999999999992
+        ]
+      ],
+      "solids": [
+        {
+          "name": "optical glass",
+          "vertices": 66,
+          "triangles": 128,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 5.593629712846358e-07
+        }
+      ]
+    },
+    {
+      "file": "navigation_front.dae",
+      "sha256": "4461c5d2a3e7fd83db7a68339215a90bc91d0f19a878602b97815986fe93ae09",
+      "vertices": 18,
+      "triangles": 32,
+      "bounds_m": [
+        [
+          0.126,
+          -0.039,
+          0.022999999999999996
+        ],
+        [
+          0.134,
+          0.039,
+          0.033
+        ]
+      ],
+      "solids": [
+        {
+          "name": "front lamps",
+          "vertices": 18,
+          "triangles": 32,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 6.059999999999999e-06
+        }
+      ]
+    },
+    {
+      "file": "navigation_rear.dae",
+      "sha256": "884a7c5fec16975864f605ebe4a218e9e683733cbba8542aebc2b75bad9757b8",
+      "vertices": 18,
+      "triangles": 32,
+      "bounds_m": [
+        [
+          -0.134,
+          -0.039,
+          0.022999999999999996
+        ],
+        [
+          -0.126,
+          0.039,
+          0.033
+        ]
+      ],
+      "solids": [
+        {
+          "name": "rear lamps",
+          "vertices": 18,
+          "triangles": 32,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 6.059999999999995e-06
+        }
+      ]
+    },
+    {
+      "file": "foot_rubber.dae",
+      "sha256": "00465ff68eb619ceb7ec01deb55fa3da38d86f3c9f8eaf20377efb6951238fc9",
+      "vertices": 1928,
+      "triangles": 3840,
+      "bounds_m": [
+        [
+          -0.325,
+          -0.325,
+          -0.45
+        ],
+        [
+          0.325,
+          0.325,
+          -0.39999999999999997
+        ]
+      ],
+      "solids": [
+        {
+          "name": "fl contact foot",
+          "vertices": 482,
+          "triangles": 960,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 6.440533969980114e-05
+        },
+        {
+          "name": "fr contact foot",
+          "vertices": 482,
+          "triangles": 960,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 6.440533969979456e-05
+        },
+        {
+          "name": "rl contact foot",
+          "vertices": 482,
+          "triangles": 960,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 6.440533969979731e-05
+        },
+        {
+          "name": "rr contact foot",
+          "vertices": 482,
+          "triangles": 960,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 6.440533969979815e-05
+        }
+      ]
+    },
+    {
+      "file": "motor_bell.dae",
+      "sha256": "22a749f6915e99d43a14bace88370df4207d6ff8a744918b940572173fd34ec3",
+      "vertices": 232,
+      "triangles": 448,
+      "bounds_m": [
+        [
+          -0.025,
+          -0.025,
+          -0.011000000000000005
+        ],
+        [
+          0.025,
+          0.025,
+          0.04900000000000001
+        ]
+      ],
+      "solids": [
+        {
+          "name": "rotating motor bell",
+          "vertices": 66,
+          "triangles": 128,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 5.0371800903705616e-05
+        },
+        {
+          "name": "motor top shoulder",
+          "vertices": 66,
+          "triangles": 128,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 5.717447037219319e-06
+        },
+        {
+          "name": "raised propeller shaft",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 2.826303972519525e-06
+        },
+        {
+          "name": "propeller hub",
+          "vertices": 50,
+          "triangles": 96,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 5.259202996483222e-06
+        }
+      ]
+    },
+    {
+      "file": "motor_copper.dae",
+      "sha256": "8dfe29ae6cb95912e3ad215afa91e4fb0cc3e41b87f81b6e08112d14d4717122",
+      "vertices": 66,
+      "triangles": 128,
+      "bounds_m": [
+        [
+          -0.0254,
+          -0.0254,
+          -0.004000000000000003
+        ],
+        [
+          0.0254,
+          0.0254,
+          0.0
+        ]
+      ],
+      "solids": [
+        {
+          "name": "copper bell stripe",
+          "vertices": 66,
+          "triangles": 128,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 8.055326217723219e-06
+        }
+      ]
+    },
+    {
+      "file": "rotor_blade_ccw.dae",
+      "sha256": "5c48308a2297eb4d8c0609881ebe8b728830187ac3846a7c6996b6564f3bffe9",
+      "vertices": 36,
+      "triangles": 64,
+      "bounds_m": [
+        [
+          -0.13,
+          -0.022,
+          0.03774999999999999
+        ],
+        [
+          0.13,
+          0.022,
+          0.04825
+        ]
+      ],
+      "solids": [
+        {
+          "name": "CCW blade 1",
+          "vertices": 18,
+          "triangles": 32,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 7.109833333333331e-06
+        },
+        {
+          "name": "CCW blade -1",
+          "vertices": 18,
+          "triangles": 32,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 7.109833333333331e-06
+        }
+      ]
+    },
+    {
+      "file": "rotor_blade_cw.dae",
+      "sha256": "56d08cfa27990e2289ede710b2782fb7db23e21223ff704e950c9ad27f553d61",
+      "vertices": 36,
+      "triangles": 64,
+      "bounds_m": [
+        [
+          -0.13,
+          -0.022,
+          0.03774999999999999
+        ],
+        [
+          0.13,
+          0.022,
+          0.04825
+        ]
+      ],
+      "solids": [
+        {
+          "name": "CW blade 1",
+          "vertices": 18,
+          "triangles": 32,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 6.2751666666666756e-06
+        },
+        {
+          "name": "CW blade -1",
+          "vertices": 18,
+          "triangles": 32,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 6.2751666666666756e-06
+        }
+      ]
+    },
+    {
+      "file": "propeller_tip_ccw.dae",
+      "sha256": "1acdb70dca2d1456c9dcf5df0eb549c470acc16593683a9ce533c32fd6cabcae",
+      "vertices": 20,
+      "triangles": 32,
+      "bounds_m": [
+        [
+          -0.13,
+          -0.021368421052631578,
+          0.04226315789473684
+        ],
+        [
+          0.13,
+          0.021368421052631578,
+          0.04623684210526315
+        ]
+      ],
+      "solids": [
+        {
+          "name": "attached blade tip marker 1",
+          "vertices": 10,
+          "triangles": 16,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 1.2010526315789115e-07
+        },
+        {
+          "name": "attached blade tip marker -1",
+          "vertices": 10,
+          "triangles": 16,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 1.2010526315789115e-07
+        }
+      ]
+    },
+    {
+      "file": "propeller_tip_cw.dae",
+      "sha256": "ad101af6468e2bef21dbced8b3653740673466fe65c91497644ba0e98f504da0",
+      "vertices": 20,
+      "triangles": 32,
+      "bounds_m": [
+        [
+          -0.13,
+          -0.021368421052631578,
+          0.04226315789473684
+        ],
+        [
+          0.13,
+          0.021368421052631578,
+          0.04623684210526315
+        ]
+      ],
+      "solids": [
+        {
+          "name": "attached blade tip marker 1",
+          "vertices": 10,
+          "triangles": 16,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 7.88421052631594e-08
+        },
+        {
+          "name": "attached blade tip marker -1",
+          "vertices": 10,
+          "triangles": 16,
+          "closed_edges": true,
+          "outward_winding": true,
+          "volume_m3": 7.88421052631594e-08
+        }
+      ]
+    }
+  ]
+}

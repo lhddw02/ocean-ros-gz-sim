@@ -1,0 +1,38 @@
+Start testing: Oct 24 04:16 UTC
+----------------------------------------------------------
+1/2 Testing: mooring_math_test
+1/2 Test: mooring_math_test
+Command: "/proof/build/mooring_math_test"
+Directory: /proof/build
+"mooring_math_test" start time: Oct 24 04:16 UTC
+Output:
+----------------------------------------------------------
+Mooring restoring force, damping, saturation and yaw-wrap checks passed.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"mooring_math_test" end time: Oct 24 04:16 UTC
+"mooring_math_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: contact_reset_test
+2/2 Test: contact_reset_test
+Command: "/usr/bin/python3" "/src/test/contact_reset_test.py" "--plugin-dir" "/proof/build" "--output" "/proof/build/contact-reset-report.json"
+Directory: /proof/build
+"contact_reset_test" start time: Oct 24 04:16 UTC
+Output:
+----------------------------------------------------------
+Phase 0: named contacts received on both topics
+Phase 1: named contacts received on both topics
+Phase 2: named contacts received on both topics
+Named contact sensing passed initial run and two full world resets.
+<end of output>
+Test time =   5.14 sec
+----------------------------------------------------------
+Test Passed.
+"contact_reset_test" end time: Oct 24 04:16 UTC
+"contact_reset_test" time elapsed: 00:00:05
+----------------------------------------------------------
+
+End testing: Oct 24 04:16 UTC

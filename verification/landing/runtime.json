@@ -1,0 +1,22 @@
+{
+  "verified_at_utc": "2026-10-24T03:13:45.659539+00:00",
+  "image_id": "sha256:42b40a2e7c592dfbc7dddc2a06fddf35431533fd1672ae4d2ed70bc7660048a6",
+  "container_started_at_utc": "2026-10-24T03:03:45.720930141Z",
+  "running": true,
+  "restart_count": 0,
+  "oom_killed": false,
+  "command": [
+    "ros2",
+    "launch",
+    "ocean_sim",
+    "landing.launch.py",
+    "tag_id:=config",
+    "tag_family:=config",
+    "tag_size:=config",
+    "autoland:=true"
+  ],
+  "baseline_report": "landing-report.json",
+  "alternate_report": "../landing-alternate/landing-report.json",
+  "graphics": "D3D12 (NVIDIA GeForce RTX 3060), OpenGL 4.2",
+  "note": "The post-touchdown GUI was briefly paused during the isolated alternate-tag check, then resumed."
+}

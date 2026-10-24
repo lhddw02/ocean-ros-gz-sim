@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "verified_at_utc": "2026-10-24T05:08:58.595921+00:00",
+  "actual_gui_button_click": {
+    "requested_at_utc": "2026-10-24T05:03:29.161Z",
+    "completed_at_utc": "2026-10-24T05:03:29.330Z",
+    "method": "Computer Use actual Replay landing mouse click in Gazebo",
+    "window_title": "Gazebo Sim (Ubuntu-22.04)",
+    "backend_request_published_by_recorder": false
+  },
+  "clock_rewinds": 1,
+  "completed_physical_landings": [
+    {
+      "replay": 0,
+      "simulation_seconds": 13.410000000000082,
+      "center_distance_m": 0.04528864937180859,
+      "physical_contact_messages": 1017,
+      "settled_seconds": 2.0
+    },
+    {
+      "replay": 1,
+      "simulation_seconds": 26.1875,
+      "center_distance_m": 0.2741605650262164,
+      "physical_contact_messages": 1095,
+      "settled_seconds": 2.0
+    }
+  ],
+  "same_container": true,
+  "same_gazebo_and_controller_processes": true,
+  "container_id": "c0f69c8f6679413679cec2426d8c23dd985e3bb61cf1648ce6f2afd07ab8ea82",
+  "image_id": "sha256:f6fba3507eb98770cb412714b6ba367229b88019c45836c26192872019f35d60",
+  "container_start_time": "2026-10-24T04:46:30.111067827Z",
+  "restart_count": 0,
+  "gui_renderer": "D3D12 (NVIDIA GeForce RTX 3060)",
+  "successful_run_texture_assertions_or_process_errors": false,
+  "startup_issue": "The first launch failed during NVIDIA/WSLg graphics initialization; the relaunch and recorded replay passed. See startup-driver-failure.log.",
+  "original_mesh_files": 15,
+  "nonvisual_sdf_unchanged": true,
+  "central_camera_rays_tested": 1681,
+  "central_camera_rays_blocked": 0,
+  "gif": {
+    "path": "replay-landing.gif",
+    "seconds": 38.47,
+    "size": [
+      1200,
+      1000
+    ],
+    "synthetic_frames": false,
+    "source_captures": 83,
+    "encoded_frames": 82
+  },
+  "files_sha256": {
+    "airframe_carbon.dae": "0382f5698c711ee9d3bf2624a1f720dc9989d41a771ca38b5af038c4b881cb07",
+    "camera_housing.dae": "f6210e5ae549e4dfbc6823cc474868ce69e8263f57e28c3de17e2805468796e7",
+    "camera_lens.dae": "d6943a05ea5d791148eadd1bced41797f95afa745673f10d98c6ac660c40493b",
+    "canopy_orange.dae": "f2d70fec031e6e8eaf4b40e3c0696558439787a5c739ddd6003da14ffdb44422",
+    "fasteners_aluminum.dae": "32b60f443be84183f76f05bd2b04afa2917dba0c3933699b2239e1229e20e94e",
+    "foot_rubber.dae": "00465ff68eb619ceb7ec01deb55fa3da38d86f3c9f8eaf20377efb6951238fc9",
+    "motor_bell.dae": "22a749f6915e99d43a14bace88370df4207d6ff8a744918b940572173fd34ec3",
+    "motor_copper.dae": "8dfe29ae6cb95912e3ad215afa91e4fb0cc3e41b87f81b6e08112d14d4717122",
+    "navigation_front.dae": "4461c5d2a3e7fd83db7a68339215a90bc91d0f19a878602b97815986fe93ae09",
+    "navigation_rear.dae": "884a7c5fec16975864f605ebe4a218e9e683733cbba8542aebc2b75bad9757b8",
+    "propeller_tip_ccw.dae": "1acdb70dca2d1456c9dcf5df0eb549c470acc16593683a9ce533c32fd6cabcae",
+    "propeller_tip_cw.dae": "ad101af6468e2bef21dbced8b3653740673466fe65c91497644ba0e98f504da0",
+    "rotor_blade_ccw.dae": "5c48308a2297eb4d8c0609881ebe8b728830187ac3846a7c6996b6564f3bffe9",
+    "rotor_blade_cw.dae": "56d08cfa27990e2289ede710b2782fb7db23e21223ff704e950c9ad27f553d61",
+    "trim_graphite.dae": "8f9451a2cc450112af8a916fc325b170935b15763b47e04a475b74a13890517c"
+  }
+}

@@ -1,0 +1,412 @@
+{
+  "nonvisual_xml_unchanged": true,
+  "visual_mesh_instances": 25,
+  "files": [
+    {
+      "file": "C:\\Users\\aston\\Documents\\Codex\\2026-10-11\\i-x20\\outputs\\ocean-ros-humble\\ros\\ocean_sim\\models\\landing_drone\\meshes\\airframe_carbon.dae",
+      "sha256": "0382f5698c711ee9d3bf2624a1f720dc9989d41a771ca38b5af038c4b881cb07",
+      "geometries": [
+        {
+          "geometry": "airframe_carbon",
+          "triangles": 3888,
+          "bounds": [
+            [
+              -0.310113928,
+              -0.310025545,
+              -0.416104857
+            ],
+            [
+              0.310113928,
+              0.310025545,
+              0.027
+            ]
+          ],
+          "signed_volume_m3": 0.0060323897079444565,
+          "degenerate_faces": 0,
+          "inverted_vertex_normals": 0,
+          "nonmanifold_indexed_edges": 0,
+          "inconsistent_edge_winding": 0
+        }
+      ]
+    },
+    {
+      "file": "C:\\Users\\aston\\Documents\\Codex\\2026-10-11\\i-x20\\outputs\\ocean-ros-humble\\ros\\ocean_sim\\models\\landing_drone\\meshes\\camera_housing.dae",
+      "sha256": "f6210e5ae549e4dfbc6823cc474868ce69e8263f57e28c3de17e2805468796e7",
+      "geometries": [
+        {
+          "geometry": "camera_housing",
+          "triangles": 176,
+          "bounds": [
+            [
+              -0.031,
+              -0.031,
+              -0.099
+            ],
+            [
+              0.031,
+              0.031,
+              -0.043
+            ]
+          ],
+          "signed_volume_m3": 0.00016513047062628096,
+          "degenerate_faces": 0,
+          "inverted_vertex_normals": 0,
+          "nonmanifold_indexed_edges": 0,
+          "inconsistent_edge_winding": 0
+        }
+      ]
+    },
+    {
+      "file": "C:\\Users\\aston\\Documents\\Codex\\2026-10-11\\i-x20\\outputs\\ocean-ros-humble\\ros\\ocean_sim\\models\\landing_drone\\meshes\\camera_lens.dae",
+      "sha256": "d6943a05ea5d791148eadd1bced41797f95afa745673f10d98c6ac660c40493b",
+      "geometries": [
+        {
+          "geometry": "camera_lens",
+          "triangles": 128,
+          "bounds": [
+            [
+              -0.016,
+              -0.016,
+              -0.0995
+            ],
+            [
+              0.016,
+              0.016,
+              -0.0988
+            ]
+          ],
+          "signed_volume_m3": 5.59362971272595e-07,
+          "degenerate_faces": 0,
+          "inverted_vertex_normals": 0,
+          "nonmanifold_indexed_edges": 0,
+          "inconsistent_edge_winding": 0
+        }
+      ]
+    },
+    {
+      "file": "C:\\Users\\aston\\Documents\\Codex\\2026-10-11\\i-x20\\outputs\\ocean-ros-humble\\ros\\ocean_sim\\models\\landing_drone\\meshes\\canopy_orange.dae",
+      "sha256": "f2d70fec031e6e8eaf4b40e3c0696558439787a5c739ddd6003da14ffdb44422",
+      "geometries": [
+        {
+          "geometry": "canopy_orange",
+          "triangles": 496,
+          "bounds": [
+            [
+              -0.156128955,
+              -0.142373004,
+              -0.0649782773
+            ],
+            [
+              0.156128955,
+              0.142373004,
+              0.061
+            ]
+          ],
+          "signed_volume_m3": 0.0029647410436149484,
+          "degenerate_faces": 0,
+          "inverted_vertex_normals": 0,
+          "nonmanifold_indexed_edges": 0,
+          "inconsistent_edge_winding": 0
+        }
+      ]
+    },
+    {
+      "file": "C:\\Users\\aston\\Documents\\Codex\\2026-10-11\\i-x20\\outputs\\ocean-ros-humble\\ros\\ocean_sim\\models\\landing_drone\\meshes\\fasteners_aluminum.dae",
+      "sha256": "32b60f443be84183f76f05bd2b04afa2917dba0c3933699b2239e1229e20e94e",
+      "geometries": [
+        {
+          "geometry": "fasteners_aluminum",
+          "triangles": 1600,
+          "bounds": [
+            [
+              -0.311738577,
+              -0.31164171,
+              -0.428766895
+            ],
+            [
+              0.311738577,
+              0.31164171,
+              0.037
+            ]
+          ],
+          "signed_volume_m3": 0.00020495023557681735,
+          "degenerate_faces": 0,
+          "inverted_vertex_normals": 0,
+          "nonmanifold_indexed_edges": 0,
+          "inconsistent_edge_winding": 0
+        }
+      ]
+    },
+    {
+      "file": "C:\\Users\\aston\\Documents\\Codex\\2026-10-11\\i-x20\\outputs\\ocean-ros-humble\\ros\\ocean_sim\\models\\landing_drone\\meshes\\foot_rubber.dae",
+      "sha256": "00465ff68eb619ceb7ec01deb55fa3da38d86f3c9f8eaf20377efb6951238fc9",
+      "geometries": [
+        {
+          "geometry": "foot_rubber",
+          "triangles": 3840,
+          "bounds": [
+            [
+              -0.325,
+              -0.325,
+              -0.45
+            ],
+            [
+              0.325,
+              0.325,
+              -0.4
+            ]
+          ],
+          "signed_volume_m3": 0.0002576213591960706,
+          "degenerate_faces": 0,
+          "inverted_vertex_normals": 0,
+          "nonmanifold_indexed_edges": 0,
+          "inconsistent_edge_winding": 0
+        }
+      ]
+    },
+    {
+      "file": "C:\\Users\\aston\\Documents\\Codex\\2026-10-11\\i-x20\\outputs\\ocean-ros-humble\\ros\\ocean_sim\\models\\landing_drone\\meshes\\motor_bell.dae",
+      "sha256": "22a749f6915e99d43a14bace88370df4207d6ff8a744918b940572173fd34ec3",
+      "geometries": [
+        {
+          "geometry": "motor_bell",
+          "triangles": 448,
+          "bounds": [
+            [
+              -0.025,
+              -0.025,
+              -0.011
+            ],
+            [
+              0.025,
+              0.025,
+              0.049
+            ]
+          ],
+          "signed_volume_m3": 6.417475486065685e-05,
+          "degenerate_faces": 0,
+          "inverted_vertex_normals": 0,
+          "nonmanifold_indexed_edges": 0,
+          "inconsistent_edge_winding": 0
+        }
+      ]
+    },
+    {
+      "file": "C:\\Users\\aston\\Documents\\Codex\\2026-10-11\\i-x20\\outputs\\ocean-ros-humble\\ros\\ocean_sim\\models\\landing_drone\\meshes\\motor_copper.dae",
+      "sha256": "8dfe29ae6cb95912e3ad215afa91e4fb0cc3e41b87f81b6e08112d14d4717122",
+      "geometries": [
+        {
+          "geometry": "motor_copper",
+          "triangles": 128,
+          "bounds": [
+            [
+              -0.0254,
+              -0.0254,
+              -0.004
+            ],
+            [
+              0.0254,
+              0.0254,
+              0.0
+            ]
+          ],
+          "signed_volume_m3": 8.055326210277693e-06,
+          "degenerate_faces": 0,
+          "inverted_vertex_normals": 0,
+          "nonmanifold_indexed_edges": 0,
+          "inconsistent_edge_winding": 0
+        }
+      ]
+    },
+    {
+      "file": "C:\\Users\\aston\\Documents\\Codex\\2026-10-11\\i-x20\\outputs\\ocean-ros-humble\\ros\\ocean_sim\\models\\landing_drone\\meshes\\navigation_front.dae",
+      "sha256": "4461c5d2a3e7fd83db7a68339215a90bc91d0f19a878602b97815986fe93ae09",
+      "geometries": [
+        {
+          "geometry": "navigation_front",
+          "triangles": 32,
+          "bounds": [
+            [
+              0.126,
+              -0.039,
+              0.023
+            ],
+            [
+              0.134,
+              0.039,
+              0.033
+            ]
+          ],
+          "signed_volume_m3": 6.059999999999999e-06,
+          "degenerate_faces": 0,
+          "inverted_vertex_normals": 0,
+          "nonmanifold_indexed_edges": 0,
+          "inconsistent_edge_winding": 0
+        }
+      ]
+    },
+    {
+      "file": "C:\\Users\\aston\\Documents\\Codex\\2026-10-11\\i-x20\\outputs\\ocean-ros-humble\\ros\\ocean_sim\\models\\landing_drone\\meshes\\navigation_rear.dae",
+      "sha256": "884a7c5fec16975864f605ebe4a218e9e683733cbba8542aebc2b75bad9757b8",
+      "geometries": [
+        {
+          "geometry": "navigation_rear",
+          "triangles": 32,
+          "bounds": [
+            [
+              -0.134,
+              -0.039,
+              0.023
+            ],
+            [
+              -0.126,
+              0.039,
+              0.033
+            ]
+          ],
+          "signed_volume_m3": 6.059999999999995e-06,
+          "degenerate_faces": 0,
+          "inverted_vertex_normals": 0,
+          "nonmanifold_indexed_edges": 0,
+          "inconsistent_edge_winding": 0
+        }
+      ]
+    },
+    {
+      "file": "C:\\Users\\aston\\Documents\\Codex\\2026-10-11\\i-x20\\outputs\\ocean-ros-humble\\ros\\ocean_sim\\models\\landing_drone\\meshes\\propeller_tip_ccw.dae",
+      "sha256": "1acdb70dca2d1456c9dcf5df0eb549c470acc16593683a9ce533c32fd6cabcae",
+      "geometries": [
+        {
+          "geometry": "propeller_tip_ccw",
+          "triangles": 32,
+          "bounds": [
+            [
+              -0.13,
+              -0.0213684211,
+              0.0422631579
+            ],
+            [
+              0.13,
+              0.0213684211,
+              0.0462368421
+            ]
+          ],
+          "signed_volume_m3": 2.4021052561333444e-07,
+          "degenerate_faces": 0,
+          "inverted_vertex_normals": 0,
+          "nonmanifold_indexed_edges": 0,
+          "inconsistent_edge_winding": 0
+        }
+      ]
+    },
+    {
+      "file": "C:\\Users\\aston\\Documents\\Codex\\2026-10-11\\i-x20\\outputs\\ocean-ros-humble\\ros\\ocean_sim\\models\\landing_drone\\meshes\\propeller_tip_cw.dae",
+      "sha256": "ad101af6468e2bef21dbced8b3653740673466fe65c91497644ba0e98f504da0",
+      "geometries": [
+        {
+          "geometry": "propeller_tip_cw",
+          "triangles": 32,
+          "bounds": [
+            [
+              -0.13,
+              -0.0213684211,
+              0.0422631579
+            ],
+            [
+              0.13,
+              0.0213684211,
+              0.0462368421
+            ]
+          ],
+          "signed_volume_m3": 1.5768421190667735e-07,
+          "degenerate_faces": 0,
+          "inverted_vertex_normals": 0,
+          "nonmanifold_indexed_edges": 0,
+          "inconsistent_edge_winding": 0
+        }
+      ]
+    },
+    {
+      "file": "C:\\Users\\aston\\Documents\\Codex\\2026-10-11\\i-x20\\outputs\\ocean-ros-humble\\ros\\ocean_sim\\models\\landing_drone\\meshes\\rotor_blade_ccw.dae",
+      "sha256": "5c48308a2297eb4d8c0609881ebe8b728830187ac3846a7c6996b6564f3bffe9",
+      "geometries": [
+        {
+          "geometry": "rotor_blade_ccw",
+          "triangles": 64,
+          "bounds": [
+            [
+              -0.13,
+              -0.022,
+              0.03775
+            ],
+            [
+              0.13,
+              0.022,
+              0.04825
+            ]
+          ],
+          "signed_volume_m3": 1.421966666666667e-05,
+          "degenerate_faces": 0,
+          "inverted_vertex_normals": 0,
+          "nonmanifold_indexed_edges": 0,
+          "inconsistent_edge_winding": 0
+        }
+      ]
+    },
+    {
+      "file": "C:\\Users\\aston\\Documents\\Codex\\2026-10-11\\i-x20\\outputs\\ocean-ros-humble\\ros\\ocean_sim\\models\\landing_drone\\meshes\\rotor_blade_cw.dae",
+      "sha256": "56d08cfa27990e2289ede710b2782fb7db23e21223ff704e950c9ad27f553d61",
+      "geometries": [
+        {
+          "geometry": "rotor_blade_cw",
+          "triangles": 64,
+          "bounds": [
+            [
+              -0.13,
+              -0.022,
+              0.03775
+            ],
+            [
+              0.13,
+              0.022,
+              0.04825
+            ]
+          ],
+          "signed_volume_m3": 1.2550333333333341e-05,
+          "degenerate_faces": 0,
+          "inverted_vertex_normals": 0,
+          "nonmanifold_indexed_edges": 0,
+          "inconsistent_edge_winding": 0
+        }
+      ]
+    },
+    {
+      "file": "C:\\Users\\aston\\Documents\\Codex\\2026-10-11\\i-x20\\outputs\\ocean-ros-humble\\ros\\ocean_sim\\models\\landing_drone\\meshes\\trim_graphite.dae",
+      "sha256": "8f9451a2cc450112af8a916fc325b170935b15763b47e04a475b74a13890517c",
+      "geometries": [
+        {
+          "geometry": "trim_graphite",
+          "triangles": 32,
+          "bounds": [
+            [
+              -0.061,
+              -0.047,
+              0.061
+            ],
+            [
+              0.061,
+              0.047,
+              0.063
+            ]
+          ],
+          "signed_volume_m3": 2.1506666666666723e-05,
+          "degenerate_faces": 0,
+          "inverted_vertex_normals": 0,
+          "nonmanifold_indexed_edges": 0,
+          "inconsistent_edge_winding": 0
+        }
+      ]
+    }
+  ],
+  "scope": "Independent SDF invariants and stored COLLADA geometry; runtime appearance and vision must also be checked."
+}

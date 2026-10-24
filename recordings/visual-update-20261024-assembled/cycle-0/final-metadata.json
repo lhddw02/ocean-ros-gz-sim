@@ -1,0 +1,29 @@
+{
+  "sim_time": 717.19,
+  "image_stamp": 717.15,
+  "status": {
+    "state": "landed",
+    "tag_family": "tag36h11",
+    "tag_id": 0,
+    "tag_size_m": 0.4,
+    "detections": 10798,
+    "target_fresh": true,
+    "lateral_error_m": 0.045273405670728635,
+    "image_age_s": 0.31750000000010914,
+    "tag_age_s": 0.31750000000010914,
+    "camera_height_m": 0.3484030372452829,
+    "reprojection_error_px": 0.02461687729243112,
+    "processing_ms": 147.7082720002727,
+    "processing_ms_ema": 108.12882429117927,
+    "image_arrival_age_s": 0.017500000000040927,
+    "image_callbacks": 10798,
+    "fallback_calls": 2,
+    "foot_station_contact": true,
+    "motors_enabled": false,
+    "sim_time": 717.1175000000001,
+    "replay_count": 0,
+    "replay_phase": null,
+    "replay_error": null
+  },
+  "independent_target_detected": true
+}

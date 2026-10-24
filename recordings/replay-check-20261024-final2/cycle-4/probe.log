@@ -1,0 +1,15 @@
+Landing state: replay_arming
+Landing state: waiting_for_camera
+Landing state: aligning
+Landing state: descending
+Landing verification: frames=174, tag poses=122, foot contacts=0, state=descending; pending=physical_foot_station_contact, controller_landed, motors_disabled, status_reports_station_contact, ground_truth_landing_height_0_80m
+Landing state: aligning
+Landing state: descending
+Landing state: flaring
+Landing state: descending
+Landing state: flaring
+Landing state: aligning
+Landing state: landed
+Landing verification: frames=352, tag poses=233, foot contacts=667, state=landed; pending=
+PASS: rendered AprilTag detected; real feet/station contact; centered landing with motors off
+Evidence directory: /recordings/replay-check-20261024-final2/cycle-4

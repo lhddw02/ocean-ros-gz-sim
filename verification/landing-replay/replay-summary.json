@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "native_gazebo_replay_actions": 4,
+  "native_request_messages": 8,
+  "clock_rewinds": 4,
+  "completed_physical_landings": [
+    {
+      "replay": 1,
+      "simulation_seconds": 26.2875,
+      "center_distance_m": 0.06273197536979902,
+      "physical_contact_messages": 1134,
+      "settled_seconds": 2.0
+    },
+    {
+      "replay": 3,
+      "simulation_seconds": 18.61,
+      "center_distance_m": 0.24969081406894816,
+      "physical_contact_messages": 953,
+      "settled_seconds": 2.0
+    },
+    {
+      "replay": 4,
+      "simulation_seconds": 18.53,
+      "center_distance_m": 0.24681237538689954,
+      "physical_contact_messages": 980,
+      "settled_seconds": 2.0100000000000016
+    }
+  ],
+  "wall_seconds": 80.498,
+  "same_container": true,
+  "container_id": "5dd1ac433fea849f6350bd636f900da5c31fd90b067f9478b81352c53873cb85",
+  "image_id": "sha256:82672a868155d68868052c374401d13c2f7e04271e15664da084beac1f9338b7",
+  "same_gazebo_and_controller_processes": true,
+  "processes": [
+    {
+      "pid": 58,
+      "start_ticks": 614002,
+      "command": "/usr/bin/python3 /opt/ocean_ws/install/lib/ocean_sim/vision_landing --ros-args --params-file /tmp/launch_params_8y4b8cqi"
+    },
+    {
+      "pid": 64,
+      "start_ticks": 614003,
+      "command": "gz sim -v 3 --render-engine ogre2 /tmp/ocean-landing-2guisa7h/landing.sdf"
+    },
+    {
+      "pid": 100,
+      "start_ticks": 614018,
+      "command": "gz sim server"
+    },
+    {
+      "pid": 101,
+      "start_ticks": 614018,
+      "command": "gz sim gui"
+    }
+  ],
+  "restart_count": 0,
+  "gui_renderer": "D3D12 (NVIDIA GeForce RTX 3060)",
+  "texture_assertions_or_process_errors": false,
+  "gui_click_test_scope": "real QML mouse clicks in isolated Qt view; native request integration in actual GUI scene"
+}

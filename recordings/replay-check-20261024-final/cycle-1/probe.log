@@ -1,0 +1,26 @@
+Landing state: aligning
+Landing state: descending
+Landing state: aligning
+Landing state: descending
+Landing verification: frames=173, tag poses=121, foot contacts=0, state=descending; pending=physical_foot_station_contact, controller_landed, motors_disabled, status_reports_station_contact, ground_truth_landing_height_0_80m
+Landing state: aligning
+Landing state: descending
+Landing state: flaring
+Landing state: descending
+Landing state: flaring
+Landing state: touchdown
+Landing state: aligning
+Landing state: landed
+Landing verification: frames=354, tag poses=238, foot contacts=728, state=landed; pending=status_reports_station_contact
+Landing verification: frames=519, tag poses=238, foot contacts=4019, state=landed; pending=status_reports_station_contact
+Landing verification: frames=670, tag poses=238, foot contacts=6847, state=landed; pending=status_reports_station_contact
+Landing verification: frames=820, tag poses=238, foot contacts=9454, state=landed; pending=status_reports_station_contact
+Landing verification: frames=965, tag poses=238, foot contacts=12162, state=landed; pending=status_reports_station_contact
+Landing verification: frames=1128, tag poses=238, foot contacts=14978, state=landed; pending=status_reports_station_contact
+Landing verification: frames=1284, tag poses=238, foot contacts=17585, state=landed; pending=status_reports_station_contact
+Landing verification: frames=1441, tag poses=238, foot contacts=20155, state=landed; pending=status_reports_station_contact
+Landing verification: frames=1614, tag poses=238, foot contacts=23240, state=landed; pending=status_reports_station_contact
+Landing verification: frames=1788, tag poses=238, foot contacts=26378, state=landed; pending=status_reports_station_contact
+FAIL: Wall-clock landing deadline exceeded
+Evidence directory: /recordings/replay-check-20261024-final/cycle-1
+Missing criteria: status_reports_station_contact

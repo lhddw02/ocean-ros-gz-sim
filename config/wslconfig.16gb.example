@@ -1,0 +1,10 @@
+# Suggested limits for this 16 GB Windows machine. Merge with existing settings.
+# Location when applied manually: %UserProfile%\.wslconfig
+[wsl2]
+memory=8GB
+processors=4
+swap=4GB
+guiApplications=true
+
+[experimental]
+autoMemoryReclaim=gradual

@@ -1,0 +1,383 @@
+name of display: :0
+display: :0  screen: 0
+direct rendering: Yes
+Extended renderer info (GLX_MESA_query_renderer):
+    Vendor: Microsoft Corporation (0xffffffff)
+    Device: D3D12 (NVIDIA GeForce RTX 3060) (0xffffffff)
+    Version: 23.2.1
+    Accelerated: yes
+    Video memory: 20235MB
+    Unified memory: no
+    Preferred profile: core (0x1)
+    Max core profile version: 4.2
+    Max compat profile version: 4.2
+    Max GLES1 profile version: 1.1
+    Max GLES[23] profile version: 3.1
+OpenGL vendor string: Microsoft Corporation
+OpenGL renderer string: D3D12 (NVIDIA GeForce RTX 3060)
+OpenGL core profile version string: 4.2 (Core Profile) Mesa 23.2.1-1ubuntu3.1~22.04.4
+OpenGL core profile shading language version string: 4.20
+OpenGL core profile context flags: (none)
+OpenGL core profile profile mask: core profile
+
+OpenGL version string: 4.2 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1~22.04.4
+OpenGL shading language version string: 4.20
+OpenGL context flags: (none)
+OpenGL profile mask: compatibility profile
+
+OpenGL ES profile version string: OpenGL ES 3.1 Mesa 23.2.1-1ubuntu3.1~22.04.4
+OpenGL ES profile shading language version string: OpenGL ES GLSL ES 3.10
+
+GPU check passed: D3D12 (NVIDIA GeForce RTX 3060); OpenGL 4.2.
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-10-24-03-03-47-384689-98eb187f1899-7
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: Landing assets: /tmp/ocean-landing-81_goxv0; tag tag36h11 ID 0
+[INFO] [vision_landing-1]: process started with pid [58]
+[INFO] [parameter_bridge-2]: process started with pid [60]
+[INFO] [landing_bootstrap-3]: process started with pid [62]
+[INFO] [gazebo-4]: process started with pid [64]
+[INFO] [parameter_bridge-5]: process started with pid [66]
+[gazebo-4] QStandardPaths: runtime directory '/mnt/wslg/runtime-dir' is not owned by UID 0, but a directory permissions 0777 owned by UID 1000 GID 1000
+[gazebo-4] [Msg] Received world [/tmp/ocean-landing-81_goxv0/landing.sdf] from the GUI.
+[gazebo-4] [Msg] Gazebo Sim Server v8.15.0
+[gazebo-4] [Msg] Loading SDF world file[/tmp/ocean-landing-81_goxv0/landing.sdf].
+[gazebo-4] Warning [Utils.cc:132] [/sdf/model[@name="landing_drone"]/link[@name="base_link"]/sensor[@name="downward_camera"]/gz_frame_id:/opt/ocean_ws/install/share/ocean_sim/models/landing_drone/model.sdf:L47]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[vision_landing-1] [INFO] [1792811028.337846862] [vision_landing]: Watching tag36h11 ID 0, black border 0.400 m; optical right=-body Y, down=-body X
+[gazebo-4] [Msg] Serving entity system service on [/entity/system/add]
+[gazebo-4] [Msg] Create service on [/world/ocean/create_multiple] (async)
+[gazebo-4] [Msg] Create service on [/world/ocean/create_multiple/blocking] (blocking)
+[gazebo-4] [Msg] Remove service on [/world/ocean/remove] (async)
+[gazebo-4] [Msg] Remove service on [/world/ocean/remove/blocking] (blocking)
+[gazebo-4] [Msg] Pose service on [/world/ocean/set_pose] (async)
+[gazebo-4] [Msg] Pose service on [/world/ocean/set_pose/blocking] (blocking)
+[gazebo-4] [Msg] Pose service on [/world/ocean/set_pose_vector] (async)
+[gazebo-4] [Msg] Pose service on [/world/ocean/set_pose_vector/blocking] (blocking)
+[gazebo-4] [Msg] Light configuration service on [/world/ocean/light_config] (async)
+[gazebo-4] [Msg] Light configuration service on [/world/ocean/light_config/blocking] (blocking)
+[gazebo-4] [Msg] Physics service on [/world/ocean/set_physics] (async)
+[gazebo-4] [Msg] Physics service on [/world/ocean/set_physics/blocking] (blocking)
+[gazebo-4] [Msg] SphericalCoordinates service on [/world/ocean/set_spherical_coordinates] (async)
+[gazebo-4] [Msg] SphericalCoordinates service on [/world/ocean/set_spherical_coordinates/blocking] (blocking)
+[gazebo-4] [Msg] Enable collision service on [/world/ocean/enable_collision] (async)
+[gazebo-4] [Msg] Enable collision service on [/world/ocean/enable_collision/blocking] (blocking)
+[gazebo-4] [Msg] Disable collision service on [/world/ocean/disable_collision] (async)
+[gazebo-4] [Msg] Disable collision service on [/world/ocean/disable_collision/blocking] (blocking)
+[gazebo-4] [Msg] Material service on [/world/ocean/visual_config] (async)
+[gazebo-4] [Msg] Material service on [/world/ocean/visual_config/blocking] (blocking)
+[gazebo-4] [Msg] Material service on [/world/ocean/wheel_slip] (async)
+[gazebo-4] [Msg] Material service on [/world/ocean/wheel_slip/blocking] (blocking)
+[gazebo-4] [Msg] WavesModel: configuring
+[gazebo-4] [Msg] WavesVisual: constructing
+[gazebo-4] [Msg] WavesVisual: configuring
+[gazebo-4] [Msg] Parameter found - setting <static> to <0>.
+[gazebo-4] [Msg] Parameter found - setting <tiles_x> to <-1 1>.
+[gazebo-4] [Msg] Parameter found - setting <tiles_y> to <-1 1>.
+[gazebo-4] [Msg] Parameter found - setting <mesh_deformation_method> to <DYNAMIC_TEXTURE>.
+[gazebo-4] [Msg] tile_size: 100, 100
+[gazebo-4] [Msg] cell_count: 128, 128
+[gazebo-4] [Msg] Parameter found - setting <algorithm> to <fft>.
+[gazebo-4] [Msg] Parameter <number> not found: Using default value of <1>.
+[gazebo-4] [Msg] Parameter <amplitude> not found: Using default value of <0>.
+[gazebo-4] [Msg] Parameter <period> not found: Using default value of <1>.
+[gazebo-4] [Msg] Parameter <phase> not found: Using default value of <0>.
+[gazebo-4] [Msg] Parameter <direction> not found: Using default value of <1 0>.
+[gazebo-4] [Msg] Parameter <scale> not found: Using default value of <2>.
+[gazebo-4] [Msg] Parameter <angle> not found: Using default value of <0.628319>.
+[gazebo-4] [Msg] Parameter found - setting <steepness> to <1>.
+[gazebo-4] [Msg] Parameter <wind_velocity> not found: Using default value of <5 0>.
+[gazebo-4] [Msg] Overriding 'wind_velocity' using 'wind_speed' and 'wind_angle_deg'
+[gazebo-4] [Msg] Parameter found - setting <wind_speed> to <5>.
+[gazebo-4] [Msg] Parameter found - setting <wind_angle_deg> to <135>.
+[gazebo-4] [Msg] WavesVisual: subscribing to [/world/ocean/waves]
+[gazebo-4] [Msg] Hydrodynamics: configuring
+[gazebo-4] [Msg] Parameter <damping_on> not found: Using default value of <1>.
+[gazebo-4] [Msg] Parameter <viscous_drag_on> not found: Using default value of <1>.
+[gazebo-4] [Msg] Parameter <pressure_drag_on> not found: Using default value of <1>.
+[gazebo-4] [Msg] Parameter <cDampL1> not found: Using default value of <1e-06>.
+[gazebo-4] [Msg] Parameter <cDampL2> not found: Using default value of <1e-06>.
+[gazebo-4] [Msg] Parameter <cDampR1> not found: Using default value of <1e-06>.
+[gazebo-4] [Msg] Parameter <cDampR2> not found: Using default value of <1e-06>.
+[gazebo-4] [Msg] Parameter <cPDrag1> not found: Using default value of <100>.
+[gazebo-4] [Msg] Parameter <cPDrag2> not found: Using default value of <100>.
+[gazebo-4] [Msg] Parameter <fPDrag> not found: Using default value of <0.4>.
+[gazebo-4] [Msg] Parameter <cSDrag1> not found: Using default value of <100>.
+[gazebo-4] [Msg] Parameter <cSDrag2> not found: Using default value of <100>.
+[gazebo-4] [Msg] Parameter <fSDrag> not found: Using default value of <0.4>.
+[gazebo-4] [Msg] Parameter <vRDrag> not found: Using default value of <1>.
+[gazebo-4] [Msg] Hydrodynamics: configuring
+[gazebo-4] [Msg] Parameter <damping_on> not found: Using default value of <1>.
+[gazebo-4] [Msg] Parameter <viscous_drag_on> not found: Using default value of <1>.
+[gazebo-4] [Msg] Parameter <pressure_drag_on> not found: Using default value of <1>.
+[gazebo-4] [Msg] Parameter <cDampL1> not found: Using default value of <1e-06>.
+[gazebo-4] [Msg] Parameter <cDampL2> not found: Using default value of <1e-06>.
+[gazebo-4] [Msg] Parameter <cDampR1> not found: Using default value of <1e-06>.
+[gazebo-4] [Msg] Parameter <cDampR2> not found: Using default value of <1e-06>.
+[gazebo-4] [Msg] Parameter <cPDrag1> not found: Using default value of <100>.
+[gazebo-4] [Msg] Parameter <cPDrag2> not found: Using default value of <100>.
+[gazebo-4] [Msg] Parameter <fPDrag> not found: Using default value of <0.4>.
+[gazebo-4] [Msg] Parameter <cSDrag1> not found: Using default value of <100>.
+[gazebo-4] [Msg] Parameter <cSDrag2> not found: Using default value of <100>.
+[gazebo-4] [Msg] Parameter <fSDrag> not found: Using default value of <0.4>.
+[gazebo-4] [Msg] Parameter <vRDrag> not found: Using default value of <1>.
+[gazebo-4] [Msg] Hydrodynamics: configuring
+[gazebo-4] [Msg] Parameter <damping_on> not found: Using default value of <1>.
+[gazebo-4] [Msg] Parameter <viscous_drag_on> not found: Using default value of <1>.
+[gazebo-4] [Msg] Parameter <pressure_drag_on> not found: Using default value of <1>.
+[gazebo-4] [Msg] Parameter <cDampL1> not found: Using default value of <1e-06>.
+[gazebo-4] [Msg] Parameter <cDampL2> not found: Using default value of <1e-06>.
+[gazebo-4] [Msg] Parameter <cDampR1> not found: Using default value of <1e-06>.
+[gazebo-4] [Msg] Parameter <cDampR2> not found: Using default value of <1e-06>.
+[gazebo-4] [Msg] Parameter <cPDrag1> not found: Using default value of <100>.
+[gazebo-4] [Msg] Parameter <cPDrag2> not found: Using default value of <100>.
+[gazebo-4] [Msg] Parameter <fPDrag> not found: Using default value of <0.4>.
+[parameter_bridge-5] [INFO] [1792811028.745464687] [ocean_bridge]: Creating GZ->ROS Bridge: [/world/ocean/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792811028.747125504] [ocean_bridge]: Creating GZ->ROS Bridge: [/station/pose (gz.msgs.Pose) -> /station/pose (geometry_msgs/msg/PoseStamped)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792811028.749168204] [ocean_bridge]: Creating GZ->ROS Bridge: [/drone/pose (gz.msgs.Pose) -> /drone/pose (geometry_msgs/msg/PoseStamped)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792811028.750101187] [ocean_bridge]: Creating GZ->ROS Bridge: [/drone/camera/image_raw (gz.msgs.Image) -> /drone/camera/image_raw (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792811028.751963945] [ocean_bridge]: Creating GZ->ROS Bridge: [/drone/camera/camera_info (gz.msgs.CameraInfo) -> /drone/camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792811028.757061253] [ocean_bridge]: Creating GZ->ROS Bridge: [/world/ocean/model/landing_drone/link/base_link/sensor/landing_contact_fl/contact (gz.msgs.Contacts) -> /drone/contacts (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792811028.758839770] [ocean_bridge]: Creating GZ->ROS Bridge: [/world/ocean/model/landing_drone/link/base_link/sensor/landing_contact_fr/contact (gz.msgs.Contacts) -> /drone/contacts (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792811028.759716103] [ocean_bridge]: Creating GZ->ROS Bridge: [/world/ocean/model/landing_drone/link/base_link/sensor/landing_contact_rl/contact (gz.msgs.Contacts) -> /drone/contacts (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792811028.761085787] [ocean_bridge]: Creating GZ->ROS Bridge: [/world/ocean/model/landing_drone/link/base_link/sensor/landing_contact_rr/contact (gz.msgs.Contacts) -> /drone/contacts (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792811028.761913628] [ocean_bridge]: Creating ROS->GZ Bridge: [/drone/cmd_vel (geometry_msgs/msg/Twist) -> /drone/cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792811028.762811595] [ocean_bridge]: Creating ROS->GZ Bridge: [/drone/enable (std_msgs/msg/Bool) -> /drone/enable (gz.msgs.Boolean)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792811028.772686112] [ocean_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+[parameter_bridge-5] [INFO] [1792811028.772849278] [ocean_bridge]: Passing message from ROS std_msgs/msg/Bool to Gazebo gz.msgs.Boolean (showing msg only once per type)
+[gazebo-4] [GUI] [Wrn] [Application.cc:908] [QT] file::/WorldStats/WorldStats.qml:53:3: QML RowLayout: Binding loop detected for property "x"
+[gazebo-4] [Msg] Parameter <cSDrag1> not found: Using default value of <100>.
+[gazebo-4] [Msg] Parameter <cSDrag2> not found: Using default value of <100>.
+[gazebo-4] [Msg] Parameter <fSDrag> not found: Using default value of <0.4>.
+[gazebo-4] [Msg] Parameter <vRDrag> not found: Using default value of <1>.
+[gazebo-4] [Msg] StationMooring: [floating_station] anchored at x=0, y=0, yaw=0; heave remains free.
+[gazebo-4] [Msg] MulticopterVelocityControl subscribing to Twist messages on [drone/cmd_vel]
+[gazebo-4] [Msg] MulticopterVelocityControl subscribing to Boolean messages on [drone/enable]
+[gazebo-4] [Msg] Loaded level [default]
+[gazebo-4] [Msg] Serving world controls on [/world/ocean/control], [/world/ocean/control/state] and [/world/ocean/playback/control]
+[gazebo-4] [Msg] Serving GUI information on [/world/ocean/gui/info]
+[gazebo-4] [Msg] World [ocean] initialized with [ocean_physics] physics profile.
+[gazebo-4] [Msg] Serving world SDF generation service on [/world/ocean/generate_world_sdf]
+[gazebo-4] [Msg] Serving world names on [/gazebo/worlds]
+[gazebo-4] [Msg] Resource path add service on [/gazebo/resource_paths/add].
+[gazebo-4] [Msg] Resource path get service on [/gazebo/resource_paths/get].
+[gazebo-4] [Msg] Resource path resolve service on [/gazebo/resource_paths/resolve].
+[gazebo-4] [Msg] Resource paths published on [/gazebo/resource_paths].
+[gazebo-4] [Msg] Server control service on [/server_control].
+[gazebo-4] [Msg] Found no publishers on /stats, adding root stats topic
+[gazebo-4] [Msg] Found no publishers on /clock, adding root clock topic
+[gazebo-4] [Msg] Contact system publishing on world/ocean/model/landing_drone/link/base_link/sensor/landing_contact_fl/contact
+[gazebo-4] [Msg] Contact system publishing on world/ocean/model/landing_drone/link/base_link/sensor/landing_contact_fr/contact
+[gazebo-4] [Msg] Contact system publishing on world/ocean/model/landing_drone/link/base_link/sensor/landing_contact_rl/contact
+[gazebo-4] [Msg] Contact system publishing on world/ocean/model/landing_drone/link/base_link/sensor/landing_contact_rr/contact
+[gazebo-4] [Msg] Parameter found - setting <static> to <0>.
+[gazebo-4] [Msg] Parameter found - setting <update_rate> to <30>.
+[gazebo-4] [Msg] tile_size: 100, 100
+[gazebo-4] [Msg] cell_count: 128, 128
+[gazebo-4] [Msg] Parameter found - setting <algorithm> to <fft>.
+[gazebo-4] [Msg] Parameter <number> not found: Using default value of <1>.
+[landing_bootstrap-3] [INFO] [1792811030.049823760] [landing_bootstrap]: Controller connected; unpaused the landing scene.
+[gazebo-4] [Msg] Parameter <amplitude> not found: Using default value of <0>.
+[gazebo-4] [Msg] Parameter <period> not found: Using default value of <1>.
+[gazebo-4] [Msg] Parameter <phase> not found: Using default value of <0>.
+[gazebo-4] [Msg] Parameter <direction> not found: Using default value of <1 0>.
+[gazebo-4] [Msg] Parameter <scale> not found: Using default value of <2>.
+[gazebo-4] [Msg] Parameter <angle> not found: Using default value of <0.628319>.
+[gazebo-4] [Msg] Parameter found - setting <steepness> to <1>.
+[gazebo-4] [Msg] Parameter <wind_velocity> not found: Using default value of <5 0>.
+[gazebo-4] [Msg] Overriding 'wind_velocity' using 'wind_speed' and 'wind_angle_deg'
+[gazebo-4] [Msg] Parameter found - setting <wind_speed> to <5>.
+[gazebo-4] [Msg] Parameter found - setting <wind_angle_deg> to <135>.
+[gazebo-4] [Msg] Constructing Wavefield...
+[gazebo-4] [Msg] Creating WaveParameters.
+[gazebo-4] [Msg] Creating OceanTile.
+[gazebo-4] [Msg] OceanTile: create tile
+[gazebo-4] [Msg] Resolution:    128, 128
+[gazebo-4] [Msg] NumFaces:      32768
+[gazebo-4] [Msg] TileSize:      256, 256
+[gazebo-4] [Msg] Spacing:       2, 2
+[gazebo-4] [Msg] OceanTile: calculating vertices
+[gazebo-4] [Msg] OceanTile: calculating indices
+[gazebo-4] [Msg] OceanTile: assigning texture coords
+[gazebo-4] [Msg] Creating triangulated grid.
+[gazebo-4] [Msg] Done constructing Wavefield.
+[gazebo-4] [Msg] Creating OceanTile.
+[gazebo-4] [Msg] OceanTile: create tile
+[gazebo-4] [Msg] Resolution:    128, 128
+[gazebo-4] [Msg] NumFaces:      32768
+[gazebo-4] [Msg] TileSize:      100, 100
+[gazebo-4] [Msg] Spacing:       0.78125, 0.78125
+[gazebo-4] [Msg] OceanTile: calculating vertices
+[gazebo-4] [Msg] OceanTile: calculating indices
+[gazebo-4] [Msg] OceanTile: assigning texture coords
+[gazebo-4] [Msg] Creating triangulated grid.
+[gazebo-4] [Msg] WavesModel: created wavefield in entity [68]
+[gazebo-4] [Msg] WavesModel: found wavefield with params
+[gazebo-4] [Msg] number:     1
+[gazebo-4] [Msg] scale:      2
+[gazebo-4] [Msg] angle:      0.628319
+[gazebo-4] [Msg] period:     1
+[gazebo-4] [Msg] amplitude:  0, 
+[gazebo-4] [Msg] wavenumber: 4.0243, 
+[gazebo-4] [Msg] omega:      6.28319, 
+[gazebo-4] [Msg] phase:      0, 
+[gazebo-4] [Msg] steepness:  0, 
+[gazebo-4] [Msg] direction:  1 0
+[gazebo-4] [Msg] Hydrodynamics: initialise physics
+[gazebo-4] [Msg] Hydrodynamics: checking collision meshes for link [duck::base_link]
+[gazebo-4] [Msg] Hydrodynamics: including collision [duck::base_link::collision]
+[gazebo-4] [Msg] Type:       MESH
+[gazebo-4] [Msg] Uri:        /opt/asv_ws/src/asv_wave_sim/gz-waves-models/models/duck/meshes/duck_collision.stl
+[gazebo-4] [Msg] FilePath:   /opt/asv_ws/src/asv_wave_sim/gz-waves-models/models/duck/model.sdf
+[gazebo-4] [Msg] MeshFile:   /opt/asv_ws/src/asv_wave_sim/gz-waves-models/models/duck/meshes/duck_collision.stl
+[gazebo-4] [Msg] Vertex:     390
+[gazebo-4] [Msg] Hydrodynamics: links:  1, meshes: 1, collisions: 1
+[gazebo-4] [Msg] Hydrodynamics: initialising link [duck::base_link]
+[gazebo-4] [Msg] Hydrodynamics: link has [1] collision meshes
+[gazebo-4] [Msg] Hydrodynamics: link world pose: -6 5 0 0 0 0
+[gazebo-4] [Msg] Hydrodynamics: link world CoM pose: -6 5 0 0 0 0
+[gazebo-4] [Msg] Hydrodynamics: link bounding box: size: 1.68014 1.20284 1.53369 center: -5.8606 5.0471 0.873365
+[gazebo-4] [Msg] Hydrodynamics: set water patch size: 3.36028
+[gazebo-4] [Msg] Hydrodynamics: done initialise physics
+[gazebo-4] [Msg] Hydrodynamics: initialise physics
+[gazebo-4] [Msg] Hydrodynamics: checking collision meshes for link [spherical_buoy::base_link]
+[gazebo-4] [Msg] Hydrodynamics: including collision [spherical_buoy::base_link::collision]
+[gazebo-4] [Msg] Type:       SPHERE
+[gazebo-4] [Msg] Radius:     0.25
+[gazebo-4] [Msg] MeshName:   spherical_buoy.base_link.collision.sphere
+[gazebo-4] [Msg] Vertex:     81
+[gazebo-4] [Msg] Hydrodynamics: links:  1, meshes: 1, collisions: 1
+[gazebo-4] [Msg] Hydrodynamics: initialising link [spherical_buoy::base_link]
+[gazebo-4] [Msg] Hydrodynamics: link has [1] collision meshes
+[gazebo-4] [Msg] Hydrodynamics: link world pose: 6 5 0 0 0 0
+[gazebo-4] [Msg] Hydrodynamics: link world CoM pose: 6 5 0 0 0 0
+[gazebo-4] [Msg] Hydrodynamics: link bounding box: size: 0.5 0.5 0.5 center: 6 5 0
+[gazebo-4] [Msg] Hydrodynamics: set water patch size: 2
+[gazebo-4] [Msg] Hydrodynamics: done initialise physics
+[gazebo-4] [Msg] Hydrodynamics: initialise physics
+[gazebo-4] [Msg] Hydrodynamics: checking collision meshes for link [floating_station::base_link]
+[gazebo-4] [Msg] Hydrodynamics: including collision [floating_station::base_link::hull_collision]
+[gazebo-4] [Wrn] [Component.hh:144] Trying to serialize component with data type [St8weak_ptrIKN2gz5waves9WavefieldEE], which doesn't have `operator<<`. Component will not be serialized.
+[gazebo-4] [Wrn] [Component.hh:127] Trying to serialize component with data type [St10shared_ptrIN3sdf3v147ElementEE], which doesn't have `operator<<`. Component will not be serialized.
+[gazebo-4] [GUI] [Wrn] [EntityComponentManager.cc:1984] Component type [4916660844221477451] has not been registered in this process, so it can't be deserialized.
+[gazebo-4] [Msg][Msg] Gazebo Sim GUI    v8.15.0
+[gazebo-4] [Msg] Copied installed config [/usr/share/gz/gz-sim8/gui/gui.config] to default config [/root/.gz/sim/8/gui.config].
+[gazebo-4] [GUI] [Msg] Added plugin [3D View] to main window
+[gazebo-4] [GUI] [Msg] Loaded plugin [MinimalScene] from path [/usr/lib/x86_64-linux-gnu/gz-gui-8/plugins/libMinimalScene.so]
+[gazebo-4] [GUI] [Msg] Added plugin [Scene Manager] to main window
+[gazebo-4] [GUI] [Msg] Loaded plugin [GzSceneManager] from path [/usr/lib/x86_64-linux-gnu/gz-sim-8/plugins/gui/libGzSceneManager.so]
+[gazebo-4] [GUI] [Msg] Camera view controller topic advertised on [/gui/camera/view_control]
+[gazebo-4] [GUI] [Msg] Camera reference visual topic advertised on [/gui/camera/view_control/reference_visual]
+[gazebo-4] [GUI] [Msg] Camera view control sensitivity advertised on [/gui/camera/view_control/sensitivity]
+[gazebo-4] [GUI] [Msg] Added plugin [Interactive view control] to main window
+[gazebo-4] [GUI] [Msg] Loaded plugin [InteractiveViewControl] from path [/usr/lib/x86_64-linux-gnu/gz-gui-8/plugins/libInteractiveViewControl.so]
+[gazebo-4] [GUI] [Msg] Added plugin [Camera tracking] to main window
+[gazebo-4] [GUI] [Msg] Loaded plugin [CameraTracking] from path [/usr/lib/x86_64-linux-gnu/gz-gui-8/plugins/libCameraTracking.so]
+[gazebo-4] [GUI] [Msg] Using world control service [/world/ocean/control]
+[gazebo-4] [GUI] [Msg] Listening to stats on [/world/ocean/stats]
+[gazebo-4] [GUI] [Msg] Added plugin [World control] to main window
+[gazebo-4] [GUI] [Msg] Loaded plugin [WorldControl] from path [/usr/lib/x86_64-linux-gnu/gz-gui-8/plugins/libWorldControl.so]
+[gazebo-4] [GUI] [Msg] Listening to stats on [/world/ocean/stats]
+[gazebo-4] [GUI] [Msg] Added plugin [World stats] to main window
+[gazebo-4] [GUI] [Msg] Loaded plugin [WorldStats] from path [/usr/lib/x86_64-linux-gnu/gz-gui-8/plugins/libWorldStats.so]
+[gazebo-4] [GUI] [Msg] Loading plugin [gz-rendering-ogre2]
+[gazebo-4] [GUI] [Msg] Move to service on [/gui/move_to]
+[gazebo-4] [GUI] [Msg] Follow service on [/gui/follow] (deprecated)
+[gazebo-4] [GUI] [Msg] Tracking topic on [/gui/track]
+[gazebo-4] [GUI] [Msg] Tracking status topic on [/gui/currently_tracked]
+[gazebo-4] [GUI] [Msg] Move to pose service on [/gui/move_to/pose]
+[gazebo-4] [GUI] [Msg] Camera pose topic advertised on [/gui/camera/pose]
+[gazebo-4] [GUI] [Msg] Follow offset service on [/gui/follow/offset] (deprecated)
+[gazebo-4] Warning [Utils.cc:132] [/sdf/plugin[@name="gz::sim::systems::WavesVisual"]:<data-string>:L1]: XML Element[plugin], child of element[sdf], not defined in SDF. Copying[plugin] as children of [sdf].
+[gazebo-4] Warning [Utils.cc:132] [/sdf/model[@name="landing_drone"]/link[@name="base_link"]/sensor[@name="downward_camera"]/gz_frame_id:<data-string>:L108]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gazebo-4] [GUI] [Wrn] [Component.hh:172] Trying to deserialize component with data type [St10shared_ptrIN3sdf3v147ElementEE], which doesn't have `operator>>`. Component will not be deserialized.
+[gazebo-4] [GUI] [Msg] WavesVisual: constructing
+[gazebo-4] [GUI] [Msg] WavesVisual: configuring
+[gazebo-4] [GUI] [Msg] Parameter found - setting <static> to <0>.
+[gazebo-4] [GUI] [Msg] Parameter found - setting <tiles_x> to <-1 1>.
+[gazebo-4] [GUI] [Msg] Parameter found - setting <tiles_y> to <-1 1>.
+[gazebo-4] [GUI] [Msg] Parameter found - setting <mesh_deformation_method> to <DYNAMIC_TEXTURE>.
+[gazebo-4] [GUI] [Msg] tile_size: 100, 100
+[gazebo-4] [GUI] [Msg] cell_count: 128, 128
+[gazebo-4] [GUI] [Msg] Parameter found - setting <algorithm> to <fft>.
+[gazebo-4] [GUI] [Msg] Parameter <number> not found: Using default value of <1>.
+[gazebo-4] [GUI] [Msg] Parameter <amplitude> not found: Using default value of <0>.
+[gazebo-4] [GUI] [Msg] Parameter <period> not found: Using default value of <1>.
+[gazebo-4] [GUI] [Msg] Parameter <phase> not found: Using default value of <0>.
+[gazebo-4] [GUI] [Msg] Parameter <direction> not found: Using default value of <1 0>.
+[gazebo-4] [GUI] [Msg] Parameter <scale> not found: Using default value of <2>.
+[gazebo-4] [GUI] [Msg] Parameter <angle> not found: Using default value of <0.628319>.
+[gazebo-4] [GUI] [Msg] Parameter found - setting <steepness> to <1>.
+[gazebo-4] [GUI] [Msg] Parameter <wind_velocity> not found: Using default value of <5 0>.
+[gazebo-4] [GUI] [Msg] Overriding 'wind_velocity' using 'wind_speed' and 'wind_angle_deg'
+[gazebo-4] [GUI] [Msg] Parameter found - setting <wind_speed> to <5>.
+[gazebo-4] [GUI] [Msg] Parameter found - setting <wind_angle_deg> to <135>.
+[gazebo-4] [GUI] [Msg] WavesVisual: subscribing to [/world/ocean/waves]
+[gazebo-4] [GUI] [Msg] WavesVisual: constructing
+[gazebo-4] [GUI] [Msg] WavesVisual: skipping duplicate visual plugin for entity [6]
+[gazebo-4] [GUI] [Msg] WavesVisual: retrieving scene from render engine
+[gazebo-4] [GUI] [Msg] Loading plugin [gz-waves1-rendering-ogre2]
+[gazebo-4] [GUI] [Msg] WavesVisual: searching for visual
+[gazebo-4] [GUI] [Msg] WavesVisual: creating material `OceanBlue`
+[gazebo-4] [GUI] [Msg] WavesVisual: creating dynamic texture ocean visual
+[gazebo-4] [Wrn] [Ogre2Camera.cc:423] Ogre2Camera::SetVisibilityMask: Mask bits c0000000 are set but will be ignored as they conflict with the reserved bits used internally by the ogre2 backend.
+[gazebo-4] [GUI] [Msg] Shader param [bumpMap], type: texture, tex coord set:  Type:       BOX
+[gazebo-4] [Msg] Size:       3 3 0.7
+[gazebo-4] [Msg] MeshName:   floating_station.base_link.hull_collision.box
+[gazebo-4] [Msg] Vertex:     24
+[gazebo-4] [Msg] Hydrodynamics: links:  1, meshes: 1, collisions: 1
+[gazebo-4] [Msg] Hydrodynamics: initialising link [floating_station::base_link]
+[gazebo-4] [Msg] Hydrodynamics: link has [1] collision meshes
+[gazebo-4] [Msg] Hydrodynamics: link world pose: 0 0 0.15 0 0 0
+[gazebo-4] [Msg] Hydrodynamics: link world CoM pose: 0 0 0.15 0 0 0
+[gazebo-4] [Msg] Hydrodynamics: link bounding box: size: 3 3 0.7 center: 0 0 0.15
+[gazebo-4] [Msg] Hydrodynamics: set water patch size: 6
+[gazebo-4] [Msg] Hydrodynamics: done initialise physics
+[gazebo-4] [Msg] Loading plugin [gz-rendering-ogre2]
+[gazebo-4] [Msg] Serving scene information on [/world/ocean/scene/info]
+[gazebo-4] [Msg] Serving graph information on [/world/ocean/scene/graph]
+[gazebo-4] [Msg] Serving full state on [/world/ocean/state]
+[gazebo-4] [Msg] Serving full state (async) on [/world/ocean/state_async]
+[gazebo-4] [Msg] Publishing scene information on [/world/ocean/scene/info]
+[gazebo-4] [Msg] Publishing entity deletions on [/world/ocean/scene/deletion]
+[gazebo-4] [Msg] Publishing state changes on [/world/ocean/state]
+[gazebo-4] [Msg] Publishing pose messages on [/world/ocean/pose/info]
+[gazebo-4] [Msg] Publishing dynamic pose messages on [/world/ocean/dynamic_pose/info]
+[gazebo-4] [Msg] WavesVisual: retrieving scene from render engine
+[gazebo-4] [Msg] Loading plugin [gz-waves1-rendering-ogre2]
+[gazebo-4] [Msg] WavesVisual: searching for visual
+[gazebo-4] [Msg] WavesVisual: creating material `OceanBlue`
+[gazebo-4] [Msg] WavesVisual: creating dynamic texture ocean visual
+[gazebo-4] [Msg] Shader param [bumpMap], type: texture, tex coord set: 0
+[gazebo-4] [Msg] Shader param [cubeMap], type: texture_cube, tex coord set: 1
+[gazebo-4] [Msg] WavesVisualPrivate::InitTextures
+[gazebo-4] [Msg] Ogre2DisplacementMap::InitTextures
+[gazebo-4] [Msg] Create HeightMap image
+[gazebo-4] [Msg] Create NormalMap image
+[gazebo-4] [Msg] Create TangentMap image
+[gazebo-4] [Msg] Initialising images
+[gazebo-4] [Msg] Create HeightMap texture
+[gazebo-4] [Msg] Create NormalMap texture
+[gazebo-4] [Msg] Create TangentMap texture
+[gazebo-4] [Msg] Assign dynamic textures to material
+[vision_landing-1] [INFO] [1792811030.761803432] [vision_landing]: Landing: waiting_for_camera -> aligning
+[vision_landing-1] [INFO] [1792811043.812998301] [vision_landing]: Landing: aligning -> descending
+[vision_landing-1] [INFO] [1792811044.134272544] [vision_landing]: Landing: descending -> aligning
+[vision_landing-1] [INFO] [1792811045.154823832] [vision_landing]: Landing: aligning -> descending
+[vision_landing-1] [INFO] [1792811046.158614328] [vision_landing]: Landing: descending -> aligning
+[vision_landing-1] [INFO] [1792811051.065597443] [vision_landing]: Landing: aligning -> descending
+[vision_landing-1] [INFO] [1792811052.184022512] [vision_landing]: Landing: descending -> aligning
+[vision_landing-1] [INFO] [1792811058.138061505] [vision_landing]: Landing: aligning -> descending
+[vision_landing-1] [INFO] [1792811061.790315805] [vision_landing]: Landing: descending -> flaring
+[vision_landing-1] [INFO] [1792811062.162890472] [vision_landing]: Landing: flaring -> touchdown
+[vision_landing-1] [INFO] [1792811062.205353771] [vision_landing]: Landing: touchdown -> aligning
+[vision_landing-1] [INFO] [1792811062.749570968] [vision_landing]: Landing: aligning -> landed
+[gazebo-4] [Msg] texNameStr:   HeightMapTex(6)
+[gazebo-4] [Msg] texCoordSet:  0
+[gazebo-4] [Msg] texIndex:     0
+[gazebo-4] [Msg] texNameStr:   NormalMapTex(6)
+[gazebo-4] [Msg] texCoordSet:  0
+[gazebo-4] [Msg] texIndex:     1
+[gazebo-4] [Msg] texNameStr:   TangentMapTex(6)
+[gazebo-4] [Msg] texCoordSet:  0
+[gazebo-4] [Msg] texIndex:     2
+[gazebo-4] NodeShared::Publish() Error: Interrupted system call
+[gazebo-4] NodeShared::Publish() Error: Interrupted system call

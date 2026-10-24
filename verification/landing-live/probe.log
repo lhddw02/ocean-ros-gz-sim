@@ -1,0 +1,14 @@
+Landing state: disabled_hover
+Landing state: aligning
+Landing verification: frames=188, tag poses=141, foot contacts=0, state=aligning; pending=physical_foot_station_contact, controller_landed, motors_disabled, status_reports_station_contact, ground_truth_landing_height_0_80m
+Landing state: descending
+Landing state: aligning
+Landing state: descending
+Landing state: aligning
+Landing state: descending
+Landing state: flaring
+Landing verification: frames=360, tag poses=257, foot contacts=0, state=flaring; pending=physical_foot_station_contact, controller_landed, motors_disabled, status_reports_station_contact, ground_truth_landing_height_0_80m
+Landing state: touchdown
+Landing state: landed
+PASS: rendered AprilTag detected; real feet/station contact; centered landing with motors off
+Evidence directory: /tmp/landing-side

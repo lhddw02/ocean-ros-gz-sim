@@ -1,0 +1,111 @@
+--- a/gz-waves/src/systems/waves/WavesVisual.cc
++++ b/gz-waves/src/systems/waves/WavesVisual.cc
+@@ -42,6 +42,7 @@
+ 
+ #include <algorithm>
+ #include <chrono>
++#include <functional>
+ #include <list>
+ #include <map>
+ #include <memory>
+@@ -95,6 +96,26 @@
+ inline namespace GZ_SIM_VERSION_NAMESPACE {
+ namespace systems
+ {
++namespace
++{
++// Gazebo may dispatch the same visual plugin twice (gz-sim issue #1647).
++using WavesVisualOwnerKey =
++    std::pair<const EntityComponentManager *, Entity>;
++
++struct WavesVisualOwnerKeyLess
++{
++  bool operator()(const WavesVisualOwnerKey &_a,
++      const WavesVisualOwnerKey &_b) const
++  {
++    return _a.first == _b.first ? _a.second < _b.second :
++        std::less<const EntityComponentManager *>{}(_a.first, _b.first);
++  }
++};
++
++std::mutex wavesVisualOwnersMutex;
++std::map<WavesVisualOwnerKey, const WavesVisualPrivate *,
++    WavesVisualOwnerKeyLess> wavesVisualOwners;
++}  // namespace
+ 
+ class WavesVisualPrivate
+ {
+@@ -182,6 +203,12 @@
+ 
+   /// \brief Entity id of the visual
+   public: Entity entity{kNullEntity};
++
++  /// \brief Registry scope; never dereferenced during cleanup.
++  public: const EntityComponentManager *ownerEcm{nullptr};
++
++  /// \brief Only the claiming instance may release its registration.
++  public: bool ownsRegistration{false};
+ 
+   /// \brief Pointer to scene
+   public: rendering::ScenePtr scene;
+@@ -305,14 +332,31 @@
+ {
+   GZ_PROFILE("WavesVisual::Configure");
+ 
++  // Claim this visual before subscribing or allocating render resources.
++  // Scope by ECM as entity IDs can be reused by independent worlds.
++  {
++    std::lock_guard<std::mutex> lock(wavesVisualOwnersMutex);
++    const auto key = std::make_pair(
++        static_cast<const EntityComponentManager *>(&_ecm), _entity);
++    const auto result = wavesVisualOwners.emplace(key, this->dataPtr.get());
++    if (!result.second)
++    {
++      gzmsg << "WavesVisual: skipping duplicate visual plugin for entity ["
++            << _entity << "]\n";
++      return;
++    }
++    this->dataPtr->ownerEcm = &_ecm;
++    this->dataPtr->entity = _entity;
++    this->dataPtr->ownsRegistration = true;
++  }
++
+   gzmsg << "WavesVisual: configuring\n";
+ 
+   // Ugly, but needed because the sdf::Element::GetElement is not a const
+   // function and _sdf is a const shared pointer to a const sdf::Element.
+   auto sdf = const_cast<sdf::Element *>(_sdf.get());
+ 
+-  // Capture entity
+-  this->dataPtr->entity = _entity;
++  // Capture visual name
+   auto nameComp = _ecm.Component<components::Name>(_entity);
+   this->dataPtr->visualName = nameComp->Data();
+ 
+@@ -507,6 +551,8 @@
+ //////////////////////////////////////////////////
+ WavesVisualPrivate::~WavesVisualPrivate()
+ {
++  this->connection.reset();
++
+   // Remove visuals
+   for (auto& vis : this->oceanVisuals2)
+   {
+@@ -515,6 +561,17 @@
+       vis->Destroy();
+       vis.reset();
+     }
++  }
++
++  if (this->ownsRegistration)
++  {
++    std::lock_guard<std::mutex> lock(wavesVisualOwnersMutex);
++    const auto key = std::make_pair(this->ownerEcm, this->entity);
++    const auto it = wavesVisualOwners.find(key);
++    if (it != wavesVisualOwners.end() && it->second == this)
++      wavesVisualOwners.erase(it);
++    this->ownsRegistration = false;
++    this->ownerEcm = nullptr;
+   }
+ };
+ 

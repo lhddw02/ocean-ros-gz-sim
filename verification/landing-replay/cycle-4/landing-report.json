@@ -1,0 +1,147 @@
+{
+  "passed": true,
+  "error": null,
+  "ground_truth_used_for": "verification only; no flight commands are published by this probe",
+  "wall_elapsed_s": 21.096,
+  "simulation_elapsed_s": 18.53,
+  "settled_simulation_seconds": 2.0100000000000016,
+  "criteria": {
+    "camera_frames_received": true,
+    "valid_camera_calibration": true,
+    "actual_tag_pose_messages": true,
+    "controller_tag_detections": true,
+    "independently_detected_tag_in_raw_images": true,
+    "physical_foot_station_contact": true,
+    "controller_landed": true,
+    "motors_disabled": true,
+    "status_reports_station_contact": true,
+    "fresh_controller_status": true,
+    "fresh_ground_truth_poses": true,
+    "ground_truth_center_within_0_35m": true,
+    "all_feet_inside_deck_margin": true,
+    "ground_truth_landing_height_0_80m": true,
+    "station_horizontal_drift_below_0_35m": true,
+    "station_wave_heave_above_0_01m": true
+  },
+  "missing_criteria": [],
+  "camera_frames": 368,
+  "camera_info_messages": 370,
+  "camera_calibration": {
+    "width": 960,
+    "height": 720,
+    "k": [
+      380.9045219421387,
+      0.0,
+      480.0,
+      0.0,
+      380.9045362472534,
+      360.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "tag_pose_messages": 233,
+  "independent_tag_detection_frames": 35,
+  "contact_messages": 980,
+  "physical_foot_station_contact_messages": 980,
+  "first_contact_sim_time": 15.65,
+  "first_motor_off_sim_time": 16.52,
+  "station_max_horizontal_drift_m": 0.10999025053441303,
+  "station_heave_range_m": 0.9087008114577491,
+  "final_drone_in_station_frame_m": [
+    -0.21060616703849733,
+    0.1286910682583542,
+    0.799985563381922
+  ],
+  "final_status": {
+    "state": "landed",
+    "tag_family": "tag36h11",
+    "tag_id": 0,
+    "tag_size_m": 0.4,
+    "detections": 233,
+    "target_fresh": false,
+    "lateral_error_m": 0.06357372442595902,
+    "image_age_s": 0.022500000000000853,
+    "tag_age_s": 1.822499999999998,
+    "camera_height_m": 0.37189677818174227,
+    "reprojection_error_px": 0.030585800746106073,
+    "processing_ms": 226.9099200002529,
+    "processing_ms_ema": 158.86838133503088,
+    "image_arrival_age_s": 0.022500000000000853,
+    "image_callbacks": 237,
+    "fallback_calls": 4,
+    "foot_station_contact": true,
+    "motors_enabled": false,
+    "sim_time": 18.1725,
+    "replay_count": 4,
+    "replay_phase": null,
+    "replay_error": null
+  },
+  "state_transitions": [
+    {
+      "state": "replay_arming",
+      "sim_time": 0.0,
+      "wall_elapsed_s": 0.041
+    },
+    {
+      "state": "waiting_for_camera",
+      "sim_time": 0.045000000000000005,
+      "wall_elapsed_s": 0.262
+    },
+    {
+      "state": "aligning",
+      "sim_time": 0.29750000000000004,
+      "wall_elapsed_s": 0.6
+    },
+    {
+      "state": "descending",
+      "sim_time": 5.715,
+      "wall_elapsed_s": 6.662
+    },
+    {
+      "state": "aligning",
+      "sim_time": 9.115,
+      "wall_elapsed_s": 10.353
+    },
+    {
+      "state": "descending",
+      "sim_time": 12.76,
+      "wall_elapsed_s": 14.342
+    },
+    {
+      "state": "flaring",
+      "sim_time": 13.3625,
+      "wall_elapsed_s": 14.996
+    },
+    {
+      "state": "descending",
+      "sim_time": 14.7625,
+      "wall_elapsed_s": 16.524
+    },
+    {
+      "state": "flaring",
+      "sim_time": 15.37,
+      "wall_elapsed_s": 17.199
+    },
+    {
+      "state": "aligning",
+      "sim_time": 15.9825,
+      "wall_elapsed_s": 17.896
+    },
+    {
+      "state": "landed",
+      "sim_time": 16.52,
+      "wall_elapsed_s": 18.543
+    }
+  ],
+  "image_decode_errors": [],
+  "malformed_status_messages": 0
+}

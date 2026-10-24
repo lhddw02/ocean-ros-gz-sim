@@ -1,0 +1,7 @@
+PID                 COMMAND             COMMAND
+21270               docker-init         /sbin/docker-init -- /opt/ocean/container/entrypoint.sh ros2 launch ocean_sim ocean.launch.py
+21312               ros2                /usr/bin/python3 /opt/ros/humble/bin/ros2 launch ocean_sim ocean.launch.py
+21356               ruby                gz sim -r -v 3 --render-engine ogre2 /opt/ocean_ws/install/share/ocean_sim/worlds/ocean.sdf
+21358               parameter_bridg     /opt/ros/humble/lib/ros_gz_bridge/parameter_bridge --ros-args -r __node:=ocean_bridge --params-file /tmp/launch_params_bp6crz4e
+21376               ruby                gz sim server
+21377               ruby                gz sim gui

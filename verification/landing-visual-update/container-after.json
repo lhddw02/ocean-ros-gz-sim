@@ -1,0 +1,345 @@
+[
+    {
+        "Id": "c0f69c8f6679413679cec2426d8c23dd985e3bb61cf1648ce6f2afd07ab8ea82",
+        "Created": "2026-10-24T04:45:49.046739216Z",
+        "Path": "/opt/ocean/container/entrypoint.sh",
+        "Args": [
+            "ros2",
+            "launch",
+            "ocean_sim",
+            "landing.launch.py",
+            "tag_id:=config",
+            "tag_family:=config",
+            "tag_size:=config",
+            "autoland:=false"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 25593,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-24T04:46:30.111067827Z",
+            "FinishedAt": "2026-10-24T04:46:10.006566975Z"
+        },
+        "Image": "sha256:f6fba3507eb98770cb412714b6ba367229b88019c45836c26192872019f35d60",
+        "ResolvConfPath": "/var/lib/docker/containers/c0f69c8f6679413679cec2426d8c23dd985e3bb61cf1648ce6f2afd07ab8ea82/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/c0f69c8f6679413679cec2426d8c23dd985e3bb61cf1648ce6f2afd07ab8ea82/hostname",
+        "HostsPath": "/var/lib/docker/containers/c0f69c8f6679413679cec2426d8c23dd985e3bb61cf1648ce6f2afd07ab8ea82/hosts",
+        "LogPath": "",
+        "Name": "/ocean-sim",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "local",
+                "Config": {}
+            },
+            "NetworkMode": "ocean-ros-humble_default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 1073741824,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [
+                {
+                    "PathOnHost": "/dev/dxg",
+                    "PathInContainer": "/dev/dxg",
+                    "CgroupPermissions": "rwm"
+                }
+            ],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": [
+                {
+                    "Driver": "nvidia",
+                    "Count": -1,
+                    "DeviceIDs": null,
+                    "Capabilities": [
+                        [
+                            "gpu"
+                        ]
+                    ],
+                    "Options": null
+                }
+            ],
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+                {
+                    "Type": "bind",
+                    "Source": "/mnt/c/Users/aston/Documents/Codex/2026-10-11/i-x20/outputs/ocean-ros-humble/workspace",
+                    "Target": "/workspace",
+                    "BindOptions": {}
+                },
+                {
+                    "Type": "bind",
+                    "Source": "/mnt/c/Users/aston/Documents/Codex/2026-10-11/i-x20/outputs/ocean-ros-humble/recordings",
+                    "Target": "/recordings",
+                    "BindOptions": {}
+                },
+                {
+                    "Type": "bind",
+                    "Source": "/tmp/.X11-unix",
+                    "Target": "/tmp/.X11-unix",
+                    "ReadOnly": true,
+                    "BindOptions": {}
+                },
+                {
+                    "Type": "bind",
+                    "Source": "/mnt/wslg",
+                    "Target": "/mnt/wslg",
+                    "ReadOnly": true,
+                    "BindOptions": {}
+                },
+                {
+                    "Type": "bind",
+                    "Source": "/usr/lib/wsl",
+                    "Target": "/usr/lib/wsl",
+                    "ReadOnly": true,
+                    "BindOptions": {}
+                }
+            ],
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ],
+            "Init": true
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/mnt/c/Users/aston/Documents/Codex/2026-10-11/i-x20/outputs/ocean-ros-humble/recordings",
+                "Destination": "/recordings",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/mnt/c/Users/aston/Documents/Codex/2026-10-11/i-x20/outputs/ocean-ros-humble/workspace",
+                "Destination": "/workspace",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/mnt/wslg",
+                "Destination": "/mnt/wslg",
+                "Mode": "",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/tmp/.X11-unix",
+                "Destination": "/tmp/.X11-unix",
+                "Mode": "",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/usr/lib/wsl",
+                "Destination": "/usr/lib/wsl",
+                "Mode": "",
+                "RW": false,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "c0f69c8f6679",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": true,
+            "OpenStdin": true,
+            "StdinOnce": false,
+            "Env": [
+                "NVIDIA_DRIVER_CAPABILITIES=compute,utility",
+                "GPU_EXPECT=3060",
+                "NVIDIA_VISIBLE_DEVICES=all",
+                "TAG_FAMILY=",
+                "PULSE_SERVER=unix:/mnt/wslg/PulseServer",
+                "MESA_D3D12_DEFAULT_ADAPTER_NAME=NVIDIA",
+                "WAYLAND_DISPLAY=wayland-0",
+                "ROS_DOMAIN_ID=30",
+                "QT_X11_NO_MITSHM=1",
+                "XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir",
+                "DISPLAY=:0",
+                "TAG_ID=",
+                "QT_QPA_PLATFORM=xcb",
+                "TAG_SIZE=",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "LC_ALL=C.UTF-8",
+                "ROS_DISTRO=humble",
+                "GZ_VERSION=harmonic",
+                "GZ_PARTITION=ocean-sim",
+                "RMW_IMPLEMENTATION=rmw_cyclonedds_cpp"
+            ],
+            "Cmd": [
+                "ros2",
+                "launch",
+                "ocean_sim",
+                "landing.launch.py",
+                "tag_id:=config",
+                "tag_family:=config",
+                "tag_size:=config",
+                "autoland:=false"
+            ],
+            "Image": "ros-humble-ocean:harmonic",
+            "Volumes": null,
+            "WorkingDir": "/opt/ocean",
+            "Entrypoint": [
+                "/opt/ocean/container/entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "f6cb299afcc73c82658fe21238b3c3e93ce7c290a0435f0b52f87bbfdb3163ab",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:3f30cfae651ac0e27a2ce8138c7ec4d78f60c9a3d2235a80c8ae713530918460",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "ocean-ros-humble",
+                "com.docker.compose.project.config_files": "/mnt/c/Users/aston/Documents/Codex/2026-10-11/i-x20/outputs/ocean-ros-humble/compose.wsl.yaml,/mnt/c/Users/aston/Documents/Codex/2026-10-11/i-x20/outputs/ocean-ros-humble/compose.landing.yaml",
+                "com.docker.compose.project.working_dir": "/mnt/c/Users/aston/Documents/Codex/2026-10-11/i-x20/outputs/ocean-ros-humble",
+                "com.docker.compose.replace": "ocean-sim",
+                "com.docker.compose.service": "ocean",
+                "com.docker.compose.version": "5.6.1",
+                "desktop.docker.io/wsl-distro": "Ubuntu-22.04",
+                "org.opencontainers.image.version": "22.04"
+            },
+            "StopTimeout": 20
+        },
+        "NetworkSettings": {
+            "SandboxID": "1084acb21d95214fb7c2c85263ac403b86134af13de9fb13bae32b75a321aa0d",
+            "SandboxKey": "/var/run/docker/netns/1084acb21d95",
+            "Ports": {},
+            "Networks": {
+                "ocean-ros-humble_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "ocean-sim",
+                        "ocean"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "408a611a49f8c7a451c4ac8a2178e6975f6c33b627792438752fb64864420d8e",
+                    "EndpointID": "463bff1df53cc4ce0f15f4ec9506e6fe9ac604dfcb4b80de6780af7fb4d7c1da",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.2",
+                    "MacAddress": "5a:be:7e:21:91:4d",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "ocean-sim",
+                        "ocean",
+                        "c0f69c8f6679"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:3f30cfae651ac0e27a2ce8138c7ec4d78f60c9a3d2235a80c8ae713530918460",
+            "size": 4864,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]

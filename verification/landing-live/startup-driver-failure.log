@@ -1,0 +1,362 @@
+name of display: :0
+display: :0  screen: 0
+direct rendering: Yes
+Extended renderer info (GLX_MESA_query_renderer):
+    Vendor: Microsoft Corporation (0xffffffff)
+    Device: D3D12 (NVIDIA GeForce RTX 3060) (0xffffffff)
+    Version: 23.2.1
+    Accelerated: yes
+    Video memory: 20235MB
+    Unified memory: no
+    Preferred profile: core (0x1)
+    Max core profile version: 4.2
+    Max compat profile version: 4.2
+    Max GLES1 profile version: 1.1
+    Max GLES[23] profile version: 3.1
+OpenGL vendor string: Microsoft Corporation
+OpenGL renderer string: D3D12 (NVIDIA GeForce RTX 3060)
+OpenGL core profile version string: 4.2 (Core Profile) Mesa 23.2.1-1ubuntu3.1~22.04.4
+OpenGL core profile shading language version string: 4.20
+OpenGL core profile context flags: (none)
+OpenGL core profile profile mask: core profile
+
+OpenGL version string: 4.2 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1~22.04.4
+OpenGL shading language version string: 4.20
+OpenGL context flags: (none)
+OpenGL profile mask: compatibility profile
+
+OpenGL ES profile version string: OpenGL ES 3.1 Mesa 23.2.1-1ubuntu3.1~22.04.4
+OpenGL ES profile shading language version string: OpenGL ES GLSL ES 3.10
+
+GPU check passed: D3D12 (NVIDIA GeForce RTX 3060); OpenGL 4.2.
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-10-24-03-26-41-950932-5b2d36ed3084-7
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: Landing assets: /tmp/ocean-landing-fxza00_6; tag tag36h11 ID 0
+[INFO] [vision_landing-1]: process started with pid [58]
+[INFO] [parameter_bridge-2]: process started with pid [60]
+[INFO] [landing_bootstrap-3]: process started with pid [62]
+[INFO] [gazebo-4]: process started with pid [64]
+[INFO] [parameter_bridge-5]: process started with pid [66]
+[gazebo-4] QStandardPaths: runtime directory '/mnt/wslg/runtime-dir' is not owned by UID 0, but a directory permissions 0777 owned by UID 1000 GID 1000
+[vision_landing-1] [INFO] [1792812403.253448346] [vision_landing]: Watching tag36h11 ID 0, black border 0.400 m; optical right=-body Y, down=-body X
+[vision_landing-1] [INFO] [1792812403.284560470] [vision_landing]: Landing: waiting_for_camera -> disabled_hover
+[gazebo-4] [1;32m[Msg] [0m[1;32mReceived world [[0m[1;32m/tmp/ocean-landing-fxza00_6/landing.sdf[0m[1;32m] from the GUI.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mGazebo Sim Server v[0m[1;32m8.15.0[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mLoading SDF world file[[0m[1;32m/tmp/ocean-landing-fxza00_6/landing.sdf[0m[1;32m].[0m
+[gazebo-4] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="landing_drone"]/link[@name="base_link"]/sensor[@name="downward_camera"]/gz_frame_id:/opt/ocean_ws/install/share/ocean_sim/models/landing_drone/model.sdf:L47]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gazebo-4] [1;32m[Msg] [0m[1;32mServing entity system service on [[0m[1;32m/[0m[1;32mentity/system/add[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mCreate[0m[1;32m service on [[0m[1;32m/world/ocean/create_multiple[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mCreate[0m[1;32m service on [[0m[1;32m/world/ocean/create_multiple/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mRemove[0m[1;32m service on [[0m[1;32m/world/ocean/remove[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mRemove[0m[1;32m service on [[0m[1;32m/world/ocean/remove/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/ocean/set_pose[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/ocean/set_pose/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/ocean/set_pose_vector[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/ocean/set_pose_vector/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mLight configuration[0m[1;32m service on [[0m[1;32m/world/ocean/light_config[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mLight configuration[0m[1;32m service on [[0m[1;32m/world/ocean/light_config/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPhysics[0m[1;32m service on [[0m[1;32m/world/ocean/set_physics[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPhysics[0m[1;32m service on [[0m[1;32m/world/ocean/set_physics/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mSphericalCoordinates[0m[1;32m service on [[0m[1;32m/world/ocean/set_spherical_coordinates[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mSphericalCoordinates[0m[1;32m service on [[0m[1;32m/world/ocean/set_spherical_coordinates/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mEnable collision[0m[1;32m service on [[0m[1;32m/world/ocean/enable_collision[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mEnable collision[0m[1;32m service on [[0m[1;32m/world/ocean/enable_collision/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mDisable collision[0m[1;32m service on [[0m[1;32m/world/ocean/disable_collision[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mDisable collision[0m[1;32m service on [[0m[1;32m/world/ocean/disable_collision/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/ocean/visual_config[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/ocean/visual_config/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/ocean/wheel_slip[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/ocean/wheel_slip/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mWavesModel: configuring[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mWavesVisual: constructing[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mWavesVisual: configuring[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter found - setting <[0m[1;32mstatic[0m[1;32m> to <[0m[1;32m0[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter found - setting <[0m[1;32mtiles_x[0m[1;32m> to <[0m[1;32m-1[0m[1;32m [0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter found - setting <[0m[1;32mtiles_y[0m[1;32m> to <[0m[1;32m-1[0m[1;32m [0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter found - setting <[0m[1;32mmesh_deformation_method[0m[1;32m> to <[0m[1;32mDYNAMIC_TEXTURE[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mtile_size: [0m[1;32m100[0m[1;32m, [0m[1;32m100[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mcell_count: [0m[1;32m128[0m[1;32m, [0m[1;32m128[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter found - setting <[0m[1;32malgorithm[0m[1;32m> to <[0m[1;32mfft[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mnumber[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mamplitude[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m0[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mperiod[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mphase[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m0[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mdirection[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1[0m[1;32m [0m[1;32m0[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mscale[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m2[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mangle[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m0.628319[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter found - setting <[0m[1;32msteepness[0m[1;32m> to <[0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mwind_velocity[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m5[0m[1;32m [0m[1;32m0[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mOverriding 'wind_velocity' using 'wind_speed'[0m[1;32m and 'wind_angle_deg'[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter found - setting <[0m[1;32mwind_speed[0m[1;32m> to <[0m[1;32m5[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter found - setting <[0m[1;32mwind_angle_deg[0m[1;32m> to <[0m[1;32m135[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mWavesVisual: subscribing to [[0m[1;32m/world/ocean/waves[0m[1;32m][0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: configuring[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mdamping_on[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mviscous_drag_on[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mpressure_drag_on[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcDampL1[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1e-06[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcDampL2[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1e-06[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcDampR1[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1e-06[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcDampR2[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1e-06[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcPDrag1[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m100[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcPDrag2[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m100[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mfPDrag[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m0.4[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcSDrag1[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m100[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcSDrag2[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m100[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mfSDrag[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m0.4[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mvRDrag[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: configuring[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mdamping_on[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mviscous_drag_on[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mpressure_drag_on[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcDampL1[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1e-06[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcDampL2[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1e-06[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcDampR1[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1e-06[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcDampR2[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1e-06[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcPDrag1[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m100[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcPDrag2[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m100[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mfPDrag[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m0.4[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcSDrag1[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m100[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcSDrag2[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m100[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mfSDrag[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m0.4[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mvRDrag[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: configuring[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mdamping_on[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mviscous_drag_on[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mpressure_drag_on[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcDampL1[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1e-06[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcDampL2[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1e-06[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcDampR1[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1e-06[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcDampR2[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1e-06[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcPDrag1[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m100[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcPDrag2[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m100[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mfPDrag[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m0.4[0m[1;32m>.[0m[1;32m[0m
+[parameter_bridge-5] [INFO] [1792812403.625436897] [ocean_bridge]: Creating GZ->ROS Bridge: [/world/ocean/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792812403.628360146] [ocean_bridge]: Creating GZ->ROS Bridge: [/station/pose (gz.msgs.Pose) -> /station/pose (geometry_msgs/msg/PoseStamped)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792812403.630158280] [ocean_bridge]: Creating GZ->ROS Bridge: [/drone/pose (gz.msgs.Pose) -> /drone/pose (geometry_msgs/msg/PoseStamped)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792812403.630799396] [ocean_bridge]: Creating GZ->ROS Bridge: [/drone/camera/image_raw (gz.msgs.Image) -> /drone/camera/image_raw (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792812403.634010663] [ocean_bridge]: Creating GZ->ROS Bridge: [/drone/camera/camera_info (gz.msgs.CameraInfo) -> /drone/camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792812403.634755271] [ocean_bridge]: Creating ROS->GZ Bridge: [/landing/debug_image (sensor_msgs/msg/Image) -> /landing/debug_image (gz.msgs.Image)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792812403.635614921] [ocean_bridge]: Creating GZ->ROS Bridge: [/world/ocean/model/landing_drone/link/base_link/sensor/landing_contact_fl/contact (gz.msgs.Contacts) -> /drone/contacts (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792812403.637232471] [ocean_bridge]: Creating GZ->ROS Bridge: [/world/ocean/model/landing_drone/link/base_link/sensor/landing_contact_fr/contact (gz.msgs.Contacts) -> /drone/contacts (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792812403.638152346] [ocean_bridge]: Creating GZ->ROS Bridge: [/world/ocean/model/landing_drone/link/base_link/sensor/landing_contact_rl/contact (gz.msgs.Contacts) -> /drone/contacts (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792812403.639123096] [ocean_bridge]: Creating GZ->ROS Bridge: [/world/ocean/model/landing_drone/link/base_link/sensor/landing_contact_rr/contact (gz.msgs.Contacts) -> /drone/contacts (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792812403.640164796] [ocean_bridge]: Creating ROS->GZ Bridge: [/drone/cmd_vel (geometry_msgs/msg/Twist) -> /drone/cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792812403.641216213] [ocean_bridge]: Creating ROS->GZ Bridge: [/drone/enable (std_msgs/msg/Bool) -> /drone/enable (gz.msgs.Boolean)] (Lazy 0)
+[parameter_bridge-5] [INFO] [1792812403.652051029] [ocean_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+[parameter_bridge-5] [INFO] [1792812403.652205029] [ocean_bridge]: Passing message from ROS std_msgs/msg/Bool to Gazebo gz.msgs.Boolean (showing msg only once per type)
+[gazebo-4] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file::/ImageDisplay/ImageDisplay.qml:91:5: QML Image: Invalid image provider: image://plugin49644imagedisplay/n1zij[0m[1;33m[0m
+[gazebo-4] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file::/WorldStats/WorldStats.qml:53:3: QML RowLayout: Binding loop detected for property "x"[0m[1;33m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcSDrag1[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m100[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mcSDrag2[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m100[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mfSDrag[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m0.4[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mvRDrag[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mStationMooring: [[0m[1;32mfloating_station[0m[1;32m] anchored at x=[0m[1;32m0[0m[1;32m, y=[0m[1;32m0[0m[1;32m, yaw=[0m[1;32m0[0m[1;32m; heave remains free.[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mMulticopterVelocityControl subscribing to Twist messages on [[0m[1;32mdrone/cmd_vel[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mMulticopterVelocityControl subscribing to Boolean messages on [[0m[1;32mdrone/enable[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mLoaded level [[0m[1;32mdefault[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mServing world controls on [[0m[1;32m/world/ocean[0m[1;32m/control], [[0m[1;32m/world/ocean[0m[1;32m/control/state] and [[0m[1;32m/world/ocean[0m[1;32m/playback/control][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mServing GUI information on [[0m[1;32m/world/ocean[0m[1;32m/[0m[1;32mgui/info[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mWorld [[0m[1;32mocean[0m[1;32m] initialized with [[0m[1;32mocean_physics[0m[1;32m] physics profile.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mServing world SDF generation service on [[0m[1;32m/world/ocean[0m[1;32m/[0m[1;32mgenerate_world_sdf[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mServing world names on [[0m[1;32m/gazebo/worlds[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mResource path add service on [[0m[1;32m/gazebo/resource_paths/add[0m[1;32m].[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mResource path get service on [[0m[1;32m/gazebo/resource_paths/get[0m[1;32m].[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mResource path resolve service on [[0m[1;32m/gazebo/resource_paths/resolve[0m[1;32m].[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mResource paths published on [[0m[1;32m/gazebo/resource_paths[0m[1;32m].[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mServer control service on [[0m[1;32m/server_control[0m[1;32m].[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mFound no publishers on /stats, adding root stats topic[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mFound no publishers on /clock, adding root clock topic[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mContact system publishing on [0m[1;32mworld/ocean/model/landing_drone/link/base_link/sensor/landing_contact_fl/contact[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mContact system publishing on [0m[1;32mworld/ocean/model/landing_drone/link/base_link/sensor/landing_contact_fr/contact[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mContact system publishing on [0m[1;32mworld/ocean/model/landing_drone/link/base_link/sensor/landing_contact_rl/contact[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mContact system publishing on [0m[1;32mworld/ocean/model/landing_drone/link/base_link/sensor/landing_contact_rr/contact[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter found - setting <[0m[1;32mstatic[0m[1;32m> to <[0m[1;32m0[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter found - setting <[0m[1;32mupdate_rate[0m[1;32m> to <[0m[1;32m30[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mtile_size: [0m[1;32m100[0m[1;32m, [0m[1;32m100[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mcell_count: [0m[1;32m128[0m[1;32m, [0m[1;32m128[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter found - setting <[0m[1;32malgorithm[0m[1;32m> to <[0m[1;32mfft[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mnumber[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[landing_bootstrap-3] [INFO] [1792812404.860607254] [landing_bootstrap]: Controller connected; unpaused the landing scene.
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mamplitude[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m0[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mperiod[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mphase[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m0[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mdirection[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m1[0m[1;32m [0m[1;32m0[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mscale[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m2[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mangle[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m0.628319[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter found - setting <[0m[1;32msteepness[0m[1;32m> to <[0m[1;32m1[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter <[0m[1;32mwind_velocity[0m[1;32m> not found: [0m[1;32mUsing default value of <[0m[1;32m5[0m[1;32m [0m[1;32m0[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mOverriding 'wind_velocity' using 'wind_speed'[0m[1;32m and 'wind_angle_deg'[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter found - setting <[0m[1;32mwind_speed[0m[1;32m> to <[0m[1;32m5[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mParameter found - setting <[0m[1;32mwind_angle_deg[0m[1;32m> to <[0m[1;32m135[0m[1;32m>.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mConstructing Wavefield...[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mCreating WaveParameters.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mCreating OceanTile.[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mOceanTile: create tile[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mResolution:    [0m[1;32m128[0m[1;32m, [0m[1;32m128[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mNumFaces:      [0m[1;32m32768[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mTileSize:      [0m[1;32m256[0m[1;32m, [0m[1;32m256[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mSpacing:       [0m[1;32m2[0m[1;32m, [0m[1;32m2[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mOceanTile: calculating vertices[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mOceanTile: calculating indices[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mOceanTile: assigning texture coords[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mCreating triangulated grid.[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mDone constructing Wavefield.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mCreating OceanTile.[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mOceanTile: create tile[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mResolution:    [0m[1;32m128[0m[1;32m, [0m[1;32m128[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mNumFaces:      [0m[1;32m32768[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mTileSize:      [0m[1;32m100[0m[1;32m, [0m[1;32m100[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mSpacing:       [0m[1;32m0.78125[0m[1;32m, [0m[1;32m0.78125[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mOceanTile: calculating vertices[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mOceanTile: calculating indices[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mOceanTile: assigning texture coords[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mCreating triangulated grid.[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mWavesModel: created wavefield in entity [[0m[1;32m68[0m[1;32m][0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mWavesModel: found wavefield with params[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mnumber:     [0m[1;32m1[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mscale:      [0m[1;32m2[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mangle:      [0m[1;32m0.628319[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mperiod:     [0m[1;32m1[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mamplitude:  [0m[1;32m0[0m[1;32m, [0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mwavenumber: [0m[1;32m4.0243[0m[1;32m, [0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32momega:      [0m[1;32m6.28319[0m[1;32m, [0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mphase:      [0m[1;32m0[0m[1;32m, [0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32msteepness:  [0m[1;32m0[0m[1;32m, [0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mdirection:  [0m[1;32m1[0m[1;32m [0m[1;32m0[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: initialise physics[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: checking collision meshes for link [[0m[1;32mduck::base_link[0m[1;32m][0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: including collision [[0m[1;32mduck::base_link::collision[0m[1;32m][0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mType:       [0m[1;32mMESH[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mUri:        [0m[1;32m/opt/asv_ws/src/asv_wave_sim/gz-waves-models/models/duck/meshes/duck_collision.stl[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mFilePath:   [0m[1;32m/opt/asv_ws/src/asv_wave_sim/gz-waves-models/models/duck/model.sdf[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mMeshFile:   [0m[1;32m/opt/asv_ws/src/asv_wave_sim/gz-waves-models/models/duck/meshes/duck_collision.stl[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mVertex:     [0m[1;32m390[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: links:  [0m[1;32m1[0m[1;32m, meshes: [0m[1;32m1[0m[1;32m, collisions: [0m[1;32m1[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: initialising link [[0m[1;32mduck::base_link[0m[1;32m][0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: link has [[0m[1;32m1[0m[1;32m] collision meshes[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: link world pose: [0m[1;32m-6[0m[1;32m [0m[1;32m5[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: link world CoM pose: [0m[1;32m-6[0m[1;32m [0m[1;32m5[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: link bounding box:[0m[1;32m size: [0m[1;32m1.68014[0m[1;32m [0m[1;32m1.20284[0m[1;32m [0m[1;32m1.53369[0m[1;32m center: [0m[1;32m-5.8606[0m[1;32m [0m[1;32m5.0471[0m[1;32m [0m[1;32m0.873365[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: set water patch size: [0m[1;32m3.36028[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: done initialise physics[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: initialise physics[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: checking collision meshes for link [[0m[1;32mspherical_buoy::base_link[0m[1;32m][0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: including collision [[0m[1;32mspherical_buoy::base_link::collision[0m[1;32m][0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mType:       [0m[1;32mSPHERE[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mRadius:     [0m[1;32m0.25[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mMeshName:   [0m[1;32mspherical_buoy.base_link.collision.sphere[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mVertex:     [0m[1;32m81[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: links:  [0m[1;32m1[0m[1;32m, meshes: [0m[1;32m1[0m[1;32m, collisions: [0m[1;32m1[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: initialising link [[0m[1;32mspherical_buoy::base_link[0m[1;32m][0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: link has [[0m[1;32m1[0m[1;32m] collision meshes[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: link world pose: [0m[1;32m6[0m[1;32m [0m[1;32m5[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: link world CoM pose: [0m[1;32m6[0m[1;32m [0m[1;32m5[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: link bounding box:[0m[1;32m size: [0m[1;32m0.5[0m[1;32m [0m[1;32m0.5[0m[1;32m [0m[1;32m0.5[0m[1;32m center: [0m[1;32m6[0m[1;32m [0m[1;32m5[0m[1;32m [0m[1;32m0[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: set water patch size: [0m[1;32m2[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: done initialise physics[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: initialise physics[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: checking collision meshes for link [[0m[1;32mfloating_station::base_link[0m[1;32m][0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: including collision [[0m[1;32mfloating_station::base_link::hull_collision[0m[1;32m][0m
+[gazebo-4] [1;33m[Wrn] [Component.hh:144] [0m[1;33mTrying to serialize component with data type [[0m[1;33mSt8weak_ptrIKN2gz5waves9WavefieldEE[0m[1;33m], which doesn't have [0m[1;33m`operator<<`. Component will not be serialized.[0m[1;33m[0m
+[gazebo-4] [1;33m[Wrn] [Component.hh:127] [0m[1;33mTrying to serialize component with data type [[0m[1;33mSt10shared_ptrIN3sdf3v147ElementEE[0m[1;33m], which doesn't have [0m[1;33m`operator<<`. Component will not be serialized.[0m[1;33m[0m
+[gazebo-4] Stack trace (most recent call last):
+[gazebo-4] #31   Object "/usr/lib/x86_64-linux-gnu/OGRE-2.3/libOgreNextMain.so.2.3.1", at 0x7dac4f8f05e2, in Ogre::Root::installPlugin(Ogre::Plugin*, Ogre::StdMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, Ogre::STLAllocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, Ogre::CategorisedAllocPolicy<(Ogre::MemoryCategory)0> > > const*)
+[gazebo-4] #30   Object "/usr/lib/x86_64-linux-gnu/OGRE-2.3/OGRE/RenderSystem_GL3Plus.so", at 0x7dac4f3ab215, in Ogre::GL3PlusPlugin::install(Ogre::StdMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, Ogre::STLAllocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, Ogre::CategorisedAllocPolicy<(Ogre::MemoryCategory)0> > > const*)
+[gazebo-4] #29   Object "/usr/lib/x86_64-linux-gnu/OGRE-2.3/OGRE/RenderSystem_GL3Plus.so", at 0x7dac4f3ae71d, in Ogre::GL3PlusRenderSystem::GL3PlusRenderSystem(Ogre::StdMap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, Ogre::STLAllocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, Ogre::CategorisedAllocPolicy<(Ogre::MemoryCategory)0> > > const*)
+[gazebo-4] #28   Object "/usr/lib/x86_64-linux-gnu/OGRE-2.3/OGRE/RenderSystem_GL3Plus.so", at 0x7dac4f39f943, in 
+[gazebo-4] #27   Object "/usr/lib/x86_64-linux-gnu/libEGL_mesa.so.0", at 0x7dac4f30c58e, in 
+[gazebo-4] #26   Object "/usr/lib/x86_64-linux-gnu/libEGL_mesa.so.0", at 0x7dac4f31b797, in 
+[gazebo-4] #25   Object "/usr/lib/x86_64-linux-gnu/libEGL_mesa.so.0", at 0x7dac4f31edce, in 
+[gazebo-4] #24   Object "/usr/lib/x86_64-linux-gnu/libEGL_mesa.so.0", at 0x7dac4f31d3f9, in 
+[gazebo-4] #23   Object "/usr/lib/x86_64-linux-gnu/dri/swrast_dri.so", at 0x7dacbc3bc265, in 
+[gazebo-4] #22   Object "/usr/lib/x86_64-linux-gnu/dri/swrast_dri.so", at 0x7dacbc3b2eef, in 
+[gazebo-4] #21   Object "/usr/lib/x86_64-linux-gnu/dri/swrast_dri.so", at 0x7dacbca09646, in 
+[gazebo-4] #20   Object "/usr/lib/x86_64-linux-gnu/dri/swrast_dri.so", at 0x7dacbca09705, in 
+[gazebo-4] #19   Object "/usr/lib/x86_64-linux-gnu/dri/swrast_dri.so", at 0x7dacbc3b25ef, in 
+[gazebo-4] #18   Object "/usr/lib/x86_64-linux-gnu/dri/swrast_dri.so", at 0x7dacbcea9909, in 
+[gazebo-4] #17   Object "/usr/lib/x86_64-linux-gnu/dri/swrast_dri.so", at 0x7dacbcea965b, in 
+[gazebo-4] #16   Object "/usr/lib/x86_64-linux-gnu/dri/swrast_dri.so", at 0x7dacbceaad8b, in 
+[gazebo-4] #15   Object "/usr/lib/wsl/lib/libd3d12core.so", at 0x7dacb3c14e2a, in 
+[gazebo-4] #14   Object "/usr/lib/wsl/lib/libd3d12.so", at 0x7dacb3fef1c5, in 
+[gazebo-4] #13   Object "/usr/lib/wsl/lib/libd3d12.so", at 0x7dacb3fef4b1, in 
+[gazebo-4] #12   Object "/usr/lib/wsl/lib/libd3d12core.so", at 0x7dacb3bcb6c6, in 
+[gazebo-4] #11   Object "/usr/lib/wsl/lib/libd3d12core.so", at 0x7dacb3c1268b, in 
+[gazebo-4] #10   Object "/usr/lib/wsl/lib/libd3d12core.so", at 0x7dacb3d0bd00, in 
+[gazebo-4] #9    Object "/usr/lib/wsl/lib/libd3d12core.so", at 0x7dacb3bb5876, in 
+[gazebo-4] #8    Object "/usr/lib/wsl/lib/libd3d12core.so", at 0x7dacb3bb5932, in 
+[gazebo-4] #7    Object "/usr/lib/wsl/drivers/nv_dispig.inf_amd64_f4c7a2fd13e0f763/libnvwgf2umx.so", at 0x7daca16d2636, in 
+[gazebo-4] #6    Object "/usr/lib/wsl/drivers/nv_dispig.inf_amd64_f4c7a2fd13e0f763/libnvwgf2umx.so", at 0x7daca3d111dc, in 
+[gazebo-4] #5    Object "/usr/lib/wsl/drivers/nv_dispig.inf_amd64_f4c7a2fd13e0f763/libnvwgf2umx.so", at 0x7daca3d11110, in 
+[gazebo-4] #4    Object "/usr/lib/wsl/drivers/nv_dispig.inf_amd64_f4c7a2fd13e0f763/libnvwgf2umx.so", at 0x7daca3cf855a, in 
+[gazebo-4] #3    Object "/usr/lib/wsl/drivers/nv_dispig.inf_amd64_f4c7a2fd13e0f763/libnvwgf2umx.so", at 0x7daca3d4e37f, in 
+[gazebo-4] #2    Object "/usr/lib/wsl/drivers/nv_dispig.inf_amd64_f4c7a2fd13e0f763/libnvwgf2umx.so", at 0x7daca3d4f645, in 
+[gazebo-4] #1    Object "/usr/lib/wsl/drivers/nv_dispig.inf_amd64_f4c7a2fd13e0f763/libnvwgf2umx.so", at 0x7daca3d4fb9d, in 
+[gazebo-4] #0    Object "/usr/lib/wsl/drivers/nv_dispig.inf_amd64_f4c7a2fd13e0f763/libnvwgf2umx.so", at 0x7daca1436d22, in 
+[gazebo-4] Segmentation fault (Address not mapped to object [0xa130])
+[gazebo-4] [1;33m[Wrn] [Ogre2Camera.cc:423] [0m[1;33mOgre2Camera::SetVisibilityMask: Mask bits [0m[1;33mc0000000[0m[1;33m are set but will be ignored as they conflict with the [0m[1;33mreserved bits used internally by the ogre2 backend.[0m[1;33m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mType:       [0m[1;32mBOX[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mSize:       [0m[1;32m3[0m[1;32m [0m[1;32m3[0m[1;32m [0m[1;32m0.7[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mMeshName:   [0m[1;32mfloating_station.base_link.hull_collision.box[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mVertex:     [0m[1;32m24[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: links:  [0m[1;32m1[0m[1;32m, meshes: [0m[1;32m1[0m[1;32m, collisions: [0m[1;32m1[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: initialising link [[0m[1;32mfloating_station::base_link[0m[1;32m][0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: link has [[0m[1;32m1[0m[1;32m] collision meshes[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: link world pose: [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0.15[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: link world CoM pose: [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0.15[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: link bounding box:[0m[1;32m size: [0m[1;32m3[0m[1;32m [0m[1;32m3[0m[1;32m [0m[1;32m0.7[0m[1;32m center: [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0.15[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: set water patch size: [0m[1;32m6[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mHydrodynamics: done initialise physics[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mLoading plugin [[0m[1;32mgz-rendering-ogre2[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mServing scene information on [[0m[1;32m/world/ocean[0m[1;32m/[0m[1;32mscene/info[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mServing graph information on [[0m[1;32m/world/ocean[0m[1;32m/[0m[1;32mscene/graph[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mServing full state on [[0m[1;32m/world/ocean[0m[1;32m/[0m[1;32mstate[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mServing full state (async) on [[0m[1;32m/world/ocean[0m[1;32m/[0m[1;32mstate_async[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPublishing scene information on [[0m[1;32m/world/ocean/scene/info[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPublishing entity deletions on [[0m[1;32m/world/ocean/scene/deletion[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPublishing state changes on [[0m[1;32m/world/ocean/state[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPublishing pose messages on [[0m[1;32m/world/ocean[0m[1;32m/[0m[1;32mpose/info[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPublishing dynamic pose messages on [[0m[1;32m/world/ocean[0m[1;32m/[0m[1;32mdynamic_pose/info[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mWavesVisual: retrieving scene from render engine[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mLoading plugin [[0m[1;32mgz-waves1-rendering-ogre2[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mWavesVisual: searching for visual[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mWavesVisual: creating material `OceanBlue`[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mWavesVisual: creating dynamic texture ocean visual[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mShader param [[0m[1;32mbumpMap[0m[1;32m][0m[1;32m, type: [0m[1;32mtexture[0m[1;32m, tex coord set: [0m[1;32m0[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mShader param [[0m[1;32mcubeMap[0m[1;32m][0m[1;32m, type: [0m[1;32mtexture_cube[0m[1;32m, tex coord set: [0m[1;32m1[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mWavesVisualPrivate::InitTextures[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mOgre2DisplacementMap::InitTextures[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mCreate HeightMap image[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mCreate NormalMap image[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mCreate TangentMap image[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mInitialising images[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mCreate HeightMap texture[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mCreate NormalMap texture[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mCreate TangentMap texture[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mAssign dynamic textures to material[0m
+[parameter_bridge-5] [INFO] [1792812408.426800031] [ocean_bridge]: Passing message from ROS sensor_msgs/msg/Image to Gazebo gz.msgs.Image (showing msg only once per type)
+[gazebo-4] [1;32m[Msg] [0m[1;32mtexNameStr:   [0mEscalating to SIGKILL on [Gazebo Sim Server]
+[INFO] [gazebo-4]: process has finished cleanly [pid 64]
+[INFO] [parameter_bridge-5]: sending signal 'SIGINT' to process[parameter_bridge-5]
+[INFO] [landing_bootstrap-3]: sending signal 'SIGINT' to process[landing_bootstrap-3]
+[INFO] [parameter_bridge-2]: sending signal 'SIGINT' to process[parameter_bridge-2]
+[INFO] [vision_landing-1]: sending signal 'SIGINT' to process[vision_landing-1]
+[parameter_bridge-5] [INFO] [1792812426.332485878] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-5] corrupted double-linked list
+[parameter_bridge-2] [INFO] [1792812426.334121120] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[vision_landing-1] Traceback (most recent call last):
+[vision_landing-1]   File "/opt/ocean_ws/install/lib/ocean_sim/vision_landing", line 33, in <module>
+[vision_landing-1]     sys.exit(load_entry_point('ocean-sim==0.1.0', 'console_scripts', 'vision_landing')())
+[vision_landing-1]   File "/opt/ocean_ws/install/lib/python3.10/site-packages/ocean_sim/vision_landing.py", line 461, in main
+[vision_landing-1]     node.command_publisher.publish(Twist())
+[vision_landing-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/publisher.py", line 70, in publish
+[vision_landing-1]     self.__publisher.publish(msg)
+[vision_landing-1] rclpy._rclpy_pybind11.RCLError: Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:389
+[INFO] [parameter_bridge-2]: process has finished cleanly [pid 60]
+[INFO] [landing_bootstrap-3]: process has finished cleanly [pid 62]
+[ERROR] [vision_landing-1]: process has died [pid 58, exit code 1, cmd '/opt/ocean_ws/install/lib/ocean_sim/vision_landing --ros-args --params-file /tmp/launch_params_rcur6vo_'].
+[ERROR] [parameter_bridge-5]: process[parameter_bridge-5] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [parameter_bridge-5]: sending signal 'SIGTERM' to process[parameter_bridge-5]
+[ERROR] [parameter_bridge-5]: process[parameter_bridge-5] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[INFO] [parameter_bridge-5]: sending signal 'SIGKILL' to process[parameter_bridge-5]
+[ERROR] [parameter_bridge-5]: process has died [pid 66, exit code -9, cmd '/opt/ros/humble/lib/ros_gz_bridge/parameter_bridge --ros-args -r __node:=ocean_bridge --params-file /tmp/launch_params_c7ouy0ak'].
